@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for http://vodatours.com.vn/</title>
+  <link>http://vodatours.com.vn/</link>
+
+<item>
+     <link>http://vodatours.com.vn/</link>
+     <title>CÔNG TY TNHH MTV THƯƠNG MẠI VÀ DICH VỤ DU LỊCH VODATOURS</title>
+     <description>Vodatours.com - Website đặt tour du lịch hàng đầu Việt Nam: đặt tour du lịch trong nước và nước ngoài. Các dịch vụ du lịch: Thuê xe, phòng khách sạn, vé máy bay.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich</link>
+     <title>Tour du lịch</title>
+     <description>Tour du lịch</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/du-lich-trong-nuoc</link>
+     <title>Du lịch trong nước</title>
+     <description>Du lịch trong nước</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/mien-bac</link>
+     <title>Miền Bắc</title>
+     <description>Miền Bắc</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/mien-trung</link>
+     <title>Miền Trung</title>
+     <description>Miền Trung</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/mien-nam</link>
+     <title>Miền Nam</title>
+     <description>Miền Nam</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/ghep-doan</link>
+     <title>Ghép đoàn</title>
+     <description>Ghép đoàn</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/du-lich-nuoc-ngoai</link>
+     <title>Du lịch nước ngoài</title>
+     <description>Du lịch nước ngoài</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/thai-lan</link>
+     <title>Thái Lan</title>
+     <description>Thái Lan</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/singapore</link>
+     <title>Singapore</title>
+     <description>Singapore</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/trung-quoc</link>
+     <title>Trung Quốc</title>
+     <description>Trung Quốc</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/campuchia</link>
+     <title>Campuchia</title>
+     <description>Campuchia</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/nhat-ban</link>
+     <title>Nhật Bản</title>
+     <description>Nhật Bản</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/han-quoc</link>
+     <title>Hàn Quốc</title>
+     <description>Hàn Quốc</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/maylaysia</link>
+     <title>Maylaysia</title>
+     <description>Maylaysia</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/tour-mice</link>
+     <title>Tour Mice</title>
+     <description>Tour Mice</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/team-building</link>
+     <title>Team Building</title>
+     <description>Team Building</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/ve-may-bay</link>
+     <title>Vé máy bay</title>
+     <description>Vé máy bay</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/ve-may-bay/hang-khong-noi-dia</link>
+     <title>Hàng không nội địa</title>
+     <description>Hàng không nội địa</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/ve-may-bay/hang-khong-quoc-te</link>
+     <title>Hàng không quốc tế</title>
+     <description>Hàng không quốc tế</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/ve-may-bay/ve-khuyen-mai</link>
+     <title>Vé Khuyến Mãi</title>
+     <description>bay cùng Jestar giá rẻ</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/phong-khach-san</link>
+     <title>Phòng khách sạn</title>
+     <description>Phòng khách sạn</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/phong-khach-san/nam-sao</link>
+     <title>Năm sao</title>
+     <description>Năm sao</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/phong-khach-san/bon-sao</link>
+     <title>Bốn sao</title>
+     <description>Bốn sao</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/phong-khach-san/ba-sao</link>
+     <title>Ba sao</title>
+     <description>Ba sao</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/phong-khach-san/hai-sao</link>
+     <title>Hai sao</title>
+     <description>Hai sao</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/phong-khach-san/mot-sao</link>
+     <title>Một sao</title>
+     <description>Một sao</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/xe-du-lich</link>
+     <title>XE DU LỊCH ĐÀ NẴNG</title>
+     <description>XE DU LỊCH ĐÀ NẴNG</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/xe-du-lich/thue-xe-theo-thang</link>
+     <title>Xe 4 Chỗ</title>
+     <description>Các dòng xe Huynhdai - Chevrolet - Mazda - Vios ... đời mới</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/xe-du-lich/thue-xe-du-lich</link>
+     <title>Xe 7 chỗ</title>
+     <description>Các dòng xe Innova đời mới</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/xe-du-lich/thue-xe-cuoi-hoi</link>
+     <title>XE 16 CHỖ</title>
+     <description>các dòng xe du lịch FORD TRANSIT - TOYOTA HIACE - MEC SPRINTER -...đời mới</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/xe-du-lich/thue-xe-tu-lai</link>
+     <title>XE 30 CHỖ</title>
+     <description>CÁC DÒNG XE HUYNH DAI - COUNTY - SAMCO.. ĐỜI MỚI</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/xe-du-lich/thue-xe-don-tien</link>
+     <title>XE 45 CHỖ</title>
+     <description>CÁC DÒNG XE UNIVER- AERO SPACE đời mới</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tin-tuc-su-kien</link>
+     <title>Tin tức - Sự kiện</title>
+     <description>Tin tức - Sự kiện</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tin-tuc-su-kien/tin-tuc-su-kien</link>
+     <title>Tin tức cộng đồng</title>
+     <description>Tin tức cộng đồng</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tin-tuc-su-kien/tin-tuc-du-lich</link>
+     <title>Tin tức du lịch</title>
+     <description>Tin tức du lịch</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tin-tuc-su-kien/khuyen-mai-du-lich</link>
+     <title>Khuyến mãi du lịch</title>
+     <description>Khuyến mãi du lịch</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/cam-nang-du-lich</link>
+     <title>Cẩm nang du lịch</title>
+     <description>Cẩm nang du lịch</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/cam-nang-du-lich/am-thuc</link>
+     <title>Ẩm thực</title>
+     <description>Ẩm thực</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/cam-nang-du-lich/canh-dep</link>
+     <title>Cảnh đẹp</title>
+     <description>Cảnh đẹp</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/cam-nang-du-lich/kham-pha</link>
+     <title>Khám phá</title>
+     <description>Khám phá</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/cam-nang-du-lich/du-lich-bien</link>
+     <title>Du lịch biển</title>
+     <description>Du lịch biển</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/cam-nang-du-lich/di-san-van-hoa</link>
+     <title>Di sản văn hóa</title>
+     <description>Di sản văn hóa</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/cam-nang-du-lich/meo-du-lich</link>
+     <title>Mẹo du lịch</title>
+     <description>Mẹo du lịch</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/cam-nang-du-lich/vui-choi-giai-tri</link>
+     <title>Vui chơi - Giải trí</title>
+     <description>Vui chơi - Giải trí</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/cam-nang-du-lich/the-gioi-do-day</link>
+     <title>Thế giới đó đây</title>
+     <description>Thế giới đó đây</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/cam-nang-du-lich/nghi-duong</link>
+     <title>Nghỉ dưỡng</title>
+     <description>Nghỉ dưỡng</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/lien-he</link>
+     <title>Liên hệ - CÔNG TY TNHH MTV THƯƠNG MẠI VÀ DICH VỤ DU LỊCH VODATOURS</title>
+     <description>Liên hệ - Vodatours.com - Website đặt tour du lịch hàng đầu Việt Nam: đặt tour du lịch trong nước và nước ngoài. Các dịch vụ du lịch: Thuê xe, phòng khách sạn, vé máy bay.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/mien-trung/du-lich-da-nang-son-tra-hoi-an-hue-trong-5-ngay-4-dem-2.html</link>
+     <title>TOUR SƠN TRÀ - NGŨ HÀNH SƠN - HỘI AN 1 NGÀY</title>
+     <description>Du Lịch Hội An - Bước chân vào khu phố cổ, du khách sẽ ngỡ ngàng trước một thế giới biệt lập, tách khỏi mọi dòng chảy và sức phá huỷ của thời gian. Không có tiếng động cơ gầm rú cũng chẳng có những thương hiệu rực rỡ đèn màu. Tất cả đã lùi xa sau lưng, cả không gian và thời gian đều... </description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/mien-trung/du-lich-da-nang-4-ngay-3-dem-26.html</link>
+     <title>DU LỊCH ĐÀ NẴNG 4 NGÀY 3 ĐÊM</title>
+     <description>ĐÀ NẴNG – SƠN TRÀ - BÀ NÀ - CÙ LAO CHÀM – HỘI AN</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/mien-trung/du-lich-da-nang-3-ngay-2-dem-25.html</link>
+     <title>DU LỊCH ĐÀ NẴNG 3 NGÀY 2 ĐÊM</title>
+     <description>Du lịch Đà Nẵng 3 ngày 2 đêm giá rẻ - Bà Nà - Cù Lao Chàm - Ngũ Hành Sơn - Hội An</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/mien-trung/ba-na-hills-1-ngay-3.html</link>
+     <title>BÀ NÀ HILLS 1 NGÀY</title>
+     <description>Bà Nà Hill’s được mệnh danh là Sapa của miền Trung với khí hâu quanh năm mát mẻ, nhiệt độ trung bình vào khoảng 18oC, Bà Nà – Núi Chúa là khu du lịch sinh thái nghỉ dưỡng lý tưởng ở miền Trung. Du khách đến khu du lich Bà Nà không chỉ được tận hưởng không khí trong lành, xanh, sạch, đẹp mà còn... </description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/mien-trung/du-lich-dao-ly-son-2-ngay-1-dem-28.html</link>
+     <title>DU LỊCH ĐẢO LÝ SƠN 2 NGÀY 1 ĐÊM</title>
+     <description>Bạn chỉ mới nghe đến vẻ đẹp của Đảo Lý Sơn? bạn muốn khám phá Lý Sơn nhưng chưa biết bằng cách nào và chi phí ra sao? Hãy để chúng tôi, Vodatours sẽ đồng hành cùng chuyến đi của bạn. Với kinh nghiệm và sự nhiệt tình của đội ngũ nhân viên Vodatours - chúng tôi sẽ mang đến cho bạn những khoảnh khắc... </description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/mien-trung/city-tour-da-nang-18.html</link>
+     <title>CITY TOUR ĐÀ NẴNG</title>
+     <description>Du lịch Đà Nẵng nên đi đâu, Ăn gì, Chơi gì, Ở đâu? Hiện nay với dịch vụ trọn gói có rất nhiều người thân, người bạn của mình đa số đều đặt qua các công ty lữ hành. Còn nếu các bạn muốn tự tổ chức một chuyến du lịch cùng gia đình hay bạn bè của mình thì các bạn phải lên được... </description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/mien-trung/city-hue-1-ngay-11.html</link>
+     <title>CITY HUẾ 1 NGÀY</title>
+     <description>Đến Huế, nhiều người vẫn trầm trồ trước vẻ thơ mộng, hữu tình của cảnh sắc nơi đây, đan xen vào đó là vẻ cổ kính, ưu tư trước những thành quách đền đài xưa cũ. Nằm ở bờ Bắc con sông Hương thơ mộng, tổng thể kiến trúc của Kinh thành Huế được xây dựng trên một mặt bằng diện tích hơn 500ha, bao... </description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/mien-trung/tour-cu-lao-cham-hoi-an-1-ngay-10.html</link>
+     <title>TOUR CÙ LAO CHÀM - HỘI AN 1 NGÀY</title>
+     <description>Được ví như một </description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/mien-trung/tour-son-tra-ngu-hanh-son-hoi-an-1-ngay-2.html</link>
+     <title>TOUR SƠN TRÀ - NGŨ HÀNH SƠN - HỘI AN 1 NGÀY</title>
+     <description>Du Lịch Hội An - Bước chân vào khu phố cổ, du khách sẽ ngỡ ngàng trước một thế giới biệt lập, tách khỏi mọi dòng chảy và sức phá huỷ của thời gian. Không có tiếng động cơ gầm rú cũng chẳng có những thương hiệu rực rỡ đèn màu. Tất cả đã lùi xa sau lưng, cả không gian và thời gian đều... </description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/mien-trung/tour-cu-lao-cham-1-ngay-19.html</link>
+     <title>TOUR CÙ LAO CHÀM 1 NGÀY</title>
+     <description>Được ví như một </description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/mien-trung/du-lich-da-nang-3-ngay-2-dem-gia-re-27.html</link>
+     <title>DU LỊCH ĐÀ NẴNG 3 NGÀY 2 ĐÊM GIÁ RẺ</title>
+     <description>Bạn đã lên kế hoạch cho kỳ nghỉ của mình? Bạn muốn khám phá Đà Nẵng - Thành phố của những cây cầu? hay bạn muốn biết tại sao Đà Nẵng được đánh giá là thành phố đáng sống và đáng đến nhất Việt Nam trong những năm trở lại đây, hãy để chúng tôi đồng hành cùng bạn trong chuyến đi này. </description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/xe-du-lich/thue-xe-du-lich/xe-toyota-innova-2-0v-2015-so-tu-dong-311.html</link>
+     <title>Xe Toyota Innova 2.0V 2015 số tự động</title>
+     <description>Toyota Innova V  7 chỗ, số tự động là bản cao cấp nhất trong số các sản phẩm của dòng xe này tại Việt nam. Với nhiều tiện ích tăng thêm như ghế da, màn hình, tay lái ốp gỗ sang trọng.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/xe-du-lich/thue-xe-du-lich/xe-4-cho-toyota-camry-2015-phien-ban-2-0e-310.html</link>
+     <title>Xe 4 chỗ Toyota Camry 2015 phiên bản 2.0E</title>
+     <description>Toyota Camry thế hệ mới nhất được bán ra thị trường với 3 phiên bản, giá từ 1,078 đến 1,359 tỷ đồng, có 4 lựa chọn về màu sắc.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/xe-du-lich/thue-xe-du-lich/xe-audi-sq7-suv-diesel-manh-nhat-the-gioi-309.html</link>
+     <title>Xe Audi SQ7 - SUV diesel mạnh nhất thế giới</title>
+     <description>The Audi SQ7 is a 435bhp diesel SUV. Audi adds tri-turbocharged V8 diesel to Q7. Result is plentiful speed and all the torque.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/xe-du-lich/thue-xe-du-lich/xe-audi-a7-sportback-se-executive-308.html</link>
+     <title>Xe Audi A7 Sportback SE Executive</title>
+     <description>Mang dáng vẻ thể thao đầy cá tính, tinh tế trong việc kết hợp giữa công nghệ, động cơ và tính năng lái, chiếc coupe thể thao Audi A7 Sportback 2015 tạo được sức hút khó cưỡng với những ai từng một lần cầm lái.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/xe-du-lich/thue-xe-du-lich/xe-toyota-innova-2-0v-2015-so-tu-dong-307.html</link>
+     <title>Xe Toyota Innova 2.0V 2015 số tự động</title>
+     <description>Toyota Innova V  7 chỗ, số tự động là bản cao cấp nhất trong số các sản phẩm của dòng xe này tại Việt nam. Với nhiều tiện ích tăng thêm như ghế da, màn hình, tay lái ốp gỗ sang trọng.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/xe-du-lich/thue-xe-du-lich/xe-4-cho-toyota-camry-2015-phien-ban-2-0e-306.html</link>
+     <title>Xe 4 chỗ Toyota Camry 2015 phiên bản 2.0E</title>
+     <description>Toyota Camry thế hệ mới nhất được bán ra thị trường với 3 phiên bản, giá từ 1,078 đến 1,359 tỷ đồng, có 4 lựa chọn về màu sắc.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/xe-du-lich/thue-xe-du-lich/xe-audi-sq7-suv-diesel-manh-nhat-the-gioi-305.html</link>
+     <title>Xe Audi SQ7 - SUV diesel mạnh nhất thế giới</title>
+     <description>The Audi SQ7 is a 435bhp diesel SUV. Audi adds tri-turbocharged V8 diesel to Q7. Result is plentiful speed and all the torque.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/xe-du-lich/thue-xe-du-lich/xe-audi-a7-sportback-se-executive-304.html</link>
+     <title>Xe Audi A7 Sportback SE Executive</title>
+     <description>Mang dáng vẻ thể thao đầy cá tính, tinh tế trong việc kết hợp giữa công nghệ, động cơ và tính năng lái, chiếc coupe thể thao Audi A7 Sportback 2015 tạo được sức hút khó cưỡng với những ai từng một lần cầm lái.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/xe-du-lich/thue-xe-du-lich/xe-toyota-innova-2-0v-2015-so-tu-dong-303.html</link>
+     <title>Xe Toyota Innova 2.0V 2015 số tự động</title>
+     <description>Toyota Innova V  7 chỗ, số tự động là bản cao cấp nhất trong số các sản phẩm của dòng xe này tại Việt nam. Với nhiều tiện ích tăng thêm như ghế da, màn hình, tay lái ốp gỗ sang trọng.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/xe-du-lich/thue-xe-du-lich/xe-4-cho-toyota-camry-2015-phien-ban-2-0e-302.html</link>
+     <title>Xe 4 chỗ Toyota Camry 2015 phiên bản 2.0E</title>
+     <description>Toyota Camry thế hệ mới nhất được bán ra thị trường với 3 phiên bản, giá từ 1,078 đến 1,359 tỷ đồng, có 4 lựa chọn về màu sắc.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/xe-du-lich/thue-xe-du-lich/xe-audi-sq7-suv-diesel-manh-nhat-the-gioi-301.html</link>
+     <title>Xe Audi SQ7 - SUV diesel mạnh nhất thế giới</title>
+     <description>The Audi SQ7 is a 435bhp diesel SUV. Audi adds tri-turbocharged V8 diesel to Q7. Result is plentiful speed and all the torque.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/xe-du-lich/thue-xe-du-lich/xe-audi-a7-sportback-se-executive-300.html</link>
+     <title>Xe Audi A7 Sportback SE Executive</title>
+     <description>Mang dáng vẻ thể thao đầy cá tính, tinh tế trong việc kết hợp giữa công nghệ, động cơ và tính năng lái, chiếc coupe thể thao Audi A7 Sportback 2015 tạo được sức hút khó cưỡng với những ai từng một lần cầm lái.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/phong-khach-san/ba-sao/khach-san-varna-gia-tu-400-000d-dem-buffet-sang-727.html</link>
+     <title>KHÁCH SẠN VARNA GIÁ TỪ 400.000đ/ đêm (buffet sáng)</title>
+     <description>KHÁCH SẠN BÊN BỜ SÔNG HÀN GIÁ RẺ</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/phong-khach-san/nam-sao/khach-san-a-la-carte-da-nang-beach-725.html</link>
+     <title>Khách Sạn A La Carte Đà Nẵng Beach</title>
+     <description>Khách Sạn A La Carte Đà Nẵng Beach có tiện nghi như quán Bar, phòng hội họp, dịch vụ Spa &amp; Massage, đảm bảo quý khách có thời gian thư giãn tuyệt vời nhất khi dừng chân tới đây.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/cam-nang-du-lich/kham-pha/ba-quan-ca-phe-gay-an-tuong-voi-khach-tay-o-sai-gon-719.html</link>
+     <title>Ba quán cà phê gây ấn tượng với khách Tây ở Sài Gòn</title>
+     <description>Không gian khiêm tốn nhưng được trang trí tinh tế, nước uống đa dạng với nhiều sự lựa chọn... khiến cho nhiều quán cà phê nhỏ ở Sài Gòn được lòng của du khách. </description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tin-tuc-su-kien/tin-tuc-du-lich/son-doong-duoc-de-cu-vao-top-100-noi-hap-dan-nhat-the-gioi-721.html</link>
+     <title>Sơn Đoòng được đề cử vào top 100 nơi hấp dẫn nhất thế giới</title>
+     <description>Hạ Long, Tràng An - Bái Đính, hang Sơn Đoòng, địa đạo Củ Chi là 4 địa điểm được đề cử lên Tổ chức Liên minh Kỷ lục Thế giới (WorldKings).</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/campuchia/du-lich-campuchia-ghe-tham-xu-so-chua-thap-le-30-4-16.html</link>
+     <title>Du lịch Campuchia – ghé thăm xứ sở chùa Tháp lễ 30/4</title>
+     <description>Tour du lịch Campuchia – ghé thăm xứ sở chùa Tháp lễ 30/4 sẽ giúp quý khách có một kì nghỉ lễ thật thú vị, đầy bất ngờ. Quý khách được ghé thăm thủ đô Phnôm Pênh với nhiều công trình kiến trúc nổi bật và thành phố biển Sihanoukville mát mẻ, thoáng đãng. Bên cạnh đó còn khám phá Đảo Koh Rong Saloem –... </description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/campuchia/du-lich-campuchia-ghe-tham-xu-so-chua-thap-le-30-4-24.html</link>
+     <title>Du lịch Campuchia – ghé thăm xứ sở chùa Tháp lễ 30/4</title>
+     <description>Tour du lịch Campuchia – ghé thăm xứ sở chùa Tháp lễ 30/4 sẽ giúp quý khách có một kì nghỉ lễ thật thú vị, đầy bất ngờ. Quý khách được ghé thăm thủ đô Phnôm Pênh với nhiều công trình kiến trúc nổi bật và thành phố biển Sihanoukville mát mẻ, thoáng đãng. Bên cạnh đó còn khám phá Đảo Koh Rong Saloem –... </description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/nhat-ban/du-lich-nhat-ban-le-30-4-ngam-hoa-anh-dao-gia-re-15.html</link>
+     <title>Du lịch Nhật Bản lễ 30/4 ngắm hoa anh đào giá rẻ</title>
+     <description>our du lịch Nhật Bản lễ 30/4 ngắm hoa anh đào giá rẻ sẽ giúp quý khách có một kì nghỉ lễ thú vị tại xứ Phù Tang. Bên cạnh việc ngắm nhìn loài hoa anh đào nổi tiếng thì quý khách còn có thời gian tự do mua sắm và tham quan nhiều địa danh như núi Phú Sĩ, chùa cổ Asakusa Kannon,…</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/campuchia/du-lich-campuchia-ghe-tham-xu-so-chua-thap-le-30-4-8.html</link>
+     <title>Du lịch Campuchia – ghé thăm xứ sở chùa Tháp lễ 30/4</title>
+     <description>Tour du lịch Campuchia – ghé thăm xứ sở chùa Tháp lễ 30/4 sẽ giúp quý khách có một kì nghỉ lễ thật thú vị, đầy bất ngờ. Quý khách được ghé thăm thủ đô Phnôm Pênh với nhiều công trình kiến trúc nổi bật và thành phố biển Sihanoukville mát mẻ, thoáng đãng. Bên cạnh đó còn khám phá Đảo Koh Rong Saloem –... </description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/nhat-ban/du-lich-nhat-ban-le-30-4-ngam-hoa-anh-dao-gia-re-7.html</link>
+     <title>Du lịch Nhật Bản lễ 30/4 ngắm hoa anh đào giá rẻ</title>
+     <description>our du lịch Nhật Bản lễ 30/4 ngắm hoa anh đào giá rẻ sẽ giúp quý khách có một kì nghỉ lễ thú vị tại xứ Phù Tang. Bên cạnh việc ngắm nhìn loài hoa anh đào nổi tiếng thì quý khách còn có thời gian tự do mua sắm và tham quan nhiều địa danh như núi Phú Sĩ, chùa cổ Asakusa Kannon,…</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich?p=2</link>
+     <title>Tour du lịch</title>
+     <description>Tour du lịch</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/xe-du-lich/thue-xe-du-lich/xe-audi-a7-sportback-se-executive-292.html</link>
+     <title>Xe Audi A7 Sportback SE Executive</title>
+     <description>Mang dáng vẻ thể thao đầy cá tính, tinh tế trong việc kết hợp giữa công nghệ, động cơ và tính năng lái, chiếc coupe thể thao Audi A7 Sportback 2015 tạo được sức hút khó cưỡng với những ai từng một lần cầm lái.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/xe-du-lich/thue-xe-du-lich/xe-audi-sq7-suv-diesel-manh-nhat-the-gioi-293.html</link>
+     <title>Xe Audi SQ7 - SUV diesel mạnh nhất thế giới</title>
+     <description>The Audi SQ7 is a 435bhp diesel SUV. Audi adds tri-turbocharged V8 diesel to Q7. Result is plentiful speed and all the torque.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/xe-du-lich/thue-xe-du-lich/xe-4-cho-toyota-camry-2015-phien-ban-2-0e-294.html</link>
+     <title>Xe 4 chỗ Toyota Camry 2015 phiên bản 2.0E</title>
+     <description>Toyota Camry thế hệ mới nhất được bán ra thị trường với 3 phiên bản, giá từ 1,078 đến 1,359 tỷ đồng, có 4 lựa chọn về màu sắc.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/xe-du-lich/thue-xe-du-lich/xe-toyota-innova-2-0v-2015-so-tu-dong-295.html</link>
+     <title>Xe Toyota Innova 2.0V 2015 số tự động</title>
+     <description>Toyota Innova V  7 chỗ, số tự động là bản cao cấp nhất trong số các sản phẩm của dòng xe này tại Việt nam. Với nhiều tiện ích tăng thêm như ghế da, màn hình, tay lái ốp gỗ sang trọng.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/xe-du-lich/thue-xe-du-lich/xe-audi-a7-sportback-se-executive-296.html</link>
+     <title>Xe Audi A7 Sportback SE Executive</title>
+     <description>Mang dáng vẻ thể thao đầy cá tính, tinh tế trong việc kết hợp giữa công nghệ, động cơ và tính năng lái, chiếc coupe thể thao Audi A7 Sportback 2015 tạo được sức hút khó cưỡng với những ai từng một lần cầm lái.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/xe-du-lich/thue-xe-du-lich/xe-audi-sq7-suv-diesel-manh-nhat-the-gioi-297.html</link>
+     <title>Xe Audi SQ7 - SUV diesel mạnh nhất thế giới</title>
+     <description>The Audi SQ7 is a 435bhp diesel SUV. Audi adds tri-turbocharged V8 diesel to Q7. Result is plentiful speed and all the torque.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich/nhat-ban/du-lich-nhat-ban-le-30-4-ngam-hoa-anh-dao-gia-re-23.html</link>
+     <title>Du lịch Nhật Bản lễ 30/4 ngắm hoa anh đào giá rẻ</title>
+     <description>our du lịch Nhật Bản lễ 30/4 ngắm hoa anh đào giá rẻ sẽ giúp quý khách có một kì nghỉ lễ thú vị tại xứ Phù Tang. Bên cạnh việc ngắm nhìn loài hoa anh đào nổi tiếng thì quý khách còn có thời gian tự do mua sắm và tham quan nhiều địa danh như núi Phú Sĩ, chùa cổ Asakusa Kannon,…</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/phong-khach-san/ba-sao/khach-san-kay-da-nang-723.html</link>
+     <title>Khách Sạn Kay Đà Nẵng</title>
+     <description>Khách sạn Kay Đà Nẵng tọa lạc ngay bên bờ sông Hàn thơ mộng. Khách sạn có một vị trí rất thuận lợi cho tất cả các hoạt động Du lịch, vui chơi, giải trí, tham quan, mua sắm hay cho chuyến đi công tác của Quý khách.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/phong-khach-san/ba-sao/khach-san-gold-3-da-nang-724.html</link>
+     <title>Khách Sạn Gold 3 Đà Nẵng</title>
+     <description>Khách Sạn Gold 3 Đà Nẵng nằm bên bờ sông Hàn thơ mông và gần kề ngay cầu Rồng nổi tiếng của thành phố, view hướng ra cầu Rồng về đêm rất đẹp. Đây sẽ là điểm đến lý tưởng cho du khách.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/xe-du-lich/thue-xe-du-lich/xe-4-cho-toyota-camry-2015-phien-ban-2-0e-298.html</link>
+     <title>Xe 4 chỗ Toyota Camry 2015 phiên bản 2.0E</title>
+     <description>Toyota Camry thế hệ mới nhất được bán ra thị trường với 3 phiên bản, giá từ 1,078 đến 1,359 tỷ đồng, có 4 lựa chọn về màu sắc.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/xe-du-lich/thue-xe-du-lich/xe-toyota-innova-2-0v-2015-so-tu-dong-299.html</link>
+     <title>Xe Toyota Innova 2.0V 2015 số tự động</title>
+     <description>Toyota Innova V  7 chỗ, số tự động là bản cao cấp nhất trong số các sản phẩm của dòng xe này tại Việt nam. Với nhiều tiện ích tăng thêm như ghế da, màn hình, tay lái ốp gỗ sang trọng.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/xe-du-lich?p=2</link>
+     <title>XE DU LỊCH ĐÀ NẴNG</title>
+     <description>XE DU LỊCH ĐÀ NẴNG</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/xe-du-lich/thue-xe-du-lich?p=2</link>
+     <title>Xe 7 chỗ</title>
+     <description>Các dòng xe Innova đời mới</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tin-tuc-su-kien/tin-tuc-su-kien/du-khach-nhat-ban-bi-nem-da-tai-israel-715.html</link>
+     <title>Du khách Nhật Bản bị ném đá tại Israel</title>
+     <description>Khi đang cầu nguyện gần giáo đường Saint Anne’s, nữ du khách Nhật Bản bất ngờ bị ném đá vào người, dẫn đến thương nhẹ.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/cam-nang-du-lich/kham-pha/hang-nghin-du-khach-do-toi-indonesia-ngam-nhat-thuc-toan-phan-722.html</link>
+     <title>Hàng nghìn du khách đổ tới Indonesia ngắm nhật thực toàn phần</title>
+     <description>Khoảng 10.000 du khách quốc tế sẽ đến Indonesia để chiêm ngưỡng nhật thực toàn phần duy nhất năm 2016, diễn ra ngày mai. </description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/cam-nang-du-lich/kham-pha/phong-tuc-mai-tang-tren-cay-cua-nguoi-tay-tang-720.html</link>
+     <title>Phong tục mai táng trên cây của người Tây Tạng</title>
+     <description>Nơi thụ táng nằm trong rừng, trên mỗi cây treo đầy những chiếc giỏ và thùng gỗ chứa thi thể.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/cam-nang-du-lich/kham-pha/gordon-ramsay-me-man-hang-rong-singapore-718.html</link>
+     <title>Gordon Ramsay mê mẩn hàng rong Singapore</title>
+     <description>Vị bếp trưởng nổi tiếng thế giới khẳng định chợ hàng rong chính hiệu, nhà hàng sao Michelin sắp ra mắt, cửa hàng bánh mì đường phố... là những lý do khiến anh dành tình yêu cho đất nước Singapore.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/cam-nang-du-lich/kham-pha/haiku-nac-thang-len-thien-duong-o-hawaii-717.html</link>
+     <title>Haiku - 'nấc thang lên thiên đường' ở Hawaii</title>
+     <description>Ở độ cao hơn 800 m, những nhịp cầu thang Haiku uốn lượn ẩn hiện trong màn mây khiến du khách có cảm giác như đang lạc vào xứ sở thần tiên.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/cam-nang-du-lich/kham-pha/tu-tuc-du-lich-yen-tu-mot-ngay-716.html</link>
+     <title>Tự túc du lịch Yên Tử một ngày</title>
+     <description>Lễ hội chùa Yên Tử còn kéo dài tới hết tháng 3 Âm lịch và du khách hoàn toàn có thể khám phá phong cảnh, di tích lịch sử cũng như vãn cảnh chùa ở đây trong một ngày. </description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/tour-du-lich?p=1</link>
+     <title>Tour du lịch</title>
+     <description>Tour du lịch</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/xe-du-lich?p=1</link>
+     <title>XE DU LỊCH ĐÀ NẴNG</title>
+     <description>XE DU LỊCH ĐÀ NẴNG</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://vodatours.com.vn/xe-du-lich/thue-xe-du-lich?p=1</link>
+     <title>Xe 7 chỗ</title>
+     <description>Các dòng xe Innova đời mới</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  

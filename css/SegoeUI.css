@@ -1,0 +1,26 @@
+@font-face {
+		font-family: "segoe";
+		src: url("../fonts/segoeui.eot");
+		src: url("../fonts/segoeui.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/segoeui.woff") format("woff"),
+		url("../fonts/segoeui.ttf") format("truetype"),
+		url("../fonts/segoeui.svg#segoeui") format("svg");
+		font-weight: 500;
+		font-style: normal;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+		font-family: "segoe";
+		src: url("../fonts/seguisb.eot");
+		src: url("../fonts/seguisb.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/seguisb.woff") format("woff"),
+		url("../fonts/seguisb.ttf") format("truetype"),
+		url("../fonts/seguisb.svg#seguisb") format("svg");
+		font-weight: 800;
+		font-style: normal;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+}
+

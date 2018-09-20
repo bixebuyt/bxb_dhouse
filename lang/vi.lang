@@ -1,0 +1,174 @@
+<?php
+// Page
+	$lgTxt_lang                           = 'vi';
+	$lgTxt_social                         = 'Liên kết mạng xã hội';
+	$lgTxt_social_face                    = 'Liên kết Facebook';
+	$lgTxt_update                         = 'Dữ liệu rỗng... Bạn vui lòng quay lại sau!';
+	$lgTxt_error_page                     = 'Trang thông báo lỗi';
+	$lgTxt_page404                        = 'Liên kết không tồn tại, vui lòng';
+	$lgTxt_page404_click                  = 'bấm';
+	$lgTxt_page404_back                   = 'để quay lại';
+	$lgTxt_article_plus                   = 'Các tin khác:';
+	$lgTxt_article_other                  = 'Cùng chuyên mục:';
+
+	$lgTxt_tour_views_max                 = 'Tour xem nhiều';
+	$lgTxt_detail                         = 'Xem thêm';
+	$lgTxt_view_all                       = 'Tất cả';
+	$lgTxt_price                          = 'Giá: ';
+	$lgTxt_price_unit                     = ' (đ)';
+	$lgTxt_price_unitCar                  = ' (đ/ngày)';
+	$lgTxt_price_unitTour                 = ' (đ/nngười)';
+	$lgTxt_price_contact                  = '(Liên hệ)';
+	$lgTxt_title_search					  = 'Tìm kiếm';
+
+// Menu
+	$lgTxt_menu_home                      = 'Trang chủ';
+	$lgTxt_menu_contact                   = 'Liên hệ';
+	$lgTxt_slug_contact                   = 'lien-he';
+	$lgTxt_menu_search                    = 'Tìm kiếm nhanh';
+	$lgTxt_input_search                   = 'Tìm kiếm nhanh...';
+	$lgTxt_slug_search                    = 'tim-kiem';
+
+// Search tour
+	$lgTxt_sTour_date                     = 'Ngày khởi hành';
+	$lgTxt_sTour_slug                     = 'tra-cuu-tour';
+	$lgTxt_sTour_submit                   = 'Tìm kiếm';
+
+// Tabs
+	$lgTxt_tab_information                = 'Giới thiệu';
+	$lgTxt_tab_gallery                    = 'Hình ảnh';
+	$lgTxt_tab_service                    = 'Bảng giá & Dịch vụ';
+	$lgTxt_tab_maps                       = 'Bản đồ';
+	$lgTxt_tab_video                      = 'Video';
+	$lgTxt_tab_comment                    = 'Bình luận';
+	$lgTxt_tab_bookingHotel               = 'Đặt phòng';
+	$lgTxt_tab_bookingCar                 = 'Đặt xe';
+	$lgTxt_tab_bookingTour                = 'Đặt tour';
+
+// Car
+	$lgTxt_car_model                      = '<span>Hiệu:</span> ';
+	$lgTxt_car_year                       = '<span>Đời xe:</span> ';
+	$lgTxt_car_seat                       = '<span>Kiểu xe:</span> ';
+	$lgTxt_car_color                      = '<span>Màu xe:</span> ';
+
+// Tour
+	$lgTxt_tour_date_schedule              = '<span>Thời gian:</span> ';
+	$lgTxt_tour_date_departure             = '<span>Ngày khởi hành:</span> ';
+	$lgTxt_tour_date_departure_always      = 'Khởi hành hàng ngày';
+	$lgTxt_tour_means                      = '<span>Phương tiện:</span> ';
+	$lgTxt_tour_tour_type                  = '<span>Loại hình du lịch:</span> ';
+	$lgTxt_tour_destination                = '<span>Điểm đến:</span> ';
+
+// Booking
+    $lgTxt_booking_order_id             = 'Mã đặt hàng:';
+    $lgTxt_booking_full_name            = 'Họ và tên:';
+    $lgTxt_booking_country              = 'Quốc tịch:';
+    $lgTxt_booking_address              = 'Địa chỉ:';
+    $lgTxt_booking_email                = 'Email:';
+    $lgTxt_booking_phone                = 'Điện thoại:';
+    $lgTxt_booking_content              = 'Yêu cầu:';
+    //--------
+    $lgTxt_booking_destination          = 'Điểm đến:';
+    $lgTxt_booking_hotel                = 'Khách sạn:';
+    $lgTxt_booking_room                 = 'Loại phòng:';
+    $lgTxt_booking_room_a1              = 'Phòng tiêu chuẩn';
+    $lgTxt_booking_room_a2              = 'Phòng cao cấp';
+    $lgTxt_booking_room_a3              = 'Phòng sang trọng';
+    $lgTxt_booking_room_b1              = 'Phòng đơn';
+    $lgTxt_booking_room_b2              = 'Phòng đôi 2 giường';
+    $lgTxt_booking_room_b3              = 'Phòng đôi 1 giường';
+    $lgTxt_booking_room_b4              = 'Phòng ba';
+    $lgTxt_booking_room_b5              = 'Phòng gia đình';
+    $lgTxt_booking_date_begin           = 'Ngày nhận phòng:';
+    $lgTxt_booking_date_end             = 'Ngày trả:';
+    $lgTxt_booking_quantity             = 'Số lượng:';
+    $lgTxt_booking_quantity_adults      = '(Người lớn:)';
+    $lgTxt_booking_quantity_child       = '(Trẻ em:)';
+    //--------
+    $lgTxt_booking_location_to          = 'Điểm đi:';
+    $lgTxt_booking_location_from        = 'Nơi cần đến:';
+    $lgTxt_booking_visa                 = 'Loại Visa:';
+    $lgTxt_booking_star                 = 'Tiêu chuẩn:';
+    $lgTxt_booking_star_0               = 'Không có sao';
+    $lgTxt_booking_star_1               = '1 sao';
+    $lgTxt_booking_star_2               = '2 sao';
+    $lgTxt_booking_star_3               = '3 sao';
+    $lgTxt_booking_star_4               = '4 sao';
+    $lgTxt_booking_star_5               = '5 sao';
+    $lgTxt_booking_hotel_date_begin     = 'Ngày nhận phòng:';
+    $lgTxt_booking_hotel_date_end       = 'Ngày trả:';
+    //--------
+    $lgTxt_booking_car_use              = 'Mục đích thuê xe:';
+    $lgTxt_booking_car_pickup           = 'Điểm đón/trả khách:';
+    $lgTxt_booking_car_begin            = 'Ngày nhận:';
+    $lgTxt_booking_car_end              = 'Ngày trả:';
+    //--------
+    $lgTxt_booking_tour_begin           = 'Ngày đi:';
+    $lgTxt_booking_tour_end             = 'Ngày về:';
+
+// Contact
+	$txtContact_titleForm                 = 'Thắc mắc - Góp ý';
+	$txtContact_name		              = 'Họ và tên: (*)';
+	$txtContact_address	                  = 'Địa chỉ:';
+	$txtContact_email		              = 'Email:  (*)';
+	$txtContact_fone		              = 'Số điện thoại: (*)';
+	$txtContact_content	                  = 'Nội dung liên hệ: (*)';
+	$txtContact_button_s	              = 'Gửi đi';
+	$txtContact_sendOk		              = 'Xin chân thành cảm ơn Quý khách đã quan tâm và sử dụng dịch vụ của chúng tôi!
+Yêu cầu của Quý khách đã gửi thành công. Chúng tôi sẽ phản hồi lại trong vòng 24h tới.
+Chân thành cảm ơn!';
+	$txtContact_sendDie	                  = 'Không thể gửi thư vì một vài lỗi từ phía máy chủ.';
+
+	$txtOrder_sendOk		              = 'Xin chân thành cảm ơn Quý khách đã quan tâm và sử dụng dịch vụ của chúng tôi!
+Yêu cầu của Quý khách đã gửi thành công. Chúng tôi sẽ phản hồi lại trong vòng 24h tới.
+Chân thành cảm ơn!';
+
+    $txtEnter_field		                  = 'Trường bắt buộc.';
+    $txtEnter_email		                  = 'Địa chỉ Email không hợp lệ.';
+    $txtEnter_tell		                  = 'Số điện thoại không hợp lệ.';
+	$txtEnter_number		              = 'Số không hợp lệ.';
+
+	$lgTxt_register_mail_title            = 'Đăng ký nhận khuyến mãi';
+	$lgTxt_register_mail_input            = 'Vui lòng nhập email...';
+	$txtEmail_sendOk		              = 'Đăng ký email nhận tin khuyến mãi thành công.';
+	$txtEmail_sendDie	                  = 'Không thể thực hiện vì một vài lỗi từ phía máy chủ.';
+	
+	
+	$lgTxt_chi_tiet                      = 'Chi tiết';
+	
+	$lgTxt_send_mail                      = 'Vui lòng nhập email để nhận được những khuyến mãi mới nhất từ chúng tôi';
+	
+	$lgTxt_cont_mail                     = 'Nhập mail tại đây...';
+	
+    $lgTxt_prod_new          = 'Sản phẩm mới';
+	$lgTxt_prod_feat         = 'Sản phẩm nổi bật';
+	$lgTxt_list_prod		 = 'Danh mục sản phẩm';
+	$txtContact_name		 = 'Full name';
+	
+	$txt_service		= 'Dịch vụ';
+	$txt_poj = 'Công trình - Dự án';
+	$txt_code = 'Mã sản phẩm';
+	
+	$txt_weight   ='Trọng lượng';
+	$txt_buy   ='Đặt hàng';
+	$txt_spect = 'THÔNG SỐ KĨ THUẬT';
+	$txt_code_color = 'Bảng mã màu';
+	$txt_pro_other = 'SẢN PHẨM KHÁC';
+	
+	$txt_order_inf = 'THÔNG TIN ĐẶT HÀNG';
+	$txtContact_number = 'Số lượng';
+	$txtContact_sub = 'ĐẶT HÀNG';
+	$txtContact_refresh = 'LÀM LẠI';
+	$txtContact_note = 'Nội dung';
+	
+	$search = 'Nhập từ khóa';
+	
+	$txt_l_product = 'Danh mục sản phẩm';
+	
+	$prod_news = 'Sản phẩm mới';
+	$txtdistri_name = 'Họ và Tên';
+	$buy = 'Đặt mua';
+	
+	$news = 'Tin tức';
+
+	$txt_Special = 'Dự án nổi bậc';

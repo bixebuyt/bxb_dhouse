@@ -1,0 +1,224 @@
+#mainbody {
+	max-width: 200px;
+	float: left;
+}
+#upload {
+	padding: 15px;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	max-width: 200px;
+	margin: 20px;
+	float: left;
+	background-color: #428bca;
+	border-color: #357ebd;
+	width: auto;
+	cursor: pointer;
+}
+.darkbg {
+	background:#ddd !important;
+}
+#status {
+	color: #357ebd;
+}
+ul#files{ list-style:none; padding:0; margin:0; }
+ul#files li{ padding:10px; margin-bottom:2px; width:200px; float:left; margin-right:10px;}
+ul#files li img{ max-width:180px; max-height:150px; }
+
+.show_img_upload {
+	float: left;
+	margin: 5px;
+	position: relative;
+	width: 134px;
+}
+.show_img_upload img {
+	width: auto;
+	padding: 2px;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+}
+.icon_delete_img {
+	background: url(../images/deletered.png);
+	cursor: pointer;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: -8px;
+	right: -8px;
+}
+
+#fadingBarsG{
+	position:relative;
+	width:150px;
+	height:18px}
+
+.fadingBarsG{
+	position:absolute;
+	top:0;
+	background-color:#304a54;
+	width:18px;
+	height:18px;
+	-moz-animation-name:bounce_fadingBarsG;
+	-moz-animation-duration:0.9s;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:linear;
+	-moz-transform:scale(.3);
+	-webkit-animation-name:bounce_fadingBarsG;
+	-webkit-animation-duration:0.9s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:linear;
+	-webkit-transform:scale(.3);
+	-ms-animation-name:bounce_fadingBarsG;
+	-ms-animation-duration:0.9s;
+	-ms-animation-iteration-count:infinite;
+	-ms-animation-direction:linear;
+	-ms-transform:scale(.3);
+	-o-animation-name:bounce_fadingBarsG;
+	-o-animation-duration:0.9s;
+	-o-animation-iteration-count:infinite;
+	-o-animation-direction:linear;
+	-o-transform:scale(.3);
+	animation-name:bounce_fadingBarsG;
+	animation-duration:0.9s;
+	animation-iteration-count:infinite;
+	animation-direction:linear;
+	transform:scale(.3);
+}
+
+#fadingBarsG_1{
+	left:0;
+	-moz-animation-delay:0.36s;
+	-webkit-animation-delay:0.36s;
+	-ms-animation-delay:0.36s;
+	-o-animation-delay:0.36s;
+	animation-delay:0.36s;
+}
+
+#fadingBarsG_2{
+	left:19px;
+	-moz-animation-delay:0.45s;
+	-webkit-animation-delay:0.45s;
+	-ms-animation-delay:0.45s;
+	-o-animation-delay:0.45s;
+	animation-delay:0.45s;
+}
+
+#fadingBarsG_3{
+	left:38px;
+	-moz-animation-delay:0.54s;
+	-webkit-animation-delay:0.54s;
+	-ms-animation-delay:0.54s;
+	-o-animation-delay:0.54s;
+	animation-delay:0.54s;
+}
+
+#fadingBarsG_4{
+	left:56px;
+	-moz-animation-delay:0.63s;
+	-webkit-animation-delay:0.63s;
+	-ms-animation-delay:0.63s;
+	-o-animation-delay:0.63s;
+	animation-delay:0.63s;
+}
+
+#fadingBarsG_5{
+	left:75px;
+	-moz-animation-delay:0.72s;
+	-webkit-animation-delay:0.72s;
+	-ms-animation-delay:0.72s;
+	-o-animation-delay:0.72s;
+	animation-delay:0.72s;
+}
+
+#fadingBarsG_6{
+	left:94px;
+	-moz-animation-delay:0.81s;
+	-webkit-animation-delay:0.81s;
+	-ms-animation-delay:0.81s;
+	-o-animation-delay:0.81s;
+	animation-delay:0.81s;
+}
+
+#fadingBarsG_7{
+	left:113px;
+	-moz-animation-delay:0.9s;
+	-webkit-animation-delay:0.9s;
+	-ms-animation-delay:0.9s;
+	-o-animation-delay:0.9s;
+	animation-delay:0.9s;
+}
+
+#fadingBarsG_8{
+	left:131px;
+	-moz-animation-delay:0.99s;
+	-webkit-animation-delay:0.99s;
+	-ms-animation-delay:0.99s;
+	-o-animation-delay:0.99s;
+	animation-delay:0.99s;
+}
+
+@-moz-keyframes bounce_fadingBarsG{
+	0%{
+		-moz-transform:scale(1);
+		background-color:#304a54;
+	}
+
+	100%{
+		-moz-transform:scale(.3);
+		background-color:#1d92af;
+	}
+
+}
+
+@-webkit-keyframes bounce_fadingBarsG{
+	0%{
+		-webkit-transform:scale(1);
+		background-color:#304a54;
+	}
+
+	100%{
+		-webkit-transform:scale(.3);
+		background-color:#1d92af;
+	}
+
+}
+
+@-ms-keyframes bounce_fadingBarsG{
+	0%{
+		-ms-transform:scale(1);
+		background-color:#304a54;
+	}
+
+	100%{
+		-ms-transform:scale(.3);
+		background-color:#1d92af;
+	}
+
+}
+
+@-o-keyframes bounce_fadingBarsG{
+	0%{
+		-o-transform:scale(1);
+		background-color:#304a54;
+	}
+
+	100%{
+		-o-transform:scale(.3);
+		background-color:#1d92af;
+	}
+
+}
+
+@keyframes bounce_fadingBarsG{
+	0%{
+		transform:scale(1);
+		background-color:#304a54;
+	}
+
+	100%{
+		transform:scale(.3);
+		background-color:#1d92af;
+	}
+
+}

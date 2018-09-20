@@ -1,0 +1,182 @@
+[30-Dec-2015 14:24:54 Asia/Saigon] PHP Notice:  Undefined variable: article_id in /home/danaweb1/domains/v2.danaweb.vn/public_html/olala-admin/modules/article_edit.php on line 4
+[08-Jan-2016 03:47:26 Europe/Berlin] PHP Fatal error:  Uncaught exception 'DatabaseConnException' with message 'Database Connection Exception: An error Unknown column 'icon' in 'field list' occurred when executing INSERT INTO olala3w_car_menu(`category_id`,`name`,`slug`,`title`,`description`,`keywords`,`parent`,`sort`,`comment`,`icon`,`is_active`,`hot`,`created_time`,`modified_time`,`user_id`) VALUES ('67','Xe khách, taxi, tàu, vận tải','xe-khach-taxi-tau-van-tai','','','','0','1','','','1','0','1452221246','1452221246','1').' in E:\Xampp\htdocs\dnw_thuexemientrung\includes\class\DatabaseConnect.class.php:56
+Stack trace:
+#0 E:\Xampp\htdocs\dnw_thuexemientrung\includes\class\ActiveRecord.class.php(48): DatabaseConnect->query('INSERT INTO ola...')
+#1 E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\car_menu_add.php(96): ActiveRecord->insert(Array)
+#2 E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\index.php(48): include('E:\\Xampp\\htdocs...')
+#3 {main}
+  thrown in E:\Xampp\htdocs\dnw_thuexemientrung\includes\class\DatabaseConnect.class.php on line 56
+[18-Feb-2016 16:01:22 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:01:22 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:01:22 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:01:22 Asia/Bangkok] PHP Notice:  Use of undefined constant DATETIMEFORMAT - assumed 'DATETIMEFORMAT' in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 94
+[18-Feb-2016 16:01:22 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:01:22 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:01:22 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:01:22 Asia/Bangkok] PHP Notice:  Use of undefined constant DATETIMEFORMAT - assumed 'DATETIMEFORMAT' in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 94
+[18-Feb-2016 16:01:22 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:01:22 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:01:22 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:01:22 Asia/Bangkok] PHP Notice:  Use of undefined constant DATETIMEFORMAT - assumed 'DATETIMEFORMAT' in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 94
+[18-Feb-2016 16:01:22 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:01:22 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:01:22 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:01:22 Asia/Bangkok] PHP Notice:  Use of undefined constant DATETIMEFORMAT - assumed 'DATETIMEFORMAT' in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 94
+[18-Feb-2016 16:01:22 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:01:22 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:01:22 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:01:22 Asia/Bangkok] PHP Notice:  Use of undefined constant DATETIMEFORMAT - assumed 'DATETIMEFORMAT' in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 94
+[18-Feb-2016 16:01:42 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:01:42 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:01:42 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:01:42 Asia/Bangkok] PHP Notice:  Use of undefined constant DATETIMEFORMAT - assumed 'DATETIMEFORMAT' in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 94
+[18-Feb-2016 16:01:42 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:01:42 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:01:42 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:01:42 Asia/Bangkok] PHP Notice:  Use of undefined constant DATETIMEFORMAT - assumed 'DATETIMEFORMAT' in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 94
+[18-Feb-2016 16:01:42 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:01:42 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:01:42 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:01:42 Asia/Bangkok] PHP Notice:  Use of undefined constant DATETIMEFORMAT - assumed 'DATETIMEFORMAT' in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 94
+[18-Feb-2016 16:01:42 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:01:42 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:01:42 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:01:42 Asia/Bangkok] PHP Notice:  Use of undefined constant DATETIMEFORMAT - assumed 'DATETIMEFORMAT' in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 94
+[18-Feb-2016 16:01:42 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:01:42 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:01:42 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:01:42 Asia/Bangkok] PHP Notice:  Use of undefined constant DATETIMEFORMAT - assumed 'DATETIMEFORMAT' in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 94
+[18-Feb-2016 16:15:08 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:15:08 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:15:08 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:15:08 Asia/Bangkok] PHP Notice:  Use of undefined constant DATETIMEFORMAT - assumed 'DATETIMEFORMAT' in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 94
+[18-Feb-2016 16:15:08 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:15:08 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:15:08 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:15:08 Asia/Bangkok] PHP Notice:  Use of undefined constant DATETIMEFORMAT - assumed 'DATETIMEFORMAT' in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 94
+[18-Feb-2016 16:15:08 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:15:08 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:15:08 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:15:08 Asia/Bangkok] PHP Notice:  Use of undefined constant DATETIMEFORMAT - assumed 'DATETIMEFORMAT' in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 94
+[18-Feb-2016 16:15:08 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:15:08 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:15:08 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:15:08 Asia/Bangkok] PHP Notice:  Use of undefined constant DATETIMEFORMAT - assumed 'DATETIMEFORMAT' in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 94
+[18-Feb-2016 16:15:08 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:15:08 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:15:08 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:15:08 Asia/Bangkok] PHP Notice:  Use of undefined constant DATETIMEFORMAT - assumed 'DATETIMEFORMAT' in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 94
+[18-Feb-2016 16:15:49 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:15:49 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:15:49 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:15:49 Asia/Bangkok] PHP Notice:  Use of undefined constant DATETIMEFORMAT - assumed 'DATETIMEFORMAT' in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 94
+[18-Feb-2016 16:15:49 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:15:49 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:15:49 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:15:49 Asia/Bangkok] PHP Notice:  Use of undefined constant DATETIMEFORMAT - assumed 'DATETIMEFORMAT' in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 94
+[18-Feb-2016 16:15:49 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:15:49 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:15:49 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:15:49 Asia/Bangkok] PHP Notice:  Use of undefined constant DATETIMEFORMAT - assumed 'DATETIMEFORMAT' in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 94
+[18-Feb-2016 16:15:49 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:15:49 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:15:49 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:15:49 Asia/Bangkok] PHP Notice:  Use of undefined constant DATETIMEFORMAT - assumed 'DATETIMEFORMAT' in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 94
+[18-Feb-2016 16:15:49 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:15:49 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:15:49 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:15:49 Asia/Bangkok] PHP Notice:  Use of undefined constant DATETIMEFORMAT - assumed 'DATETIMEFORMAT' in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 94
+[18-Feb-2016 16:16:02 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:16:02 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:16:02 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:16:02 Asia/Bangkok] PHP Notice:  Use of undefined constant DATETIMEFORMAT - assumed 'DATETIMEFORMAT' in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 94
+[18-Feb-2016 16:16:02 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:16:02 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:16:02 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:16:02 Asia/Bangkok] PHP Notice:  Use of undefined constant DATETIMEFORMAT - assumed 'DATETIMEFORMAT' in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 94
+[18-Feb-2016 16:16:02 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:16:02 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:16:02 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:16:02 Asia/Bangkok] PHP Notice:  Use of undefined constant DATETIMEFORMAT - assumed 'DATETIMEFORMAT' in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 94
+[18-Feb-2016 16:16:02 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:16:02 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:16:02 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:16:02 Asia/Bangkok] PHP Notice:  Use of undefined constant DATETIMEFORMAT - assumed 'DATETIMEFORMAT' in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 94
+[18-Feb-2016 16:16:02 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:16:02 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:16:02 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:16:02 Asia/Bangkok] PHP Notice:  Use of undefined constant DATETIMEFORMAT - assumed 'DATETIMEFORMAT' in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 94
+[18-Feb-2016 16:20:14 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:20:14 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:20:14 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:20:14 Asia/Bangkok] PHP Notice:  Use of undefined constant DATETIMEFORMAT - assumed 'DATETIMEFORMAT' in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 94
+[18-Feb-2016 16:20:14 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:20:14 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:20:14 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:20:14 Asia/Bangkok] PHP Notice:  Use of undefined constant DATETIMEFORMAT - assumed 'DATETIMEFORMAT' in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 94
+[18-Feb-2016 16:20:14 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:20:14 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:20:14 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:20:14 Asia/Bangkok] PHP Notice:  Use of undefined constant DATETIMEFORMAT - assumed 'DATETIMEFORMAT' in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 94
+[18-Feb-2016 16:20:14 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:20:14 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:20:14 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:20:14 Asia/Bangkok] PHP Notice:  Use of undefined constant DATETIMEFORMAT - assumed 'DATETIMEFORMAT' in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 94
+[18-Feb-2016 16:20:14 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:20:14 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:20:14 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:20:14 Asia/Bangkok] PHP Notice:  Use of undefined constant DATETIMEFORMAT - assumed 'DATETIMEFORMAT' in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 94
+[18-Feb-2016 16:21:18 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:21:18 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:21:18 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:21:18 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:21:18 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:21:18 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:21:18 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:21:18 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:21:18 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:21:18 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:21:18 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:21:18 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:21:18 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:21:18 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 83
+[18-Feb-2016 16:21:18 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 84
+[18-Feb-2016 16:21:50 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 80
+[18-Feb-2016 16:21:50 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 81
+[18-Feb-2016 16:21:50 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:21:50 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 80
+[18-Feb-2016 16:21:50 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 81
+[18-Feb-2016 16:21:50 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:21:50 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 80
+[18-Feb-2016 16:21:50 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 81
+[18-Feb-2016 16:21:50 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:21:50 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 80
+[18-Feb-2016 16:21:50 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 81
+[18-Feb-2016 16:21:50 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 16:21:50 Asia/Bangkok] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 80
+[18-Feb-2016 16:21:50 Asia/Bangkok] PHP Notice:  Undefined index: keys in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 81
+[18-Feb-2016 16:21:50 Asia/Bangkok] PHP Notice:  Undefined index: full_name in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\order_list.php on line 82
+[18-Feb-2016 10:29:12 Europe/Berlin] PHP Fatal error:  Uncaught exception 'DatabaseConnException' with message 'Database Connection Exception: An error Unknown column 'modified_time' in 'field list' occurred when executing UPDATE olala3w_order SET `is_active` = '0',`modified_time` = '1455787752' WHERE order_id = 5.' in E:\Xampp\htdocs\dnw_thuexemientrung\includes\class\DatabaseConnect.class.php:56
+Stack trace:
+#0 E:\Xampp\htdocs\dnw_thuexemientrung\includes\class\ActiveRecord.class.php(73): DatabaseConnect->query('UPDATE olala3w_...')
+#1 E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\action\edit_status.php(16): ActiveRecord->update(Array)
+#2 E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\action.php(26): include('E:\\Xampp\\htdocs...')
+#3 {main}
+  thrown in E:\Xampp\htdocs\dnw_thuexemientrung\includes\class\DatabaseConnect.class.php on line 56
+[18-Feb-2016 10:30:12 Europe/Berlin] PHP Fatal error:  Uncaught exception 'DatabaseConnException' with message 'Database Connection Exception: An error Unknown column 'modified_time' in 'field list' occurred when executing UPDATE olala3w_order SET `is_active` = '0',`modified_time` = '1455787812' WHERE order_id = 3.' in E:\Xampp\htdocs\dnw_thuexemientrung\includes\class\DatabaseConnect.class.php:56
+Stack trace:
+#0 E:\Xampp\htdocs\dnw_thuexemientrung\includes\class\ActiveRecord.class.php(73): DatabaseConnect->query('UPDATE olala3w_...')
+#1 E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\action\edit_status.php(16): ActiveRecord->update(Array)
+#2 E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\action.php(26): include('E:\\Xampp\\htdocs...')
+#3 {main}
+  thrown in E:\Xampp\htdocs\dnw_thuexemientrung\includes\class\DatabaseConnect.class.php on line 56
+[18-Feb-2016 10:34:40 Europe/Berlin] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\action\open_order.php on line 19
+[18-Feb-2016 10:34:48 Europe/Berlin] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\action\open_order.php on line 19
+[18-Feb-2016 10:35:00 Europe/Berlin] PHP Notice:  Undefined index: type in E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\action\open_order.php on line 19
+[18-Feb-2016 17:27:56 Asia/Bangkok] PHP Fatal error:  Uncaught exception 'DatabaseConnException' with message 'Database Connection Exception: An error Unknown column 'sort' in 'order clause' occurred when executing SELECT * FROM olala3w_contact ORDER BY sort ASC.' in E:\Xampp\htdocs\dnw_thuexemientrung\includes\class\DatabaseConnect.class.php:56
+Stack trace:
+#0 E:\Xampp\htdocs\dnw_thuexemientrung\includes\class\ActiveRecord.class.php(18): DatabaseConnect->query('SELECT * FROM o...')
+#1 E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\modules\contact_list.php(57): ActiveRecord->select()
+#2 E:\Xampp\htdocs\dnw_thuexemientrung\olala-admin\index.php(48): include('E:\\Xampp\\htdocs...')
+#3 {main}
+  thrown in E:\Xampp\htdocs\dnw_thuexemientrung\includes\class\DatabaseConnect.class.php on line 56
