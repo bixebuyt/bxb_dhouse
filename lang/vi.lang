@@ -171,4 +171,4 @@ Chân thành cảm ơn!';
 	
 	$news = 'Tin tức';
 
-	$txt_Special = 'Dự án nổi bậc';
+	$txt_Special = 'Dự án mới nhất';

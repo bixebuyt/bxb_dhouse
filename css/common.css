@@ -737,7 +737,8 @@ img {
     right: 0px;
     background: #e8a180f5; }
     .menu_sp .cont span {
-      width: 100%; }
+      width: 100%;
+      text-transform: uppercase; }
       .menu_sp .cont span i {
         float: right;
         font-size: 30px; }

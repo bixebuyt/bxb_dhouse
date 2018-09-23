@@ -6,8 +6,8 @@ if (!defined('TTH_SYSTEM')) { die('Please stop!'); }
 	<a id="hamburger"><span class="breadcrumb"></span></a>
 	<div class="box_lang">
 		<ul>
-			<li><a href="<?php echo HOME_URL;?>"><img src="images/ic_vn.png" alt="Viet Nam" /></a></li>
-			<li><a href="<?php echo HOME_URL . '/en/';?>"><img src="images/ic_en.png" alt="English" /></a></li>
+			<li><a href="<?php echo HOME_URL;?>"><img src="<?php echo HOME_URL; ?>/images/ic_vn.png" alt="Viet Nam" /></a></li>
+			<li><a href="<?php echo HOME_URL . '/en/';?>"><img src="<?php echo HOME_URL; ?>/images/ic_en.png" alt="English" /></a></li>
 		</ul>
 	</div>
 	<div class="menu_sp">
