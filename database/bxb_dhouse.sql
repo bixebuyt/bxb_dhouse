@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 24, 2018 at 07:30 AM
+-- Generation Time: Oct 02, 2018 at 01:07 AM
 -- Server version: 5.1.33
 -- PHP Version: 5.2.9
 
@@ -44,26 +44,25 @@ CREATE TABLE IF NOT EXISTS `olala3w_article` (
   `modified_time` int(11) NOT NULL DEFAULT '0',
   `user_id` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`article_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=743 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=744 ;
 
 --
 -- Dumping data for table `olala3w_article`
 --
 
 INSERT INTO `olala3w_article` (`article_id`, `article_menu_id`, `name`, `title`, `description`, `keywords`, `img`, `img_note`, `upload_id`, `comment`, `content`, `is_active`, `hot`, `views`, `created_time`, `modified_time`, `user_id`) VALUES
-(728, 323, 'Căn hộ D House', '', '', '', 'c6yimgxe1ii8q40-728-can-ho-d-house.jpg', '', 1325, 'NỘI THẤT BẾP - ĐẾN NGAY D-HOUSE NHẬN ƯU ĐÃI GIẢM GIÁ HẤP DẪN KHI THI CÔNG TRỌN BỘ ', '<p><img alt=\\"\\" src=\\"/uploads/images/36437197_246705092729054_7561113783704223744_n(1).jpg\\" /><br />\r\n<br />\r\n<img alt=\\"\\" src=\\"/uploads/images/36607578_247428645990032_3943647075790487552_n(1).jpg\\" /></p>\r\n', 1, 0, 50, 1536719520, 1537681732, 1),
+(728, 323, 'Căn hộ D House', '', '', '', 'c6yimgxe1ii8q40-728-can-ho-d-house.jpg', '8.000.000', 1325, 'NỘI THẤT BẾP - ĐẾN NGAY D-HOUSE NHẬN ƯU ĐÃI GIẢM GIÁ HẤP DẪN KHI THI CÔNG TRỌN BỘ ', '<p><img alt=\\"\\" src=\\"/uploads/images/36437197_246705092729054_7561113783704223744_n(1).jpg\\" /><br />\r\n<br />\r\n<img alt=\\"\\" src=\\"/uploads/images/36607578_247428645990032_3943647075790487552_n(1).jpg\\" /></p>\r\n', 1, 0, 54, 1536719520, 1538211325, 1),
 (729, 323, 'Home Solution', '', '', '', '2sz8akpgbld6aar-729-home-solution.jpg', '', 1326, '', '<p><img alt=\\"\\" src=\\"/uploads/images/36607578_247428645990032_3943647075790487552_n.jpg\\" style=\\"width: 960px; height: 720px; float: left;\\" /></p>\r\n', 1, 0, 3, 1536719760, 1536719835, 25),
 (730, 323, 'Studio Apartment', '', '', '', 'hlk4f5fw3rf2njt-730-studio-apartment.png', '', 1327, '', '<p>xxx</p>\r\n', 1, 0, 3, 1536722700, 1536722737, 25),
 (731, 323, 'Accessories', '', '', '', 'qlctmu941vdinop-731-accessories.jpg', '', 1328, '', '<p>xxx</p>\r\n', 1, 0, 1, 1536722700, 1536722761, 25),
 (732, 323, 'Accessories', '', '', '', 'q44md1ybps9ma0a-732-accessories.jpg', '', 1329, '', '<p>xxx</p>\r\n', 1, 0, 18, 1536722760, 1536722772, 25),
-(733, 323, 'Home Solution', '', '', '', 'ct82ag2m9dd90we-733-home-solution.jpg', '', 1330, '', '<p>ccc</p>\r\n', 1, 0, 1, 1536722760, 1536722786, 25),
+(733, 323, 'Home Solution', '', '', '', 'ct82ag2m9dd90we-733-home-solution.jpg', '', 1330, '', '<p>ccc</p>\r\n', 1, 0, 2, 1536722760, 1536722786, 25),
 (734, 323, 'Căn hộ dịch vụ', '', '', '', 'pegeuo0v4fqc5wn-734-can-ho-dich-vu.png', '', 1331, '', '<p>yyy</p>\r\n', 1, 0, 6, 1536722820, 1536722856, 25),
 (735, 323, 'Studio Apartment', '', '', '', 'pkbi1uvwz9qtt1w-735-studio-apartment.png', '', 1332, '', '<p>xxx</p>\r\n', 1, 0, 3, 1536722820, 1536722868, 25),
 (736, 323, 'Home Solution', '', '', '', 'j1l7pvn6d4p1uct-736-home-solution.jpg', '', 1333, '', '<p>vvv</p>\r\n', 1, 0, 8, 1536725280, 1537681724, 25),
-(740, 326, 'Studio Apartment', '', '', '', '5ov4fabmewb0uqd-740-studio-apartment.jpg', '', 1337, '', '<p>xcccc</p>\r\n', 1, 0, 2, 1536738360, 1536738414, 25),
+(740, 326, 'Studio Apartment', '', '', '', '5ov4fabmewb0uqd-740-studio-apartment.jpg', '', 1337, '', '<p>xcccc</p>\r\n', 1, 0, 3, 1536738360, 1536738414, 25),
 (739, 326, 'Home Solution', '', '', '', 'm43ui25jegtou5n-739-home-solution.jpg', '', 1336, '', '<p>xxx</p>\r\n', 1, 0, 5, 1536738360, 1536738401, 25),
-(741, 325, 'Home Solution', '', '', '', '1x3al7lncd52i90-741-home-solution.jpg', '', 1338, '', '<p>xxxx</p>\r\n', 1, 0, 8, 1536738600, 1536738631, 25),
-(742, 325, 'Accessories', '', '', '', '6knuxxvstgttv0x-742-accessories.png', '', 1339, '', '<p>xxx</p>\r\n', 1, 0, 8, 1536738600, 1536738642, 25);
+(743, 332, 'ahihi', '', '', '', 'no', '', 1340, 'ád', '<p>ádasd</p>\r\n', 1, 0, 19, 1538411040, 1538411093, 1);
 
 -- --------------------------------------------------------
 
@@ -90,24 +89,31 @@ CREATE TABLE IF NOT EXISTS `olala3w_article_menu` (
   `modified_time` int(11) NOT NULL DEFAULT '0',
   `user_id` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`article_menu_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=330 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=339 ;
 
 --
 -- Dumping data for table `olala3w_article_menu`
 --
 
 INSERT INTO `olala3w_article_menu` (`article_menu_id`, `category_id`, `name`, `slug`, `title`, `description`, `keywords`, `parent`, `sort`, `comment`, `icon`, `is_active`, `hot`, `img`, `created_time`, `modified_time`, `user_id`) VALUES
-(318, 9, 'Nhà ở', 'nha-o', '', '', '', 0, 1, '', '', 1, 0, 'no', 1536718131, 1536718131, 25),
-(319, 9, 'Căn hộ dịch vụ', 'can-ho-dich-vu', '', '', '', 0, 2, '', '', 1, 0, 'no', 1536718144, 1536718144, 25),
+(318, 9, 'Nội thất căn hộ cho thuê', 'noi-that-can-ho-cho-thue-yhbq066z1o', '', '', '', 0, 1, '', '', 1, 0, 'no', 1536718131, 1538210070, 1),
+(319, 9, 'Nội thất dân dụng', 'noi-that-dan-dung', '', '', '', 0, 2, '', '', 1, 0, 'no', 1536718144, 1538210094, 1),
 (320, 73, 'Về chúng tôi', 've-chung-toi', '', '', '', 0, 1, '', '', 1, 0, 'no', 1536718231, 1536718231, 25),
 (321, 73, 'Đội ngủ', 'doi-ngu', '', '', '', 0, 2, '', '', 1, 0, 'no', 1536718244, 1536718244, 25),
 (322, 73, 'Liên hệ', 'lien-he', '', '', '', 0, 3, '', '', 1, 0, 'no', 1536718253, 1536718253, 25),
-(323, 7, 'Villa', 'villa', '', '', '', 0, 1, '', '', 1, 0, 'no', 1536718684, 1536737883, 25),
-(326, 7, 'Căn hộ dịch vụ', 'can-ho-dich-vu-2hb4v67vht', '', '', '', 0, 3, '', '', 1, 0, 'no', 1536738314, 1536738869, 25),
-(325, 7, 'Công trình công cộng', 'cong-trinh-cong-cong', '', '', '', 0, 3, '', '', 1, 0, 'no', 1536718723, 1536718723, 25),
-(327, 68, 'Xây dựng', 'xay-dung', '', '', '', 0, 1, '', '', 1, 0, 'no', 1537540919, 1537540919, 1),
+(323, 7, 'Công trình công cộng', 'cong-trinh-cong-cong-p6acltbq41', '', '', '', 0, 1, '', '', 1, 0, 'no', 1536718684, 1538405367, 1),
+(326, 7, 'Khách sạn', 'khach-san-it1kr4wfhk', '', '', '', 0, 3, '', '', 1, 0, 'no', 1536738314, 1538405429, 1),
+(338, 69, 'Ý tưởng', 'y-tuong', '', '', '', 0, 1, '', '', 1, 0, 'no', 1538407167, 1538407167, 1),
+(327, 68, 'Công trình dân dụng', 'cong-trinh-dan-dung', '', '', '', 0, 1, '', '', 1, 0, 'no', 1537540919, 1538405411, 1),
 (328, 55, 'Nội thất', 'noi-that', '', '', '', 0, 1, '', '', 1, 0, 'no', 1537540928, 1537540928, 1),
-(329, 55, 'Nội thất căn hộ cho thuê', 'noi-that-can-ho-cho-thue', '', '', '', 0, 2, '', '', 1, 0, 'no', 1537681918, 1537681918, 1);
+(329, 55, 'Nội thất căn hộ cho thuê', 'noi-that-can-ho-cho-thue', '', '', '', 0, 2, '', '', 1, 0, 'no', 1537681918, 1537681918, 1),
+(330, 9, 'Nội thất khách sạn', 'noi-that-khach-san', '', '', '', 0, 3, '', '', 1, 0, 'no', 1538210116, 1538210116, 1),
+(331, 9, 'Villa, biệt thự', 'villa-biet-thu', '', '', '', 0, 4, '', '', 1, 0, 'no', 1538210136, 1538210136, 1),
+(332, 9, 'Biệt thự tân cổ điển', 'biet-thu-tan-co-dien', '', '', '', 331, 1, '', '', 1, 0, 'no', 1538210176, 1538210176, 1),
+(333, 9, 'Biệt thự hiện đại', 'biet-thu-hien-dai', '', '', '', 331, 2, '', '', 1, 0, 'no', 1538210191, 1538210191, 1),
+(334, 9, 'Đơn giản lẻ', 'don-gian-le', '', '', '', 0, 5, '', '', 1, 0, 'no', 1538210204, 1538210204, 1),
+(335, 68, 'Nhà hàng', 'nha-hang', '', '', '', 0, 2, '', '', 1, 0, 'no', 1538405231, 1538405461, 1),
+(337, 68, 'Biệt thự', 'biet-thu', '', '', '', 0, 3, '', '', 1, 0, 'no', 1538405478, 1538405478, 1);
 
 -- --------------------------------------------------------
 
@@ -313,11 +319,10 @@ CREATE TABLE IF NOT EXISTS `olala3w_category` (
 --
 
 INSERT INTO `olala3w_category` (`category_id`, `type_id`, `name`, `slug`, `plus`, `title`, `description`, `keywords`, `comment`, `is_active`, `hot`, `sort`, `menu_main`, `sort_hide`, `menu_sm`, `img`, `icon`, `created_time`, `modified_time`, `user_id`) VALUES
-(9, 1, 'Ý tưởng', 'y-tuong', '', '', '', '', '', 1, 1, 1, 1, 2, 1, 'no', 'fa fa-plane fa-lg fa-fw', 0, 1450922752, 1),
+(9, 1, 'Nội thất', 'noi-that', '', '', '', '', '', 1, 1, 1, 1, 2, 1, 'no', 'fa fa-plane fa-lg fa-fw', 0, 1450922752, 1),
 (7, 1, 'Kiến trúc', 'kien-truc', '', '', '', '', 'Khám phá những vùng đất tuyệt vời cùng những dịch vụ đẳng cấp', 1, 1, 2, 1, 3, 1, 'no', 'fa fa-building fa-lg fa-fw', 0, 1457647068, 25),
-(55, 1, 'Nội thất', 'noi-that', '', '', '', '', '', 1, 1, 4, 1, 6, 1, 'no', 'fa fa-book fa-lg fa-fw', 0, 1457608722, 1),
 (68, 1, 'Xây dựng', 'xay-dung', '', '', '', '', '', 1, 1, 3, 1, 5, 0, 'no', 'fa fa-newspaper-o fa-lg fa-fw', 0, 1457608710, 1),
-(69, 15, 'Blog', 'blog', '', '', '', '', '', 1, 0, 2, 0, 0, 0, 'no', '', 0, 1452789440, 1),
+(69, 1, 'Ý tưởng', 'y-tuong', '', '', '', '', '', 1, 0, 2, 1, 0, 1, 'no', '', 0, 1452789440, 1),
 (56, 2, 'Slider', 'slider', '', '', '', '', '', 1, 0, 1, 0, 0, 0, 'no', 'fa fa-image fa-lg fa-fw', 0, 1447180299, 1),
 (73, 1, 'Giới thiệu', 'gioi-thieu', '', '', '', '', '', 1, 0, 1, 1, 1, 1, 'no', '', 0, 0, 1);
 
@@ -345,10 +350,10 @@ INSERT INTO `olala3w_category_type` (`type_id`, `name`, `slug`, `sort`, `is_acti
 (2, 'Hình ảnh', 'gallery_manager', 2, 1),
 (7, 'Đăng ký email', 'register_email', 6, 1),
 (6, 'Sản phẩm', 'product_manager', 0, 0),
-(8, 'Booking online', 'order_list', 7, 1),
-(9, 'Tour du lịch', 'tour_manager', 3, 1),
+(8, 'Booking online', 'order_list', 7, 0),
+(9, 'Tour du lịch', 'tour_manager', 3, 0),
 (10, 'Đồ lưu niệm', 'gift_manager', 0, 0),
-(11, 'Thuê xe', 'car_manager', 4, 1),
+(11, 'Thuê xe', 'car_manager', 4, 0),
 (12, 'Vị trí địa lý', 'location_manager', 0, 0),
 (13, 'Dữ liệu đường phố', 'street_manager', 0, 0),
 (14, 'Dữ liệu phương hướng', 'direction_manager', 0, 0),
@@ -474,7 +479,7 @@ CREATE TABLE IF NOT EXISTS `olala3w_core_privilege` (
   `type` varchar(30) NOT NULL,
   `privilege_slug` varchar(50) NOT NULL,
   PRIMARY KEY (`privilege_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4088 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4128 ;
 
 --
 -- Dumping data for table `olala3w_core_privilege`
@@ -863,19 +868,19 @@ INSERT INTO `olala3w_core_privilege` (`privilege_id`, `role_id`, `type`, `privil
 (3335, 1, 'product', 'category_edit;37'),
 (3133, 11, 'product', 'product_list;37'),
 (3138, 11, 'product', 'owner_cus;37'),
-(4083, 1, 'article', 'article_menu_del;55'),
+(4123, 1, 'article', 'article_menu_del;68'),
 (3953, 1, 'category', 'gallery_manager'),
 (3326, 1, 'info', 'sys_info_php'),
 (3325, 1, 'info', 'sys_info_diary'),
 (3334, 1, 'core', 'core_mail'),
 (3342, 1, 'product', 'owner_real;37'),
 (3343, 1, 'product', 'owner_cus;37'),
-(4082, 1, 'article', 'article_menu_edit;55'),
-(4081, 1, 'article', 'article_menu_add;55'),
-(4080, 1, 'article', 'category_edit;55'),
-(4079, 1, 'article', 'article_del;68'),
-(4078, 1, 'article', 'article_edit;68'),
-(4077, 1, 'article', 'article_add;68'),
+(4122, 1, 'article', 'article_menu_edit;68'),
+(4121, 1, 'article', 'article_menu_add;68'),
+(4120, 1, 'article', 'category_edit;68'),
+(4119, 1, 'article', 'article_del;69'),
+(4118, 1, 'article', 'article_edit;69'),
+(4117, 1, 'article', 'article_add;69'),
 (3750, 1, 'gallery', 'category_edit;66'),
 (3749, 1, 'gallery', 'gallery_del;65'),
 (3748, 1, 'gallery', 'gallery_edit;65'),
@@ -883,24 +888,24 @@ INSERT INTO `olala3w_core_privilege` (`privilege_id`, `role_id`, `type`, `privil
 (3746, 1, 'gallery', 'gallery_list;65'),
 (3745, 1, 'gallery', 'gallery_menu_del;65'),
 (3744, 1, 'gallery', 'gallery_menu_edit;65'),
-(4076, 1, 'article', 'article_list;68'),
-(4075, 1, 'article', 'article_menu_del;68'),
-(4074, 1, 'article', 'article_menu_edit;68'),
+(4116, 1, 'article', 'article_list;69'),
+(4115, 1, 'article', 'article_menu_del;69'),
+(4114, 1, 'article', 'article_menu_edit;69'),
 (3743, 1, 'gallery', 'gallery_menu_add;65'),
 (3742, 1, 'gallery', 'category_edit;65'),
-(4073, 1, 'article', 'article_menu_add;68'),
-(4072, 1, 'article', 'category_edit;68'),
-(4071, 1, 'article', 'article_del;7'),
-(4070, 1, 'article', 'article_edit;7'),
-(4069, 1, 'article', 'article_add;7'),
-(4068, 1, 'article', 'article_list;7'),
-(4067, 1, 'article', 'article_menu_del;7'),
-(4066, 1, 'article', 'article_menu_edit;7'),
-(4065, 1, 'article', 'article_menu_add;7'),
-(4064, 1, 'article', 'category_edit;7'),
-(4063, 1, 'article', 'article_del;73'),
-(4062, 1, 'article', 'article_edit;73'),
-(4061, 1, 'article', 'article_add;73'),
+(4113, 1, 'article', 'article_menu_add;69'),
+(4112, 1, 'article', 'category_edit;69'),
+(4111, 1, 'article', 'article_del;7'),
+(4110, 1, 'article', 'article_edit;7'),
+(4109, 1, 'article', 'article_add;7'),
+(4108, 1, 'article', 'article_list;7'),
+(4107, 1, 'article', 'article_menu_del;7'),
+(4106, 1, 'article', 'article_menu_edit;7'),
+(4105, 1, 'article', 'article_menu_add;7'),
+(4104, 1, 'article', 'category_edit;7'),
+(4103, 1, 'article', 'article_del;73'),
+(4102, 1, 'article', 'article_edit;73'),
+(4101, 1, 'article', 'article_add;73'),
 (3762, 1, 'gallery', 'gallery_list;56'),
 (3763, 1, 'gallery', 'gallery_add;56'),
 (3764, 1, 'gallery', 'gallery_edit;56'),
@@ -913,29 +918,29 @@ INSERT INTO `olala3w_core_privilege` (`privilege_id`, `role_id`, `type`, `privil
 (3771, 1, 'gallery', 'gallery_add;57'),
 (3772, 1, 'gallery', 'gallery_edit;57'),
 (3773, 1, 'gallery', 'gallery_del;57'),
-(4060, 1, 'article', 'article_list;73'),
-(4059, 1, 'article', 'article_menu_del;73'),
-(4058, 1, 'article', 'article_menu_edit;73'),
-(4057, 1, 'article', 'article_menu_add;73'),
-(4056, 1, 'article', 'category_edit;73'),
-(4055, 1, 'article', 'article_del;9'),
-(4054, 1, 'article', 'article_edit;9'),
+(4100, 1, 'article', 'article_list;73'),
+(4099, 1, 'article', 'article_menu_del;73'),
+(4098, 1, 'article', 'article_menu_edit;73'),
+(4097, 1, 'article', 'article_menu_add;73'),
+(4096, 1, 'article', 'category_edit;73'),
 (3985, 1, 'others', 'others_menu_add;69'),
 (3984, 1, 'others', 'category_edit;69'),
 (3952, 1, 'category', 'article_manager'),
 (3958, 1, 'category', 'order_list'),
 (3959, 1, 'category', 'contact_list'),
 (3960, 1, 'category', 'plugin_page'),
-(4053, 1, 'article', 'article_add;9'),
-(4052, 1, 'article', 'article_list;9'),
-(4051, 1, 'article', 'article_menu_del;9'),
-(4050, 1, 'article', 'article_menu_edit;9'),
-(4049, 1, 'article', 'article_menu_add;9'),
-(4048, 1, 'article', 'category_edit;9'),
-(4084, 1, 'article', 'article_list;55'),
-(4085, 1, 'article', 'article_add;55'),
-(4086, 1, 'article', 'article_edit;55'),
-(4087, 1, 'article', 'article_del;55');
+(4095, 1, 'article', 'article_del;9'),
+(4094, 1, 'article', 'article_edit;9'),
+(4093, 1, 'article', 'article_add;9'),
+(4092, 1, 'article', 'article_list;9'),
+(4091, 1, 'article', 'article_menu_del;9'),
+(4090, 1, 'article', 'article_menu_edit;9'),
+(4089, 1, 'article', 'article_menu_add;9'),
+(4088, 1, 'article', 'category_edit;9'),
+(4124, 1, 'article', 'article_list;68'),
+(4125, 1, 'article', 'article_add;68'),
+(4126, 1, 'article', 'article_edit;68'),
+(4127, 1, 'article', 'article_del;68');
 
 -- --------------------------------------------------------
 
@@ -1227,7 +1232,7 @@ CREATE TABLE IF NOT EXISTS `olala3w_online` (
 --
 
 INSERT INTO `olala3w_online` (`ip`, `created_time`, `site`, `agent`, `user_id`) VALUES
-('127.0.0.1', 1537693073, 'url=fonts/MyriadPro-Regular.ttf', 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36', 0);
+('127.0.0.1', 1538413273, 'url=fonts/MyriadPro-Semibold.ttf', 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36', 0);
 
 -- --------------------------------------------------------
 
@@ -1639,7 +1644,10 @@ INSERT INTO `olala3w_online_daily` (`date`, `count`) VALUES
 ('2018-09-20', 2),
 ('2018-09-21', 1),
 ('2018-09-22', 2),
-('2018-09-23', 2);
+('2018-09-23', 2),
+('2018-09-25', 2),
+('2018-09-29', 1),
+('2018-10-01', 1);
 
 -- --------------------------------------------------------
 
@@ -2274,7 +2282,7 @@ CREATE TABLE IF NOT EXISTS `olala3w_uploads_tmp` (
   `list_img` text NOT NULL,
   `created_time` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`upload_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1340 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1341 ;
 
 --
 -- Dumping data for table `olala3w_uploads_tmp`
@@ -2436,8 +2444,7 @@ INSERT INTO `olala3w_uploads_tmp` (`upload_id`, `status`, `list_img`, `created_t
 (1333, 1, '', 1536725326),
 (1337, 1, '', 1536738405),
 (1336, 1, '', 1536738380),
-(1338, 1, '', 1536738623),
-(1339, 1, '', 1536738634);
+(1340, 1, '', 1538411082);
 
 -- --------------------------------------------------------
 
