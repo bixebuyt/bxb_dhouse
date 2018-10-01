@@ -262,6 +262,19 @@
 	.box_menu_article {
 		margin-top: 25px;
 		@extend %cf;
+		.sub_menu {
+			display: block;
+			margin-top: 10px;
+			margin-left: 1em;
+			font-size: 11px;
+			li {
+				font-size: 12px;
+				position: relative;
+				a {
+					color: #e8a140;
+				}
+			}
+		}
 		@media all and (max-width: 767px) {
 			margin-top: 10px;
 			margin-bottom: 20px;
@@ -394,8 +407,6 @@
 				overflow: hidden;
 				display: inline-block;
 				img  {
-					-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-					filter: grayscale(100%);
 					transition: all 1s ease;
 					-webkit-transition: opacity 1s, -webkit-transform 1s;
 					transition: opacity 1s, transform 1s;
@@ -403,9 +414,7 @@
 			}
 			&:hover {
 				a {
-					img {
-						-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-						filter: grayscale(0%);		
+					img {	
 				    	-webkit-transform: scale3d(1.2,1.2,1);
     					transform: scale3d(1.2,1.2,1);					
 					}
@@ -416,7 +425,7 @@
 					text-transform: uppercase;
 					font-weight: 400;
 					font-size: 11px;
-					margin: 1em 0px 5px;
+					margin: 0.5em 0px 2px;
 					a {
 						color: #000;
 						&:hover {
@@ -426,6 +435,11 @@
 					@media all and (max-width: 500px) {
 						margin-bottom: 0px;
 					}
+				}
+				.txt_price {
+					width: 100%;
+					margin-bottom: 0.5em;
+					color: #e8a140;
 				}
 				.box_archive {
 					padding-right: 1em;

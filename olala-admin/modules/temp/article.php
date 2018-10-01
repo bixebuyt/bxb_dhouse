@@ -51,7 +51,7 @@ function article($act, $typeFunc, $article_id, $article_menu_id, $name, $title, 
 							</td>
 						</tr>
 						<tr>
-							<td><label>Ghi chú hình:</label></td>
+							<td><label>Giá:</label></td>
 							<td><input class="form-control" type="text" name="img_note" maxlength="255" value="<?=stripslashes($img_note)?>" ></td>
 						</tr>
 						<tr>

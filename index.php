@@ -76,7 +76,17 @@ echo getConstant('script_bottom');
 //if($slug_cat=='home'){ require_once("popup" . DS . "popup.php");}
 ?>
 <div class="con_phone">
-	<p class="img"><a href="tel:<?php echo getConstant('tell_contact');  ?>"><img src="<?php echo HOME_URL; ?>/images/ic_phone.gif" alt="<?php echo getConstant('tell_contact');  ?>" /></a></p>
+	<div class="phonering-alo-phone phonering-alo-green phonering-alo-show" id="phonering-alo-phoneIcon" style="left: -50px; bottom: 150px; position: fixed;">
+	 <div class="phonering-alo-ph-circle"></div>
+	 <div class="phonering-alo-ph-circle-fill"></div>
+	 <a href="tel:+84123456789"></a>
+	 <div class="phonering-alo-ph-img-circle">
+	 <a href="tel:+84123456789"></a>
+	 <a href="tel:+84123456789" class="pps-btn-img " title="Liên hệ">
+	 <img src="https://i.imgur.com/v8TniL3.png" alt="Liên hệ" width="50" onmouseover="this.src='https://i.imgur.com/v8TniL3.png';" onmouseout="this.src='https://i.imgur.com/v8TniL3.png';">
+	 </a>
+	 </div>
+	</div>
 </div>
 </body>
 </html>

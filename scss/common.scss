@@ -763,21 +763,7 @@ img {
 }
 
 //--------------------------- PHONE ---------------//
-.con_phone {
-	position: fixed;
-	bottom: 0em;
-	left: 0em;
-	z-index: 3;
-	width: 100px;
-	p {
-		a {
-			img {}
-		}
-	}
-	@media all and(max-width: 767px) {
-		width: 70px;
-	}
-}
+
 //--------------- CON TOP SP------------------//
 .con_top_sp {
 	width: 100%;
