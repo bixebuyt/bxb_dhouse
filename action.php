@@ -21,5 +21,3 @@ if (file_exists(_F_ACTIONS . DS . $url .".php" )) {
 	include (_F_ACTIONS . DS . $url .".php" );
 }
 else die();
-
-

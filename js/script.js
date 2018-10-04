@@ -307,11 +307,19 @@ function clickMenusp() {
 		$('.clicked').show();
 	})
 }
+//------------//
+function menuToogle() {
+	$('.box_menu_article ul li a').click(function(e) {
+	  e.preventDefault();
+	  $(this).next('.sub_menu').slideToggle(200);
+	});
+}
 $(document).ready(function() {
 	slickSlider();
 	toggleMenuLeft();
 	maxHeight();
 	toggleMenuSp();
+	menuToogle();
 })
 $(window).resize(function() {
 	maxHeight();

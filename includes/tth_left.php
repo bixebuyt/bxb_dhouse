@@ -1,7 +1,6 @@
 <?php
 	if (!defined('TTH_SYSTEM')) { die('Please stop!'); }
 ?>
-        
 <div class="box_left">
 	<h3><i class="fa fa-align-left" aria-hidden="true"></i><a href="<?php echo HOME_URL_LANG; ?>">D HOUSE</a></h3>
 	<div class="box_menu_category">
@@ -37,7 +36,7 @@
 					$db->limit = 10;
 					$rows = $db->select();
 					foreach($rows as $row) {
-				?>			
+				?>
 					<li><a <?php if($slug_cat==$row_mn['slug'] && $id_menu==$row['article_menu_id']) echo 'class="active"'; ?> href="<?php echo HOME_URL_LANG . '/' . $row_mn['slug'] . '/' .  $row['slug']; ?>" ><?php echo $row['name'] ?></a>
 
 					<?php
@@ -46,19 +45,21 @@
 						$db->order = "created_time ASC";
 						$db->limit = 10;
 						$rows_sub = $db->select();
-						echo '<ul class="sub_menu">';
-						foreach($rows_sub as $row_sub) {
-						?>							
+						if($db->RowCount>0) {
+							echo '<ul class="sub_menu">';
+							foreach($rows_sub as $row_sub) {
+							?>
 								<li><a href="<?php echo HOME_URL_LANG . '/' . $row_mn['slug'] . '/' . $row_sub['slug'] ?>"><i class="fa fa-angle-right" aria-hidden="true"></i> &nbsp;<?php echo $row_sub['name']; ?></a></li>
-						<?php
+							<?php
+							}
+							echo '</ul>';
 						}
-						echo '</ul>';
-					?>							
+					?>
 					</li>
 				<?php
 					}
 				?>
-			<?php 
+			<?php
 				}
 			?>
 		</ul>

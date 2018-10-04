@@ -40,3 +40,4 @@ if (!defined('TTH_SYSTEM')) { die('Please stop!'); }
 <link rel="stylesheet" href="<?php echo HOME_URL; ?>/js/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen">
 <link rel="stylesheet" href="<?php echo HOME_URL; ?>/js/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen">
 <link rel="stylesheet" href="<?php echo HOME_URL; ?>/js/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen">
+<link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">

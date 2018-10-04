@@ -82,7 +82,7 @@ if ($id_article > 0){
 	$total = $db->RowCount;
 	if($total>1) {
 		$total_pages = 0;
-		$per_page = 8;
+		$per_page = 12;
 		if($total%$per_page==0) $total_pages = $total/$per_page;
 		else $total_pages = floor($total/$per_page)+1;
 		if($page<=0) $page=1;
@@ -157,7 +157,7 @@ if ($id_article > 0){
 	$total = $db->RowCount;
 	if($total>1) {
 		$total_pages = 0;
-		$per_page = 8;
+		$per_page = 12;
 		if($total%$per_page==0) $total_pages=$total/$per_page;
 		else $total_pages = floor($total/$per_page)+1;
 		if($page<=0) $page=1;

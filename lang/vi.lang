@@ -132,43 +132,31 @@ Chân thành cảm ơn!';
 	$lgTxt_register_mail_input            = 'Vui lòng nhập email...';
 	$txtEmail_sendOk		              = 'Đăng ký email nhận tin khuyến mãi thành công.';
 	$txtEmail_sendDie	                  = 'Không thể thực hiện vì một vài lỗi từ phía máy chủ.';
-	
-	
 	$lgTxt_chi_tiet                      = 'Chi tiết';
-	
 	$lgTxt_send_mail                      = 'Vui lòng nhập email để nhận được những khuyến mãi mới nhất từ chúng tôi';
-	
 	$lgTxt_cont_mail                     = 'Nhập mail tại đây...';
-	
     $lgTxt_prod_new          = 'Sản phẩm mới';
 	$lgTxt_prod_feat         = 'Sản phẩm nổi bật';
 	$lgTxt_list_prod		 = 'Danh mục sản phẩm';
 	$txtContact_name		 = 'Full name';
-	
 	$txt_service		= 'Dịch vụ';
 	$txt_poj = 'Công trình - Dự án';
 	$txt_code = 'Mã sản phẩm';
-	
 	$txt_weight   ='Trọng lượng';
 	$txt_buy   ='Đặt hàng';
 	$txt_spect = 'THÔNG SỐ KĨ THUẬT';
 	$txt_code_color = 'Bảng mã màu';
 	$txt_pro_other = 'SẢN PHẨM KHÁC';
-	
 	$txt_order_inf = 'THÔNG TIN ĐẶT HÀNG';
 	$txtContact_number = 'Số lượng';
 	$txtContact_sub = 'ĐẶT HÀNG';
 	$txtContact_refresh = 'LÀM LẠI';
 	$txtContact_note = 'Nội dung';
-	
 	$search = 'Nhập từ khóa';
-	
 	$txt_l_product = 'Danh mục sản phẩm';
-	
 	$prod_news = 'Sản phẩm mới';
 	$txtdistri_name = 'Họ và Tên';
 	$buy = 'Đặt mua';
-	
 	$news = 'Tin tức';
-
 	$txt_Special = 'Dự án mới nhất';
+	$txt_price = 'Giá trị hợp đồng';

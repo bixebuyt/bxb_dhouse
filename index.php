@@ -37,7 +37,6 @@ include_once(_F_INCLUDES . DS . "_tth_online_daily.php");
 	include(_F_INCLUDES . DS . "_tth_head.php");
 	include(_F_INCLUDES . DS . "_tth_script.php");
 	?>
-	
 </head>
 
 <body>
@@ -47,26 +46,26 @@ include_once(_F_INCLUDES . DS . "_tth_online_daily.php");
 	<!-- MENU SP -->
 	<?php
 		if ( $slug_cat == 'home' ) {
-			include(_F_INCLUDES . DS . "tth_menu_sp.php");	
-		}	
+			include(_F_INCLUDES . DS . "tth_menu_sp.php");
+		}
 	?>
 	<!-- top -->
 	<?php
 		if ( $slug_cat === 'home' ) {
-			include(_F_INCLUDES . DS . "tth_top.php");	
-		}	
+			include(_F_INCLUDES . DS . "tth_top.php");
+		}
 	?>
 		<!-- intro -->
-		<div class="main">  
+		<div class="main">
 		<!-- content -->
-			<?php			
+			<?php
 				include(_F_MODULES . DS .  str_replace('-','_',$slug_cat) . ".php");
 			?>
 		</div>
 	<?php
 		if ( $slug_cat != 'home' ) {
-			include(_F_INCLUDES . DS . "tth_footer.php");	
-		}	
+			include(_F_INCLUDES . DS . "tth_footer.php");
+		}
 	?>
 </div>
 <!-- / #wrapper -->

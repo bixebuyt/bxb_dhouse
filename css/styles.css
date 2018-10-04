@@ -28,11 +28,11 @@ html {
   -ms-text-size-adjust: 100%; }
 
 body {
-  font-family: "Myriad Pro";
+  font-family: 'Open Sans', sans-serif;
   color: #000000;
   font-size: 13px;
   line-height: 17px;
-  font-weight: 400;
+  font-weight: 500;
   position: relative; }
 
 article,
@@ -163,7 +163,6 @@ strong, b {
 h1 {
   font-size: 20px;
   line-height: 30px;
-  font-family: "UTM";
   color: #ae303f;
   text-transform: uppercase;
   font-weight: 500; }
@@ -487,8 +486,7 @@ img {
   .top .menu {
     float: right; }
     .top .menu .navigation ul {
-      padding-left: 0px;
-      font-family: 'Open Sans'; }
+      padding-left: 0px; }
     @media all and (max-width: 767px) {
       .top .menu {
         float: none;
@@ -841,7 +839,6 @@ img {
       padding: 3px 5px; }
       @media all and (max-width: 500px) {
         .main .menu_bottom ul li {
-          width: 24%;
           font-size: 12px; } }
       .main .menu_bottom ul li a {
         color: inherit;
@@ -948,10 +945,9 @@ img {
   .box_left .box_menu_article {
     margin-top: 25px; }
     .box_left .box_menu_article .sub_menu {
-      display: block;
-      margin-top: 10px;
+      display: none;
       margin-left: 1em;
-      font-size: 11px; }
+      margin-top: 0.5em; }
       .box_left .box_menu_article .sub_menu li {
         font-size: 12px;
         position: relative; }
@@ -968,7 +964,7 @@ img {
     .box_left .box_menu_article ul li a {
       color: #8a8a8a; }
       .box_left .box_menu_article ul li a.active {
-        color: #000; }
+        color: #e8a140; }
   .box_left .copyright {
     position: fixed;
     bottom: 50px;
@@ -1140,11 +1136,16 @@ img {
 
 .wrap-detail h4 {
   margin-top: 2em;
-  margin-bottom: 2.5em;
   padding-left: 1em;
   border-left: 2px solid #000;
   font-weight: 600;
   font-style: italic; }
+.wrap-detail .txt_price {
+  font-weight: 600;
+  color: #e8a140;
+  margin: 1.5em 0em; }
+  .wrap-detail .txt_price span {
+    text-decoration: underline; }
 
 .others {
   margin-top: 2.5em; }

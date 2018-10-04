@@ -28,11 +28,11 @@ html {
   -ms-text-size-adjust: 100%; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Myriad Pro";
   color: #000000;
   font-size: 13px;
   line-height: 17px;
-  font-weight: 500;
+  font-weight: 400;
   position: relative; }
 
 article,
@@ -163,6 +163,7 @@ strong, b {
 h1 {
   font-size: 20px;
   line-height: 30px;
+  font-family: "UTM";
   color: #ae303f;
   text-transform: uppercase;
   font-weight: 500; }
@@ -486,7 +487,8 @@ img {
   .top .menu {
     float: right; }
     .top .menu .navigation ul {
-      padding-left: 0px; }
+      padding-left: 0px;
+      font-family: 'Open Sans'; }
     @media all and (max-width: 767px) {
       .top .menu {
         float: none;

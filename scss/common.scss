@@ -33,11 +33,11 @@ html {
         -ms-text-size-adjust: 100%;
 }
 body {
-	font-family: "Myriad Pro";
+	font-family: 'Open Sans', sans-serif;
 	color: #000000;
 	font-size: 13px;
 	line-height: 17px;
-	font-weight: 400;
+	font-weight: 500;
 	position: relative;
 }
 article,
@@ -169,7 +169,6 @@ strong, b {
 h1 {
 	font-size: 20px;
 	line-height: 30px;
-	font-family: "UTM";
 	color:#ae303f;
 	text-transform:uppercase;
 	font-weight:500;
@@ -501,7 +500,6 @@ img {
 		float: right;
 		.navigation ul{
 			padding-left:0px;
-			font-family: 'Open Sans';
 		}
 		@media all and(max-width: 767px) {
 			float: none;
@@ -598,7 +596,6 @@ img {
 			-ms-transition: top 0.4s ease, opacity 0.4s ease-in;
 			-o-transition: top 0.4s ease, opacity 0.4s ease-in;
 			transition: top 0.4s ease, opacity 0.4s ease-in;
-			
 		}
 		.navigation ul ul {
 			position: absolute;
@@ -640,7 +637,7 @@ img {
 			width: 0;
 			height: 0;
 			border: 7px solid transparent;
-			border-bottom-color: red;	
+			border-bottom-color: red;
 			top: 12px;
 			left: -8px;
 		}
@@ -714,10 +711,6 @@ img {
 		.navigation ul ul li > a:focus,
 		.navigation ul ul li.active > a {
 			color: white;
-			
-		}
-		.navigation ul li > a:hover span{
-			
 		}
 		.navigation ul ul li:hover > a::before,
 		.navigation ul ul li.active > a::before {
@@ -754,10 +747,6 @@ img {
 		}
 		.navigation ul ul li > a:hover{
 			color:#e8e8e8;
-			
-		}
-		.navigation ul li > a:hover span{
-			
 		}
 	}
 }

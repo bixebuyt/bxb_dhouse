@@ -1,13 +1,13 @@
 <?php
-// Page
+	// Page
 	$lgTxt_lang                           = 'en';
 	$lgTxt_social                         = 'Liên kết mạng xã hội';
 	$lgTxt_social_face                    = 'Liên kết Facebook';
 	$lgTxt_update                         = 'The data are in the process of renovation ... Please come back later!';
-    $lgTxt_error_page                     = 'Error page';
-    $lgTxt_page404                        = 'Link does not exist, please';
-    $lgTxt_page404_click                  = 'click';
-    $lgTxt_page404_back                   = 'to return';
+	$lgTxt_error_page                     = 'Error page';
+	$lgTxt_page404                        = 'Link does not exist, please';
+	$lgTxt_page404_click                  = 'click';
+	$lgTxt_page404_back                   = 'to return';
 	$lgTxt_article_plus                   = 'Other article:';
 	$lgTxt_article_other                  = 'Same category:';
 	$lgTxt_service_other                  = 'Other services:';
@@ -21,7 +21,7 @@
 	$lgTxt_detail                         = 'View detail';
 	$lgTxt_view_all                       = 'View all';
 
-// Menu
+	// Menu
 	$lgTxt_menu_home                      = 'Home';
 	$lgTxt_menu_contact                   = 'Contact';
 	$lgTxt_slug_contact                   = 'contact';
@@ -29,7 +29,7 @@
 	$lgTxt_slug_search                    = 'search';
 	$lgTxt_title_news                     = 'News - Events';
 
-// Contact
+	// Contact
 	$txtContact_titleForm   = 'Inquiries - Feedback';
 	$txtContact_name		= 'Full name';
 	$txtContact_address	    = 'Address';
@@ -46,41 +46,32 @@
 	$txtEnter_email		    = 'Invalid E-mail address.';
 	$txtEnter_tell		    = 'Invalid phone number.';
 	$txtEnter_number		= 'Invalid number.';
-		$lgTxt_chi_tiet                      = 'View detail';
-		
-		$lgTxt_send_mail	= 'Email';
-		$lgTxt_cont_mail    = 'Import email here';
-			$lgTxt_list_prod		 = 'Products';
-			$txt_service		= 'Service';
-			
-				$txt_poj = 'Construction - Project';
-				$lgTxt_price                          = 'Price: ';
-					$txt_code = 'Code: ';
-						$txt_weight   ='weight';
-							$txt_buy   ='Buy';
-							$txt_spect = 'Specifications';
-							$txt_code_color = 'Color Code';
-							$txt_pro_other = 'PRODUCTS OTHER';
-							
-							$txt_order_inf = 'ORDER INFOMATION';
-							$txtContact_number = 'Number';
-								$txtContact_sub = 'SUBMIT';
-								$txtContact_refresh = 'REFRESH';
-								$txtContact_note = 'Content';
-								
-	
+	$lgTxt_chi_tiet                      = 'View detail';
+	$lgTxt_send_mail	= 'Email';
+	$lgTxt_cont_mail    = 'Import email here';
+	$lgTxt_list_prod		 = 'Products';
+	$txt_service		= 'Service';
+	$txt_poj = 'Construction - Project';
+	$lgTxt_price         = 'Price: ';
+	$txt_code = 'Code: ';
+	$txt_weight   ='weight';
+	$txt_buy   ='Buy';
+	$txt_spect = 'Specifications';
+	$txt_code_color = 'Color Code';
+	$txt_pro_other = 'PRODUCTS OTHER';
+	$txt_order_inf = 'ORDER INFOMATION';
+	$txtContact_number = 'Number';
+	$txtContact_sub = 'SUBMIT';
+	$txtContact_refresh = 'REFRESH';
+	$txtContact_note = 'Content';
 	$search = 'Search';
-	
 	$txt_l_product = 'PRODUCTS';
 
 	$prod_news = 'New product';
-	
 	$lgTxt_prod_feat         = 'Featured products';
-	
 	$buy = 'Đặt mua';
-	
 	$news = 'News';
-	
 	$txtdistri_name = 'Full name';
-
 	$txt_Special = 'Special Projects';
+	$txt_price = 'contract value';
+?>

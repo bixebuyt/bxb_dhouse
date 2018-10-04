@@ -18,7 +18,7 @@ echo '<div class="breadcrumb">' . $breadcrumb_home . $breadcrumb_category . $bre
 ?>
 <div class="wrap-detail">
 	<div><?=getPage('contact_maps')?></div>
-	<h4 class="title-upc cl-green f-space30"><?=getPage('contact_page', 'name')?></h4>
+	<h4 class="title-upc f-space30"><?=getPage('contact_page', 'name')?></h4>
 	<div class="contact-info f-space10">
 		<?php echo getPage('contact_page')?>
 	</div>
