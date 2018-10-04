@@ -1,4 +1,15 @@
-<div class="home2 clearfix">
+<style>
+	.box_menu_category{
+		display: block !important;
+	}
+</style>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.box_left h3 i').off();
+	})
+</script>
+<div class="home2">
+	<div class="cont clearfix">
 <?php
 if (!defined('TTH_SYSTEM')) { die('Please stop!'); }
 //-----------------
@@ -6,14 +17,13 @@ if (!defined('TTH_SYSTEM')) { die('Please stop!'); }
 $breadcrumb_home = '<a href="'. HOME_URL_LANG . '" title="' . $lgTxt_menu_home . '"><i class="fa fa-home"></i></a>';
 $breadcrumb_category = $breadcrumb_menu_parent = $breadcrumb_menu = '';
 $breadcrumb_category = '<a href="' . HOME_URL_LANG . '/' . $lgTxt_slug_contact . '" title="' . $lgTxt_menu_contact . '">' . $lgTxt_menu_contact . '</a>';
-
-echo '<div class="content-left">';
+include(_F_INCLUDES . DS . "tth_left.php");
+echo '<div class="content">';
 echo '<div class="breadcrumb">' . $breadcrumb_home . $breadcrumb_category . $breadcrumb_menu_parent . $breadcrumb_menu . '</div>';
-echo '<section class="content-art clearfix">';
 ?>
 <div class="wrap-detail">
 	<div><?=getPage('contact_maps')?></div>
-	<h4 class="title-upc cl-green f-space30"><?=getPage('contact_page', 'name')?></h4>
+	<h4 class="title-upc f-space30"><?=getPage('contact_page', 'name')?></h4>
 	<div class="contact-info f-space10">
 		<?php echo getPage('contact_page')?>
 	</div>
@@ -23,7 +33,7 @@ echo '<section class="content-art clearfix">';
 	<form id="_frm_contact" name="frm_contact" class="frm f-space20" method="post" onsubmit="return sendMail('send_contact', '_frm_contact');">
 		<div class="f-space05 clearfix">
 			<div class="form-item form-sm">
-				<input type="text" name="full_name" placeholder="<?=$txtContact_name?>" value="" maxlength="250">
+				<input type="text" name="full_name" placeholder="<?=$txtdistri_name?>" value="" maxlength="250">
 				<i class="fa fa-user"></i>
 			</div>
 			<div class="form-item form-sm">
@@ -57,8 +67,5 @@ echo '<section class="content-art clearfix">';
 </div>
 <?php
 echo '</div>';
-include(_F_INCLUDES . DS . "tth_right.php");
-echo '</section>';
 ?>
-
 </div>

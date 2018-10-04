@@ -1,6 +1,9 @@
 @import "common";
 
 //------------- SOCIALMENU ----------//
+.at-share-dock-outer {
+	padding-top: 2em;
+}
 .box_social {
 	float: left;
 	margin-top: 1em;
@@ -262,8 +265,7 @@
 		margin-top: 25px;
 		@extend %cf;
 		.sub_menu {
-			display: none;
-			margin-left: 1em;
+			margin-left: 1.5em;
 			margin-top: 0.5em;
 			li {
 				font-size: 12px;
@@ -469,8 +471,11 @@
 				}
 			}
 		}
+		@media all and(max-width: 767px) {
+			margin-bottom: 3em;
+		}
 	}
-}	
+}
 
 // ------------------------- FOOTER ------------------------//
 .footer {
@@ -516,7 +521,7 @@
 			display: table;
 		}
 	}
-	p {		
+	p {
 		@media all and (max-width: 767px) {
 			text-align: center;
 			margin-bottom: 0em;
@@ -533,7 +538,7 @@
 //-------------------- DETAIL ARTICLE --------------//
 .wrap-detail {
 	h4 {
-		margin-top: 2em;
+		margin: 2em 0px;
 		padding-left: 1em;
 		border-left: 2px solid #000;
 		font-weight: 600;
@@ -546,6 +551,9 @@
 		span {
 			text-decoration: underline;
 		}
+	}
+	.con-wp {
+		margin-bottom: 2em;
 	}
 }
 //---------------- OTHER ARTICLE-----------//

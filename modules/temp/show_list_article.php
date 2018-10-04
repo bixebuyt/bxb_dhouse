@@ -7,7 +7,7 @@ if($row['img']!="" && $row['img']!="no") {
 	$photo_avt = '<img src="'. HOME_URL .'/uploads/article/news-'. $row['img'] . '" alt="' . $alt . '" />';
 	$photo_avt = '<a href="'. HOME_URL_LANG . '/' . $slug_cat . '/' . getSlugMenu($row['article_menu_id'], 'article') . '/' . $stringObj->getLinkHtml($row['name'], $row['article_id']) . '" title="' . stripslashes($row['name']) . '">' . $photo_avt .'</a>';
 } else {
-	$photo_avt = '<img src="'. HOME_URL .'/images/404-post.jpg" alt="'.$alt.'" />';
+	$photo_avt = '<img src="'. HOME_URL .'/images/no_img.png" alt="'.$alt.'" />';
 	$photo_avt = '<a href="'. HOME_URL_LANG . '/' . $slug_cat . '/' . getSlugMenu($row['article_menu_id'], 'article') . '/' . $stringObj->getLinkHtml($row['name'], $row['article_id']) . '" title="' . stripslashes($row['name']) . '">' . $photo_avt .'</a>';
 }
 ?>

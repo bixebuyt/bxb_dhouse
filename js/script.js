@@ -319,7 +319,7 @@ $(document).ready(function() {
 	toggleMenuLeft();
 	maxHeight();
 	toggleMenuSp();
-	menuToogle();
+	// menuToogle();
 })
 $(window).resize(function() {
 	maxHeight();

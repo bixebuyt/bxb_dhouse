@@ -1,7 +1,5 @@
 <?php
 if (!defined('TTH_SYSTEM')) { die('Please stop!'); }
-//
-
 $sumView = 0;
 $db->table = "article";
 $db->condition = "is_active = 1 and article_id = ".$id;
@@ -25,6 +23,7 @@ if($db->RowCount>0){
 	<?php echo '<h4 style="font-weight:bold;" class="f-space10">' . stripslashes($row['comment']) . '</h4>';?>
 
 	<div class="con-wp f-space15"><?php echo stripslashes($row['content']); ?></div>
+	<div class="addthis_inline_share_toolbox_h6l0"></div>
 	<div class="others">
 		<?php
 		//----------------------------------------------------------

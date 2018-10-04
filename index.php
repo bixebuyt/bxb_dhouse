@@ -75,7 +75,7 @@ echo getConstant('script_bottom');
 //if($slug_cat=='home'){ require_once("popup" . DS . "popup.php");}
 ?>
 <div class="con_phone">
-	<div class="phonering-alo-phone phonering-alo-green phonering-alo-show" id="phonering-alo-phoneIcon" style="left: -50px; bottom: 150px; position: fixed;">
+	<div class="phonering-alo-phone phonering-alo-green phonering-alo-show" id="phonering-alo-phoneIcon">
 	 <div class="phonering-alo-ph-circle"></div>
 	 <div class="phonering-alo-ph-circle-fill"></div>
 	 <a href="tel:+84123456789"></a>

@@ -3,6 +3,11 @@
 		display: block !important;
 	}
 </style>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.box_left h3 i').off();
+	})
+</script>
 <div class="home2">
 	<div class="cont clearfix">
 <?php

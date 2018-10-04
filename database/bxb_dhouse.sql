@@ -1,19 +1,22 @@
 -- phpMyAdmin SQL Dump
--- version 3.1.3.1
--- http://www.phpmyadmin.net
+-- version 4.8.0.1
+-- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Oct 02, 2018 at 01:07 AM
--- Server version: 5.1.33
--- PHP Version: 5.2.9
+-- Host: 127.0.0.1
+-- Generation Time: Oct 04, 2018 at 12:03 PM
+-- Server version: 10.1.32-MariaDB
+-- PHP Version: 5.6.36
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `bxb_dhouse`
@@ -25,8 +28,8 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 -- Table structure for table `olala3w_article`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_article` (
-  `article_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_article` (
+  `article_id` int(11) NOT NULL,
   `article_menu_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `title` varchar(255) NOT NULL,
@@ -42,17 +45,16 @@ CREATE TABLE IF NOT EXISTS `olala3w_article` (
   `views` bigint(20) NOT NULL DEFAULT '1',
   `created_time` int(11) NOT NULL DEFAULT '0',
   `modified_time` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`article_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=744 ;
+  `user_id` int(11) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `olala3w_article`
 --
 
 INSERT INTO `olala3w_article` (`article_id`, `article_menu_id`, `name`, `title`, `description`, `keywords`, `img`, `img_note`, `upload_id`, `comment`, `content`, `is_active`, `hot`, `views`, `created_time`, `modified_time`, `user_id`) VALUES
-(728, 323, 'Căn hộ D House', '', '', '', 'c6yimgxe1ii8q40-728-can-ho-d-house.jpg', '8.000.000', 1325, 'NỘI THẤT BẾP - ĐẾN NGAY D-HOUSE NHẬN ƯU ĐÃI GIẢM GIÁ HẤP DẪN KHI THI CÔNG TRỌN BỘ ', '<p><img alt=\\"\\" src=\\"/uploads/images/36437197_246705092729054_7561113783704223744_n(1).jpg\\" /><br />\r\n<br />\r\n<img alt=\\"\\" src=\\"/uploads/images/36607578_247428645990032_3943647075790487552_n(1).jpg\\" /></p>\r\n', 1, 0, 54, 1536719520, 1538211325, 1),
-(729, 323, 'Home Solution', '', '', '', '2sz8akpgbld6aar-729-home-solution.jpg', '', 1326, '', '<p><img alt=\\"\\" src=\\"/uploads/images/36607578_247428645990032_3943647075790487552_n.jpg\\" style=\\"width: 960px; height: 720px; float: left;\\" /></p>\r\n', 1, 0, 3, 1536719760, 1536719835, 25),
+(728, 323, 'Căn hộ D House', '', '', '', 'c6yimgxe1ii8q40-728-can-ho-d-house.jpg', '8.000.000', 1325, 'NỘI THẤT BẾP - ĐẾN NGAY D-HOUSE NHẬN ƯU ĐÃI GIẢM GIÁ HẤP DẪN KHI THI CÔNG TRỌN BỘ ', '<p><img alt=\\\"\\\" src=\\\"/uploads/images/36437197_246705092729054_7561113783704223744_n(1).jpg\\\" /><br />\r\n<br />\r\n<img alt=\\\"\\\" src=\\\"/uploads/images/36607578_247428645990032_3943647075790487552_n(1).jpg\\\" /></p>\r\n', 1, 0, 119, 1536719520, 1538211325, 1),
+(729, 323, 'Home Solution', '', '', '', '2sz8akpgbld6aar-729-home-solution.jpg', '', 1326, '', '<p><img alt=\\\"\\\" src=\\\"/uploads/images/36607578_247428645990032_3943647075790487552_n.jpg\\\" style=\\\"width: 960px; height: 720px; float: left;\\\" /></p>\r\n', 1, 0, 3, 1536719760, 1536719835, 25),
 (730, 323, 'Studio Apartment', '', '', '', 'hlk4f5fw3rf2njt-730-studio-apartment.png', '', 1327, '', '<p>xxx</p>\r\n', 1, 0, 3, 1536722700, 1536722737, 25),
 (731, 323, 'Accessories', '', '', '', 'qlctmu941vdinop-731-accessories.jpg', '', 1328, '', '<p>xxx</p>\r\n', 1, 0, 1, 1536722700, 1536722761, 25),
 (732, 323, 'Accessories', '', '', '', 'q44md1ybps9ma0a-732-accessories.jpg', '', 1329, '', '<p>xxx</p>\r\n', 1, 0, 18, 1536722760, 1536722772, 25),
@@ -60,9 +62,9 @@ INSERT INTO `olala3w_article` (`article_id`, `article_menu_id`, `name`, `title`,
 (734, 323, 'Căn hộ dịch vụ', '', '', '', 'pegeuo0v4fqc5wn-734-can-ho-dich-vu.png', '', 1331, '', '<p>yyy</p>\r\n', 1, 0, 6, 1536722820, 1536722856, 25),
 (735, 323, 'Studio Apartment', '', '', '', 'pkbi1uvwz9qtt1w-735-studio-apartment.png', '', 1332, '', '<p>xxx</p>\r\n', 1, 0, 3, 1536722820, 1536722868, 25),
 (736, 323, 'Home Solution', '', '', '', 'j1l7pvn6d4p1uct-736-home-solution.jpg', '', 1333, '', '<p>vvv</p>\r\n', 1, 0, 8, 1536725280, 1537681724, 25),
-(740, 326, 'Studio Apartment', '', '', '', '5ov4fabmewb0uqd-740-studio-apartment.jpg', '', 1337, '', '<p>xcccc</p>\r\n', 1, 0, 3, 1536738360, 1536738414, 25),
-(739, 326, 'Home Solution', '', '', '', 'm43ui25jegtou5n-739-home-solution.jpg', '', 1336, '', '<p>xxx</p>\r\n', 1, 0, 5, 1536738360, 1536738401, 25),
-(743, 332, 'ahihi', '', '', '', 'no', '', 1340, 'ád', '<p>ádasd</p>\r\n', 1, 0, 19, 1538411040, 1538411093, 1);
+(740, 326, 'Studio Apartment', '', '', '', '5ov4fabmewb0uqd-740-studio-apartment.jpg', '', 1337, '', '<p>xcccc</p>\r\n', 1, 0, 4, 1536738360, 1536738414, 25),
+(739, 326, 'Home Solution', '', '', '', 'm43ui25jegtou5n-739-home-solution.jpg', '', 1336, '', '<p>xxx</p>\r\n', 1, 0, 8, 1536738360, 1536738401, 25),
+(743, 332, 'ahihi', '', '', '', 'no', '', 1340, 'ád', '<p>ádasd</p>\r\n', 1, 0, 91, 1538411040, 1538411093, 1);
 
 -- --------------------------------------------------------
 
@@ -70,8 +72,8 @@ INSERT INTO `olala3w_article` (`article_id`, `article_menu_id`, `name`, `title`,
 -- Table structure for table `olala3w_article_menu`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_article_menu` (
-  `article_menu_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_article_menu` (
+  `article_menu_id` int(11) NOT NULL,
   `category_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `slug` varchar(255) NOT NULL DEFAULT 'not-found',
@@ -87,9 +89,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_article_menu` (
   `img` varchar(255) NOT NULL DEFAULT 'no',
   `created_time` int(11) NOT NULL DEFAULT '0',
   `modified_time` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`article_menu_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=339 ;
+  `user_id` int(11) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `olala3w_article_menu`
@@ -99,8 +100,6 @@ INSERT INTO `olala3w_article_menu` (`article_menu_id`, `category_id`, `name`, `s
 (318, 9, 'Nội thất căn hộ cho thuê', 'noi-that-can-ho-cho-thue-yhbq066z1o', '', '', '', 0, 1, '', '', 1, 0, 'no', 1536718131, 1538210070, 1),
 (319, 9, 'Nội thất dân dụng', 'noi-that-dan-dung', '', '', '', 0, 2, '', '', 1, 0, 'no', 1536718144, 1538210094, 1),
 (320, 73, 'Về chúng tôi', 've-chung-toi', '', '', '', 0, 1, '', '', 1, 0, 'no', 1536718231, 1536718231, 25),
-(321, 73, 'Đội ngủ', 'doi-ngu', '', '', '', 0, 2, '', '', 1, 0, 'no', 1536718244, 1536718244, 25),
-(322, 73, 'Liên hệ', 'lien-he', '', '', '', 0, 3, '', '', 1, 0, 'no', 1536718253, 1536718253, 25),
 (323, 7, 'Công trình công cộng', 'cong-trinh-cong-cong-p6acltbq41', '', '', '', 0, 1, '', '', 1, 0, 'no', 1536718684, 1538405367, 1),
 (326, 7, 'Khách sạn', 'khach-san-it1kr4wfhk', '', '', '', 0, 3, '', '', 1, 0, 'no', 1536738314, 1538405429, 1),
 (338, 69, 'Ý tưởng', 'y-tuong', '', '', '', 0, 1, '', '', 1, 0, 'no', 1538407167, 1538407167, 1),
@@ -121,8 +120,8 @@ INSERT INTO `olala3w_article_menu` (`article_menu_id`, `category_id`, `name`, `s
 -- Table structure for table `olala3w_bds_business`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_bds_business` (
-  `bds_business_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_bds_business` (
+  `bds_business_id` int(11) NOT NULL,
   `bds_business_menu_id` int(11) NOT NULL,
   `type_show` int(1) NOT NULL DEFAULT '0',
   `name` varchar(255) NOT NULL,
@@ -174,14 +173,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_bds_business` (
   `is_active` int(1) NOT NULL DEFAULT '1',
   `views` bigint(20) NOT NULL DEFAULT '1',
   `modified_time` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`bds_business_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=443 ;
-
---
--- Dumping data for table `olala3w_bds_business`
---
-
+  `user_id` int(11) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -189,8 +182,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_bds_business` (
 -- Table structure for table `olala3w_bds_business_menu`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_bds_business_menu` (
-  `bds_business_menu_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_bds_business_menu` (
+  `bds_business_menu_id` int(11) NOT NULL,
   `category_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `slug` varchar(255) NOT NULL DEFAULT 'not-found',
@@ -204,14 +197,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_bds_business_menu` (
   `img` varchar(255) NOT NULL DEFAULT 'no',
   `created_time` int(11) NOT NULL DEFAULT '0',
   `modified_time` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`bds_business_menu_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=153 ;
-
---
--- Dumping data for table `olala3w_bds_business_menu`
---
-
+  `user_id` int(11) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -219,8 +206,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_bds_business_menu` (
 -- Table structure for table `olala3w_car`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_car` (
-  `car_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_car` (
+  `car_id` int(11) NOT NULL,
   `car_menu_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `title` varchar(255) NOT NULL,
@@ -243,14 +230,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_car` (
   `views` bigint(20) NOT NULL DEFAULT '1',
   `created_time` int(11) NOT NULL DEFAULT '0',
   `modified_time` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`car_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=312 ;
-
---
--- Dumping data for table `olala3w_car`
---
-
+  `user_id` int(11) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -258,8 +239,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_car` (
 -- Table structure for table `olala3w_car_menu`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_car_menu` (
-  `car_menu_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_car_menu` (
+  `car_menu_id` int(11) NOT NULL,
   `category_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `slug` varchar(255) NOT NULL DEFAULT 'not-found',
@@ -275,14 +256,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_car_menu` (
   `img` varchar(255) NOT NULL DEFAULT 'no',
   `created_time` int(11) NOT NULL DEFAULT '0',
   `modified_time` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`car_menu_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=188 ;
-
---
--- Dumping data for table `olala3w_car_menu`
---
-
+  `user_id` int(11) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -290,8 +265,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_car_menu` (
 -- Table structure for table `olala3w_category`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_category` (
-  `category_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_category` (
+  `category_id` int(11) NOT NULL,
   `type_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `slug` varchar(30) NOT NULL,
@@ -310,9 +285,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_category` (
   `icon` varchar(255) NOT NULL,
   `created_time` int(11) NOT NULL DEFAULT '0',
   `modified_time` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`category_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=74 ;
+  `user_id` int(11) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `olala3w_category`
@@ -322,7 +296,7 @@ INSERT INTO `olala3w_category` (`category_id`, `type_id`, `name`, `slug`, `plus`
 (9, 1, 'Nội thất', 'noi-that', '', '', '', '', '', 1, 1, 1, 1, 2, 1, 'no', 'fa fa-plane fa-lg fa-fw', 0, 1450922752, 1),
 (7, 1, 'Kiến trúc', 'kien-truc', '', '', '', '', 'Khám phá những vùng đất tuyệt vời cùng những dịch vụ đẳng cấp', 1, 1, 2, 1, 3, 1, 'no', 'fa fa-building fa-lg fa-fw', 0, 1457647068, 25),
 (68, 1, 'Xây dựng', 'xay-dung', '', '', '', '', '', 1, 1, 3, 1, 5, 0, 'no', 'fa fa-newspaper-o fa-lg fa-fw', 0, 1457608710, 1),
-(69, 1, 'Ý tưởng', 'y-tuong', '', '', '', '', '', 1, 0, 2, 1, 0, 1, 'no', '', 0, 1452789440, 1),
+(69, 1, 'Ý tưởng', 'y-tuong', '', '', '', '', '', 1, 1, 2, 1, 0, 1, 'no', '', 0, 1538638990, 1),
 (56, 2, 'Slider', 'slider', '', '', '', '', '', 1, 0, 1, 0, 0, 0, 'no', 'fa fa-image fa-lg fa-fw', 0, 1447180299, 1),
 (73, 1, 'Giới thiệu', 'gioi-thieu', '', '', '', '', '', 1, 0, 1, 1, 1, 1, 'no', '', 0, 0, 1);
 
@@ -332,14 +306,13 @@ INSERT INTO `olala3w_category` (`category_id`, `type_id`, `name`, `slug`, `plus`
 -- Table structure for table `olala3w_category_type`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_category_type` (
-  `type_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_category_type` (
+  `type_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `slug` varchar(30) NOT NULL,
   `sort` int(11) NOT NULL DEFAULT '1',
-  `is_active` int(1) NOT NULL DEFAULT '1',
-  PRIMARY KEY (`type_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=21 ;
+  `is_active` int(1) NOT NULL DEFAULT '1'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `olala3w_category_type`
@@ -370,15 +343,14 @@ INSERT INTO `olala3w_category_type` (`type_id`, `name`, `slug`, `sort`, `is_acti
 -- Table structure for table `olala3w_constant`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_constant` (
-  `constant_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_constant` (
+  `constant_id` int(11) NOT NULL,
   `constant` varchar(50) NOT NULL,
   `value` text NOT NULL,
   `name` varchar(255) NOT NULL,
   `type` int(2) NOT NULL DEFAULT '0',
-  `sort` int(11) NOT NULL,
-  PRIMARY KEY (`constant_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=90 ;
+  `sort` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `olala3w_constant`
@@ -391,7 +363,7 @@ INSERT INTO `olala3w_constant` (`constant_id`, `constant`, `value`, `name`, `typ
 (4, 'title', 'Dhouse', 'Title (trang chủ)', 0, 1),
 (5, 'description', 'Dhouse', 'Description (trang chủ)', 0, 2),
 (6, 'keywords', '', 'Keywords (trang chủ)', 0, 3),
-(74, 'script_body', '<div id="fb-root"></div>\r\n<script>(function(d, s, id) {\r\n  var js, fjs = d.getElementsByTagName(s)[0];\r\n  if (d.getElementById(id)) return;\r\n  js = d.createElement(s); js.id = id;\r\n  js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.5";\r\n  fjs.parentNode.insertBefore(js, fjs);\r\n}(document, ''script'', ''facebook-jssdk''));</script>', 'Script sau body', 4, 6),
+(74, 'script_body', '<div id=\"fb-root\"></div>\r\n<script>(function(d, s, id) {\r\n  var js, fjs = d.getElementsByTagName(s)[0];\r\n  if (d.getElementById(id)) return;\r\n  js = d.createElement(s); js.id = id;\r\n  js.src = \"//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.5\";\r\n  fjs.parentNode.insertBefore(js, fjs);\r\n}(document, \'script\', \'facebook-jssdk\'));</script>', 'Script sau body', 4, 6),
 (76, 'link_linkedin', 'https://www.linkedin.com', 'LinkedIn', 5, 5),
 (7, 'email_contact', 'minh.nhat.dev@gmail.com', 'Email site', 0, 8),
 (8, 'tell_contact', '01202503009', 'Điện thoại site', 0, 9),
@@ -412,7 +384,7 @@ INSERT INTO `olala3w_constant` (`constant_id`, `constant`, `value`, `name`, `typ
 (23, 'link_googleplus', 'https://www.instagram.com/', 'Instagram', 5, 2),
 (24, 'link_twitter', 'https://twitter.com', 'Twitter', 5, 3),
 (25, 'address_contact', 'Đà Nẵng, Việt Nam', 'Địa chỉ', 0, 10),
-(73, 'script_bottom', '<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?''http'':''https'';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+''://platform.twitter.com/widgets.js'';fjs.parentNode.insertBefore(js,fjs);}}(document, ''script'', ''twitter-wjs'');</script>\r\n<script src="https://apis.google.com/js/platform.js" async defer>\r\n  {lang: ''vi''}\r\n</script>', 'Script cuối trang', 4, 7),
+(73, 'script_bottom', '<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?\'http\':\'https\';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\'://platform.twitter.com/widgets.js\';fjs.parentNode.insertBefore(js,fjs);}}(document, \'script\', \'twitter-wjs\');</script>\r\n<script src=\"https://apis.google.com/js/platform.js\" async defer>\r\n  {lang: \'vi\'}\r\n</script>', 'Script cuối trang', 4, 7),
 (26, 'content_registertry', '', 'Email đăng ký học thử', 13, 17),
 (27, 'author_google', '', 'ID profile Google+', 4, 1),
 (28, 'google_analytics', '', 'Google analytics', 4, 4),
@@ -444,8 +416,8 @@ INSERT INTO `olala3w_constant` (`constant_id`, `constant`, `value`, `name`, `typ
 -- Table structure for table `olala3w_contact`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_contact` (
-  `contact_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_contact` (
+  `contact_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `address` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
@@ -455,17 +427,16 @@ CREATE TABLE IF NOT EXISTS `olala3w_contact` (
   `ip` varchar(255) NOT NULL,
   `icon` varchar(255) NOT NULL DEFAULT 'fa-send-o',
   `created_time` int(11) NOT NULL DEFAULT '0',
-  `modified_time` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`contact_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+  `modified_time` int(11) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `olala3w_contact`
 --
 
 INSERT INTO `olala3w_contact` (`contact_id`, `name`, `address`, `email`, `phone`, `content`, `is_active`, `ip`, `icon`, `created_time`, `modified_time`) VALUES
-(2, 'Bi Xebuyt', 'asd', 'dienthangbac@gmail.com', '', '<div marginwidth="0" marginheight="0" style="font-family:Arial,serif;"><table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="table-layout:fixed;"><tbody><tr><td width="100%" valign="top" bgcolor="#f5f5f5" style="border-top:3px solid #579902;padding:0;"><table border="0" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto;width:100%;"><tbody><tr><td bgcolor="white" style="padding:10px 0; text-align: center;"><a href="http://bxb.dhouse.com" target="_blank"><img src="http://bxb.dhouse.com/uploads/files/logo.png" style="max-height:70px;max-width:80%;" alt="" border="0"></a></td></tr></tbody></table><div style="min-height:35px">&nbsp;</div><table border="0" cellpadding="0" cellspacing="0" align="center" style="min-width:290px;margin:0 auto;font-size:13px;color:#666666;font-weight:normal;text-align:left;font-family:Arial,serif;line-height:18px;" width="620"><tbody><tr><td style="border-left:6px solid #fb651b;font-size:13px;color:#666666;font-weight:normal;text-align:left;font-family:Arial,serif;line-height:18px;vertical-align:top;padding:15px 8px 25px 20px;" bgcolor="#fdfdfd"><p style="margin: 10px 0">Chào <b> Bi Xebuyt</b>,</p><p style="margin: 10px 0">Xin chân thành cảm ơn Quý khách đã quan tâm và sử dụng dịch vụ của chúng tôi!<br>Yêu cầu của Quý khách đã gửi thành công. Chúng tôi sẽ phản hồi lại trong vòng 24h tới.</p><p style="margin: 10px 0"><b style="text-decoration:underline;">THÔNG TIN LIÊN HỆ CỦA QUÝ KHÁCH:</b><br/><label style="font-weight:600;padding-left:12px;">Họ và tên: </label> Bi Xebuyt<br/><label style="font-weight:600;padding-left:12px;">Địa chỉ: </label> asd<br/><label style="font-weight:600;padding-left:12px;">Email: </label> dienthangbac@gmail.com<br/><label style="font-weight:600;padding-left:12px;">Số điện thoại: </label> <br/><label style="font-weight:600;padding-left:12px;">Nội dung liên hệ: </label> asdasd<br/><label style="font-weight:600;padding-left:12px;">IP truy cập: </label> 127.0.0.1<br/><label style="font-weight:600;padding-left:12px;">Ngày gửi liên hệ: </label> 19/09/2018 13:24<br/></p><p style="margin: 10px 0">Đây là hộp thư tự động. Sau thời gian trên nếu quý khách chưa nhân được phản hồi từ nhân viên của chúng tôi, rất có thể đã gặp sự cố nhỏ nào đó vì vậy Quý khách có thể liên hệ trực tiếp chúng tôi để nhận được những thông tin nhanh nhất.</p><p style="margin: 10px 0">Chân thành cảm ơn!</p></td></tr></tbody></table><div style="min-height:35px">&nbsp;</div><table width="100%" border="0" cellpadding="0" cellspacing="0" align="center"><tbody><tr><td bgcolor="#e1e1e1" style="padding:15px 10px 25px"><table border="0" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto;min-width:290px;" width="620"><tbody><tr><td><table width="80%" cellpadding="0" cellspacing="0" border="0" align="left"><tbody><tr><td valign="top" style="font-size:12px;color:#5e5e5e;font-family:Arial,serif;line-height:15px;"></td></tr></tbody></table><table width="20%" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td style="font-size:13px;color:#5e5e5e;font-family:Arial,serif;line-height:1;vertical-align:top;text-align:right;font-style:italic;"><span>Follow us on</span><br><a href="https://www.facebook.com" target="_blank"><img src="https://ci5.googleusercontent.com/proxy/PMSfAkbhhMLEe-tDCLFilReG-hlq_DWsTblTQ2qp8Dsq9KFW1UyFcKTr_uwU3EqyR8AhiFIooeExoAw9Oe3G5c6hvIEoOnU=s0-d-e1-ft#https://www.livecoding.tv/static/img/email/fb.png" width="27" height="27" alt="Facebook logo" title="Facebook" border="0" style="padding:3px;"></a>&nbsp;<a href="https://twitter.com" target="_blank"><img src="https://ci3.googleusercontent.com/proxy/GNHxgrYKL99Apyic0XnGYk6IqVZAc-wFuhgCDxzBYMr80NGggmI1nRORIBVRIkPkJHbQHGGMrTFtbzTDoxk5dc0i_H0HOc0=s0-d-e1-ft#https://www.livecoding.tv/static/img/email/tw.png" width="27" height="27" alt="Twitter logo" title="Twitter" border="0" style="padding:3px;"></a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></div>', 0, '127.0.0.1', 'fa-send-o', 1537338256, 1537682453),
-(3, 'Bi Xebuyt', 'ád', 'minh.nhat.dev@gmail.com', '', '<div marginwidth="0" marginheight="0" style="font-family:Arial,serif;"><table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="table-layout:fixed;"><tbody><tr><td width="100%" valign="top" bgcolor="#f5f5f5" style="border-top:3px solid #579902;padding:0;"><table border="0" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto;width:100%;"><tbody><tr><td bgcolor="white" style="padding:10px 0; text-align: center;"><a href="http://bxb.dhouse.com" target="_blank"><img src="http://bxb.dhouse.com/uploads/files/logo.png" style="max-height:70px;max-width:80%;" alt="" border="0"></a></td></tr></tbody></table><div style="min-height:35px">&nbsp;</div><table border="0" cellpadding="0" cellspacing="0" align="center" style="min-width:290px;margin:0 auto;font-size:13px;color:#666666;font-weight:normal;text-align:left;font-family:Arial,serif;line-height:18px;" width="620"><tbody><tr><td style="border-left:6px solid #fb651b;font-size:13px;color:#666666;font-weight:normal;text-align:left;font-family:Arial,serif;line-height:18px;vertical-align:top;padding:15px 8px 25px 20px;" bgcolor="#fdfdfd"><p style="margin: 10px 0">Chào <b> Bi Xebuyt</b>,</p><p style="margin: 10px 0">Xin chân thành cảm ơn Quý khách đã quan tâm và sử dụng dịch vụ của chúng tôi!<br>Yêu cầu của Quý khách đã gửi thành công. Chúng tôi sẽ phản hồi lại trong vòng 24h tới.</p><p style="margin: 10px 0"><b style="text-decoration:underline;">THÔNG TIN LIÊN HỆ CỦA QUÝ KHÁCH:</b><br/><label style="font-weight:600;padding-left:12px;">Họ và tên: </label> Bi Xebuyt<br/><label style="font-weight:600;padding-left:12px;">Địa chỉ: </label> ád<br/><label style="font-weight:600;padding-left:12px;">Email: </label> minh.nhat.dev@gmail.com<br/><label style="font-weight:600;padding-left:12px;">Số điện thoại: </label> <br/><label style="font-weight:600;padding-left:12px;">Nội dung liên hệ: </label> sdsd<br/><label style="font-weight:600;padding-left:12px;">IP truy cập: </label> 127.0.0.1<br/><label style="font-weight:600;padding-left:12px;">Ngày gửi liên hệ: </label> 19/09/2018 13:45<br/></p><p style="margin: 10px 0">Đây là hộp thư tự động. Sau thời gian trên nếu quý khách chưa nhân được phản hồi từ nhân viên của chúng tôi, rất có thể đã gặp sự cố nhỏ nào đó vì vậy Quý khách có thể liên hệ trực tiếp chúng tôi để nhận được những thông tin nhanh nhất.</p><p style="margin: 10px 0">Chân thành cảm ơn!</p></td></tr></tbody></table><div style="min-height:35px">&nbsp;</div><table width="100%" border="0" cellpadding="0" cellspacing="0" align="center"><tbody><tr><td bgcolor="#e1e1e1" style="padding:15px 10px 25px"><table border="0" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto;min-width:290px;" width="620"><tbody><tr><td><table width="80%" cellpadding="0" cellspacing="0" border="0" align="left"><tbody><tr><td valign="top" style="font-size:12px;color:#5e5e5e;font-family:Arial,serif;line-height:15px;"></td></tr></tbody></table><table width="20%" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td style="font-size:13px;color:#5e5e5e;font-family:Arial,serif;line-height:1;vertical-align:top;text-align:right;font-style:italic;"><span>Follow us on</span><br><a href="https://www.facebook.com" target="_blank"><img src="https://ci5.googleusercontent.com/proxy/PMSfAkbhhMLEe-tDCLFilReG-hlq_DWsTblTQ2qp8Dsq9KFW1UyFcKTr_uwU3EqyR8AhiFIooeExoAw9Oe3G5c6hvIEoOnU=s0-d-e1-ft#https://www.livecoding.tv/static/img/email/fb.png" width="27" height="27" alt="Facebook logo" title="Facebook" border="0" style="padding:3px;"></a>&nbsp;<a href="https://twitter.com" target="_blank"><img src="https://ci3.googleusercontent.com/proxy/GNHxgrYKL99Apyic0XnGYk6IqVZAc-wFuhgCDxzBYMr80NGggmI1nRORIBVRIkPkJHbQHGGMrTFtbzTDoxk5dc0i_H0HOc0=s0-d-e1-ft#https://www.livecoding.tv/static/img/email/tw.png" width="27" height="27" alt="Twitter logo" title="Twitter" border="0" style="padding:3px;"></a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></div>', 0, '127.0.0.1', 'fa-send-o', 1537339548, 1537682460);
+(2, 'Bi Xebuyt', 'asd', 'dienthangbac@gmail.com', '', '<div marginwidth=\"0\" marginheight=\"0\" style=\"font-family:Arial,serif;\"><table width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" style=\"table-layout:fixed;\"><tbody><tr><td width=\"100%\" valign=\"top\" bgcolor=\"#f5f5f5\" style=\"border-top:3px solid #579902;padding:0;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" style=\"margin:0 auto;width:100%;\"><tbody><tr><td bgcolor=\"white\" style=\"padding:10px 0; text-align: center;\"><a href=\"http://bxb.dhouse.com\" target=\"_blank\"><img src=\"http://bxb.dhouse.com/uploads/files/logo.png\" style=\"max-height:70px;max-width:80%;\" alt=\"\" border=\"0\"></a></td></tr></tbody></table><div style=\"min-height:35px\">&nbsp;</div><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" style=\"min-width:290px;margin:0 auto;font-size:13px;color:#666666;font-weight:normal;text-align:left;font-family:Arial,serif;line-height:18px;\" width=\"620\"><tbody><tr><td style=\"border-left:6px solid #fb651b;font-size:13px;color:#666666;font-weight:normal;text-align:left;font-family:Arial,serif;line-height:18px;vertical-align:top;padding:15px 8px 25px 20px;\" bgcolor=\"#fdfdfd\"><p style=\"margin: 10px 0\">Chào <b> Bi Xebuyt</b>,</p><p style=\"margin: 10px 0\">Xin chân thành cảm ơn Quý khách đã quan tâm và sử dụng dịch vụ của chúng tôi!<br>Yêu cầu của Quý khách đã gửi thành công. Chúng tôi sẽ phản hồi lại trong vòng 24h tới.</p><p style=\"margin: 10px 0\"><b style=\"text-decoration:underline;\">THÔNG TIN LIÊN HỆ CỦA QUÝ KHÁCH:</b><br/><label style=\"font-weight:600;padding-left:12px;\">Họ và tên: </label> Bi Xebuyt<br/><label style=\"font-weight:600;padding-left:12px;\">Địa chỉ: </label> asd<br/><label style=\"font-weight:600;padding-left:12px;\">Email: </label> dienthangbac@gmail.com<br/><label style=\"font-weight:600;padding-left:12px;\">Số điện thoại: </label> <br/><label style=\"font-weight:600;padding-left:12px;\">Nội dung liên hệ: </label> asdasd<br/><label style=\"font-weight:600;padding-left:12px;\">IP truy cập: </label> 127.0.0.1<br/><label style=\"font-weight:600;padding-left:12px;\">Ngày gửi liên hệ: </label> 19/09/2018 13:24<br/></p><p style=\"margin: 10px 0\">Đây là hộp thư tự động. Sau thời gian trên nếu quý khách chưa nhân được phản hồi từ nhân viên của chúng tôi, rất có thể đã gặp sự cố nhỏ nào đó vì vậy Quý khách có thể liên hệ trực tiếp chúng tôi để nhận được những thông tin nhanh nhất.</p><p style=\"margin: 10px 0\">Chân thành cảm ơn!</p></td></tr></tbody></table><div style=\"min-height:35px\">&nbsp;</div><table width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\"><tbody><tr><td bgcolor=\"#e1e1e1\" style=\"padding:15px 10px 25px\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" style=\"margin:0 auto;min-width:290px;\" width=\"620\"><tbody><tr><td><table width=\"80%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" align=\"left\"><tbody><tr><td valign=\"top\" style=\"font-size:12px;color:#5e5e5e;font-family:Arial,serif;line-height:15px;\"></td></tr></tbody></table><table width=\"20%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><tbody><tr><td style=\"font-size:13px;color:#5e5e5e;font-family:Arial,serif;line-height:1;vertical-align:top;text-align:right;font-style:italic;\"><span>Follow us on</span><br><a href=\"https://www.facebook.com\" target=\"_blank\"><img src=\"https://ci5.googleusercontent.com/proxy/PMSfAkbhhMLEe-tDCLFilReG-hlq_DWsTblTQ2qp8Dsq9KFW1UyFcKTr_uwU3EqyR8AhiFIooeExoAw9Oe3G5c6hvIEoOnU=s0-d-e1-ft#https://www.livecoding.tv/static/img/email/fb.png\" width=\"27\" height=\"27\" alt=\"Facebook logo\" title=\"Facebook\" border=\"0\" style=\"padding:3px;\"></a>&nbsp;<a href=\"https://twitter.com\" target=\"_blank\"><img src=\"https://ci3.googleusercontent.com/proxy/GNHxgrYKL99Apyic0XnGYk6IqVZAc-wFuhgCDxzBYMr80NGggmI1nRORIBVRIkPkJHbQHGGMrTFtbzTDoxk5dc0i_H0HOc0=s0-d-e1-ft#https://www.livecoding.tv/static/img/email/tw.png\" width=\"27\" height=\"27\" alt=\"Twitter logo\" title=\"Twitter\" border=\"0\" style=\"padding:3px;\"></a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></div>', 0, '127.0.0.1', 'fa-send-o', 1537338256, 1537682453),
+(3, 'Bi Xebuyt', 'ád', 'minh.nhat.dev@gmail.com', '', '<div marginwidth=\"0\" marginheight=\"0\" style=\"font-family:Arial,serif;\"><table width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" style=\"table-layout:fixed;\"><tbody><tr><td width=\"100%\" valign=\"top\" bgcolor=\"#f5f5f5\" style=\"border-top:3px solid #579902;padding:0;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" style=\"margin:0 auto;width:100%;\"><tbody><tr><td bgcolor=\"white\" style=\"padding:10px 0; text-align: center;\"><a href=\"http://bxb.dhouse.com\" target=\"_blank\"><img src=\"http://bxb.dhouse.com/uploads/files/logo.png\" style=\"max-height:70px;max-width:80%;\" alt=\"\" border=\"0\"></a></td></tr></tbody></table><div style=\"min-height:35px\">&nbsp;</div><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" style=\"min-width:290px;margin:0 auto;font-size:13px;color:#666666;font-weight:normal;text-align:left;font-family:Arial,serif;line-height:18px;\" width=\"620\"><tbody><tr><td style=\"border-left:6px solid #fb651b;font-size:13px;color:#666666;font-weight:normal;text-align:left;font-family:Arial,serif;line-height:18px;vertical-align:top;padding:15px 8px 25px 20px;\" bgcolor=\"#fdfdfd\"><p style=\"margin: 10px 0\">Chào <b> Bi Xebuyt</b>,</p><p style=\"margin: 10px 0\">Xin chân thành cảm ơn Quý khách đã quan tâm và sử dụng dịch vụ của chúng tôi!<br>Yêu cầu của Quý khách đã gửi thành công. Chúng tôi sẽ phản hồi lại trong vòng 24h tới.</p><p style=\"margin: 10px 0\"><b style=\"text-decoration:underline;\">THÔNG TIN LIÊN HỆ CỦA QUÝ KHÁCH:</b><br/><label style=\"font-weight:600;padding-left:12px;\">Họ và tên: </label> Bi Xebuyt<br/><label style=\"font-weight:600;padding-left:12px;\">Địa chỉ: </label> ád<br/><label style=\"font-weight:600;padding-left:12px;\">Email: </label> minh.nhat.dev@gmail.com<br/><label style=\"font-weight:600;padding-left:12px;\">Số điện thoại: </label> <br/><label style=\"font-weight:600;padding-left:12px;\">Nội dung liên hệ: </label> sdsd<br/><label style=\"font-weight:600;padding-left:12px;\">IP truy cập: </label> 127.0.0.1<br/><label style=\"font-weight:600;padding-left:12px;\">Ngày gửi liên hệ: </label> 19/09/2018 13:45<br/></p><p style=\"margin: 10px 0\">Đây là hộp thư tự động. Sau thời gian trên nếu quý khách chưa nhân được phản hồi từ nhân viên của chúng tôi, rất có thể đã gặp sự cố nhỏ nào đó vì vậy Quý khách có thể liên hệ trực tiếp chúng tôi để nhận được những thông tin nhanh nhất.</p><p style=\"margin: 10px 0\">Chân thành cảm ơn!</p></td></tr></tbody></table><div style=\"min-height:35px\">&nbsp;</div><table width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\"><tbody><tr><td bgcolor=\"#e1e1e1\" style=\"padding:15px 10px 25px\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" style=\"margin:0 auto;min-width:290px;\" width=\"620\"><tbody><tr><td><table width=\"80%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" align=\"left\"><tbody><tr><td valign=\"top\" style=\"font-size:12px;color:#5e5e5e;font-family:Arial,serif;line-height:15px;\"></td></tr></tbody></table><table width=\"20%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><tbody><tr><td style=\"font-size:13px;color:#5e5e5e;font-family:Arial,serif;line-height:1;vertical-align:top;text-align:right;font-style:italic;\"><span>Follow us on</span><br><a href=\"https://www.facebook.com\" target=\"_blank\"><img src=\"https://ci5.googleusercontent.com/proxy/PMSfAkbhhMLEe-tDCLFilReG-hlq_DWsTblTQ2qp8Dsq9KFW1UyFcKTr_uwU3EqyR8AhiFIooeExoAw9Oe3G5c6hvIEoOnU=s0-d-e1-ft#https://www.livecoding.tv/static/img/email/fb.png\" width=\"27\" height=\"27\" alt=\"Facebook logo\" title=\"Facebook\" border=\"0\" style=\"padding:3px;\"></a>&nbsp;<a href=\"https://twitter.com\" target=\"_blank\"><img src=\"https://ci3.googleusercontent.com/proxy/GNHxgrYKL99Apyic0XnGYk6IqVZAc-wFuhgCDxzBYMr80NGggmI1nRORIBVRIkPkJHbQHGGMrTFtbzTDoxk5dc0i_H0HOc0=s0-d-e1-ft#https://www.livecoding.tv/static/img/email/tw.png\" width=\"27\" height=\"27\" alt=\"Twitter logo\" title=\"Twitter\" border=\"0\" style=\"padding:3px;\"></a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></div>', 0, '127.0.0.1', 'fa-send-o', 1537339548, 1537682460);
 
 -- --------------------------------------------------------
 
@@ -473,13 +444,12 @@ INSERT INTO `olala3w_contact` (`contact_id`, `name`, `address`, `email`, `phone`
 -- Table structure for table `olala3w_core_privilege`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_core_privilege` (
-  `privilege_id` bigint(20) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_core_privilege` (
+  `privilege_id` bigint(20) NOT NULL,
   `role_id` int(11) NOT NULL DEFAULT '0',
   `type` varchar(30) NOT NULL,
-  `privilege_slug` varchar(50) NOT NULL,
-  PRIMARY KEY (`privilege_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4128 ;
+  `privilege_slug` varchar(50) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `olala3w_core_privilege`
@@ -948,15 +918,14 @@ INSERT INTO `olala3w_core_privilege` (`privilege_id`, `role_id`, `type`, `privil
 -- Table structure for table `olala3w_core_role`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_core_role` (
-  `role_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_core_role` (
+  `role_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `comment` text NOT NULL,
   `is_active` int(1) NOT NULL DEFAULT '1',
   `modified_time` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`role_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
+  `user_id` int(11) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `olala3w_core_role`
@@ -973,8 +942,8 @@ INSERT INTO `olala3w_core_role` (`role_id`, `name`, `comment`, `is_active`, `mod
 -- Table structure for table `olala3w_core_user`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_core_user` (
-  `user_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_core_user` (
+  `user_id` int(11) NOT NULL,
   `role_id` int(11) NOT NULL,
   `user_name` varchar(16) NOT NULL,
   `password` varchar(50) NOT NULL,
@@ -994,10 +963,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_core_user` (
   `click_vote` bigint(20) NOT NULL DEFAULT '1',
   `created_time` int(11) NOT NULL DEFAULT '0',
   `modified_time` int(11) NOT NULL DEFAULT '0',
-  `user_id_edit` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`user_id`),
-  UNIQUE KEY `user_name` (`user_name`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=28 ;
+  `user_id_edit` int(11) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `olala3w_core_user`
@@ -1005,7 +972,7 @@ CREATE TABLE IF NOT EXISTS `olala3w_core_user` (
 
 INSERT INTO `olala3w_core_user` (`user_id`, `role_id`, `user_name`, `password`, `full_name`, `gender`, `birthday`, `apply`, `email`, `phone`, `address`, `comment`, `is_show`, `sort`, `img`, `is_active`, `vote`, `click_vote`, `created_time`, `modified_time`, `user_id_edit`) VALUES
 (1, 1, 'admin', 'ca4c0178da5c3219c4150c77b16c935d', 'Administrator', 1, 1426784400, 'Quản trị website', 'huyto.qng@gmail.com', '0974779085', 'Hải Châu - Đà Nẵng', '', 1, 1, 'u_1436813680_61270a35653ef9fb0b260b56eac0b11e.jpg', 1, 1, 1, 1408159832, 1448612538, 1),
-(25, 1, 'dev', '35622d129658338262443a22a9c7bac5', 'Bi Xebuyt', 1, -25200, '', 'minh.nhat.dev@gmail.com', '01202503009', '', '', 1, 1, 'u_1437075987_ffbbbf570157f5aa239cf98d7caa354a.jpg', 1, 1, 1, 0, 1536717635, 25),
+(25, 1, 'dev', '35622d129658338262443a22a9c7bac5', 'Bi Xebuyt', 1, -25200, '', 'minh.nhat.dev@gmail.com', '01202503009', '', '', 1, 1, 'u_1538643202_bbf83f71e893b9c58625666170a789cd.jpg', 1, 1, 1, 0, 1538643202, 25),
 (27, 1, 'phuongthao', 'c66f13c8be9c2a021542ac9b1f901f03', 'Bui Phuong Thao', 2, 633805200, '', 'phuongthaoairticket@gmail.com', '0934888717', '', '', 1, 3, 'no', 1, 3, 1, 1457753509, 0, 1);
 
 -- --------------------------------------------------------
@@ -1014,22 +981,16 @@ INSERT INTO `olala3w_core_user` (`user_id`, `role_id`, `user_name`, `password`, 
 -- Table structure for table `olala3w_direction`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_direction` (
-  `direction_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_direction` (
+  `direction_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `sort` int(11) NOT NULL DEFAULT '1',
   `is_active` int(1) NOT NULL DEFAULT '1',
   `hot` int(1) NOT NULL DEFAULT '0',
   `created_time` int(11) NOT NULL DEFAULT '0',
   `modified_time` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`direction_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
---
--- Dumping data for table `olala3w_direction`
---
-
+  `user_id` int(11) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -1037,8 +998,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_direction` (
 -- Table structure for table `olala3w_gallery`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_gallery` (
-  `gallery_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_gallery` (
+  `gallery_id` int(11) NOT NULL,
   `gallery_menu_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `title` varchar(255) NOT NULL,
@@ -1054,9 +1015,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_gallery` (
   `views` bigint(20) NOT NULL DEFAULT '1',
   `created_time` int(11) NOT NULL DEFAULT '0',
   `modified_time` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`gallery_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=571 ;
+  `user_id` int(11) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `olala3w_gallery`
@@ -1073,8 +1033,8 @@ INSERT INTO `olala3w_gallery` (`gallery_id`, `gallery_menu_id`, `name`, `title`,
 -- Table structure for table `olala3w_gallery_menu`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_gallery_menu` (
-  `gallery_menu_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_gallery_menu` (
+  `gallery_menu_id` int(11) NOT NULL,
   `category_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `slug` varchar(255) NOT NULL DEFAULT 'not-found',
@@ -1089,9 +1049,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_gallery_menu` (
   `img` varchar(255) NOT NULL DEFAULT 'no',
   `created_time` int(11) NOT NULL DEFAULT '0',
   `modified_time` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`gallery_menu_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=68 ;
+  `user_id` int(11) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `olala3w_gallery_menu`
@@ -1106,8 +1065,8 @@ INSERT INTO `olala3w_gallery_menu` (`gallery_menu_id`, `category_id`, `name`, `s
 -- Table structure for table `olala3w_gift`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_gift` (
-  `gift_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_gift` (
+  `gift_id` int(11) NOT NULL,
   `gift_menu_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `title` varchar(255) NOT NULL,
@@ -1125,14 +1084,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_gift` (
   `views` bigint(20) NOT NULL DEFAULT '1',
   `created_time` int(11) NOT NULL DEFAULT '0',
   `modified_time` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`gift_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=132 ;
-
---
--- Dumping data for table `olala3w_gift`
---
-
+  `user_id` int(11) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -1140,8 +1093,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_gift` (
 -- Table structure for table `olala3w_gift_menu`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_gift_menu` (
-  `gift_menu_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_gift_menu` (
+  `gift_menu_id` int(11) NOT NULL,
   `category_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `slug` varchar(255) NOT NULL DEFAULT 'not-found',
@@ -1155,14 +1108,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_gift_menu` (
   `img` varchar(255) NOT NULL DEFAULT 'no',
   `created_time` int(11) NOT NULL DEFAULT '0',
   `modified_time` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`gift_menu_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=144 ;
-
---
--- Dumping data for table `olala3w_gift_menu`
---
-
+  `user_id` int(11) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -1170,22 +1117,16 @@ CREATE TABLE IF NOT EXISTS `olala3w_gift_menu` (
 -- Table structure for table `olala3w_location`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_location` (
-  `location_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_location` (
+  `location_id` int(11) NOT NULL,
   `location_menu_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `is_active` int(1) NOT NULL DEFAULT '1',
   `hot` int(1) NOT NULL DEFAULT '0',
   `created_time` int(11) NOT NULL DEFAULT '0',
   `modified_time` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`location_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
---
--- Dumping data for table `olala3w_location`
---
-
+  `user_id` int(11) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -1193,8 +1134,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_location` (
 -- Table structure for table `olala3w_location_menu`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_location_menu` (
-  `location_menu_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_location_menu` (
+  `location_menu_id` int(11) NOT NULL,
   `category_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `parent` int(11) NOT NULL DEFAULT '0',
@@ -1204,14 +1145,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_location_menu` (
   `img` varchar(255) DEFAULT 'no',
   `created_time` int(11) NOT NULL DEFAULT '0',
   `modified_time` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`location_menu_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
---
--- Dumping data for table `olala3w_location_menu`
---
-
+  `user_id` int(11) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -1219,7 +1154,7 @@ CREATE TABLE IF NOT EXISTS `olala3w_location_menu` (
 -- Table structure for table `olala3w_online`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_online` (
+CREATE TABLE `olala3w_online` (
   `ip` varchar(255) NOT NULL,
   `created_time` int(11) NOT NULL,
   `site` varchar(255) NOT NULL,
@@ -1232,7 +1167,7 @@ CREATE TABLE IF NOT EXISTS `olala3w_online` (
 --
 
 INSERT INTO `olala3w_online` (`ip`, `created_time`, `site`, `agent`, `user_id`) VALUES
-('127.0.0.1', 1538413273, 'url=fonts/MyriadPro-Semibold.ttf', 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36', 0);
+('::1', 1538646921, 'url=fonts/opensans/MTP_ySUJH_bn48VBG8sNSv8zf_FOSsgRmwsS7Aa9k2w.woff2', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36', 0);
 
 -- --------------------------------------------------------
 
@@ -1240,7 +1175,7 @@ INSERT INTO `olala3w_online` (`ip`, `created_time`, `site`, `agent`, `user_id`) 
 -- Table structure for table `olala3w_online_daily`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_online_daily` (
+CREATE TABLE `olala3w_online_daily` (
   `date` date NOT NULL,
   `count` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
@@ -1647,7 +1582,8 @@ INSERT INTO `olala3w_online_daily` (`date`, `count`) VALUES
 ('2018-09-23', 2),
 ('2018-09-25', 2),
 ('2018-09-29', 1),
-('2018-10-01', 1);
+('2018-10-01', 1),
+('2018-10-04', 1);
 
 -- --------------------------------------------------------
 
@@ -1655,8 +1591,8 @@ INSERT INTO `olala3w_online_daily` (`date`, `count`) VALUES
 -- Table structure for table `olala3w_order`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_order` (
-  `order_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_order` (
+  `order_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `phone` varchar(20) NOT NULL,
   `email` varchar(255) NOT NULL,
@@ -1665,18 +1601,17 @@ CREATE TABLE IF NOT EXISTS `olala3w_order` (
   `ip` varchar(255) NOT NULL,
   `icon` varchar(255) NOT NULL DEFAULT 'fa-shopping-cart',
   `created_time` int(11) NOT NULL DEFAULT '0',
-  `modified_time` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`order_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+  `modified_time` int(11) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `olala3w_order`
 --
 
 INSERT INTO `olala3w_order` (`order_id`, `name`, `phone`, `email`, `content`, `is_active`, `ip`, `icon`, `created_time`, `modified_time`) VALUES
-(1, 'Thái Huy Tô', '+84974779085', 'killlllme@yahoo.com', '<div marginwidth="0" marginheight="0" style="font-family:''Open Sans'',Arial,serif;"><table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="table-layout:fixed;"><tbody><tr><td width="100%" valign="top" bgcolor="#f5f5f5" style="border-top:3px solid #579902;padding:0;"><table border="0" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto;width:100%;"><tbody><tr><td bgcolor="white" style="padding:10px 0; text-align: center;"><a href="http://vodatours.com.vn" target="_blank"><img src="http://vodatours.com.vn/uploads/images/site/logo.png" style="max-height:70px;max-width:90%;" height="70" alt="Vodatours | Thương mại và dịch vụ du lịch" border="0"></a></td></tr></tbody></table><div style="min-height:35px">&nbsp;</div><table border="0" cellpadding="0" cellspacing="0" align="center" style="min-width:290px;margin:0 auto;font-size:13px;color:#666666;font-weight:normal;text-align:left;font-family:''Open Sans'',Arial,serif;line-height:18px;" width="620"><tbody><tr><td style="border-left:6px solid #fb651b;font-size:13px;color:#666666;font-weight:normal;text-align:left;font-family:''Open Sans'',Arial,serif;line-height:18px;vertical-align:top;padding:15px 8px 25px 20px;" bgcolor="#fdfdfd"><p style="margin: 10px 0">Chào <b> Thái Huy Tô</b>,</p><p style="margin: 10px 0">Xin chân thành cảm ơn Quý khách đã quan tâm và sử dụng dịch vụ của chúng tôi!<br>Yêu cầu của Quý khách đã gửi thành công. Chúng tôi sẽ phản hồi lại trong vòng 24h tới.</p><p style="margin: 10px 0"><b style="text-decoration:underline;">THÔNG TIN ĐẶT TOUR CỦA QUÝ KHÁCH:</b><br/><label style="font-weight:600;padding-left:12px;">Họ và tên: </label> Thái Huy Tô<br/><label style="font-weight:600;padding-left:12px;">Quốc tịch: </label> Vietnam<br/><label style="font-weight:600;padding-left:12px;">Địa chỉ: </label> 122/42/23, Phan Thanh, Thanh Khê, Đà Nẵng<br/><label style="font-weight:600;padding-left:12px;">Email: </label> killlllme@yahoo.com<br/><label style="font-weight:600;padding-left:12px;">Điện thoại: </label> +84974779085<br/><label style="font-weight:600;padding-left:12px;">Tiêu chuẩn: </label> 3 sao<br/><label style="font-weight:600;padding-left:12px;">Loại phòng: </label> Phòng đôi 2 giường<br/><label style="font-weight:600;padding-left:12px;">Ngày đi: </label> 11/03/2016<br/><label style="font-weight:600;padding-left:12px;">Ngày về: </label> 17/03/2016<br/><label style="font-weight:600;padding-left:12px;">Người lớn: </label> 3<br/><label style="font-weight:600;padding-left:12px;">Trẻ em: </label> 1<br/><label style="font-weight:600;padding-left:12px;">Yêu cầu: </label> <br/><label style="font-size:15px;font-weight:600;padding-left:12px;text-transform:uppercase;"><a href="http://vodatours.com.vn/phong-khach-san/mien-trung/du-lich-hanh-huong-mien-trung-3-ngay-2-dem-11.html" title="Du lịch hành hương miền Trung 3 ngày 2 đêm">Du lịch hành hương miền Trung 3 ngày 2 đêm</a></label><br><label style="font-weight:600;padding-left:12px;">Hình ảnh: </label><br><label style="padding-left:12px;"><a href="http://vodatours.com.vn/phong-khach-san/mien-trung/du-lich-hanh-huong-mien-trung-3-ngay-2-dem-11.html" title="Du lịch hành hương miền Trung 3 ngày 2 đêm"><img width="200" src="http://vodatours.com.vn/uploads/tour/tour-ql5ow73n5rot77m-3-tour-du-lich-hanh-huong-mien-trung-3-ngay-2-dem.jpg" alt="Du lịch hành hương miền Trung 3 ngày 2 đêm" /></a></label><br><label class="sale" style="font-size:15px;font-weight:800;padding-left:12px;color:#fb651b;">Sale 10%</label><br><label style="font-weight:600;padding-left:12px;">Lịch trình: </label> 3 ngày 2 đêm<br><label style="font-weight:600;padding-left:12px;">Ngày khởi hành: </label> Khởi hành hàng ngày<br><label style="font-weight:600;padding-left:12px;">Phương tiện: </label> Xe ôtô<br><label style="font-weight:600;padding-left:12px;">Loại hình du lịch: </label> Du lịch văn hóa, Du lịch nghỉ dưỡng<br><label style="font-weight:600;padding-left:12px;">Điểm đến:: </label> Đà Nẵng, Quảng Trị, Huế<br><label style="font-weight:600;padding-left:12px;">Giá tour: </label> 1.690.000 (đ/nngười)<br><label style="font-weight:600;padding-left:12px;">IP truy cập: </label> 116.99.64.109<br/><label style="font-weight:600;padding-left:12px;">Ngày đặt: </label> 11/03/2016 18:09<br/></p><p style="margin: 10px 0">Đây là hộp thư tự động. Sau thời gian trên nếu quý khách chưa nhân được phản hồi của nhân viên <a href="http://vodatours.com.vn" target="_blank">VODATOURS.COM.VN</a>, rất có thể đã gặp sự cố nhỏ nào đó vì vậy Quý khách có thể liên hệ trực tiếp chúng tôi để nhận được những thông tin nhanh nhất.</p><p style="margin: 10px 0">Chân thành cảm ơn!</p></td></tr></tbody></table><div style="min-height:35px">&nbsp;</div><table width="100%" border="0" cellpadding="0" cellspacing="0" align="center"><tbody><tr><td bgcolor="#e1e1e1" style="padding:15px 10px 25px"><table border="0" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto;min-width:290px;" width="620"><tbody><tr><td><table width="75%" cellpadding="0" cellspacing="0" border="0" align="left"><tbody><tr><td valign="top" style="font-size:12px;color:#5e5e5e;font-family:''Open Sans'',Arial,serif;line-height:15px;"><b>VODATOUR Co., Ltd.</b><br>Số 83 Nguyễn Thị Minh Khai, Tp. Đà Nẵng<br>Hotline: (+84) 944.255.007, Tel: (+84) 511 3.823.660 & Fax: (+84) 511 3.822.999<br>Email: booking@vodatours.com.vn, Website: <a href="http://vodatours.com.vn" target="_blank">www.vodatours.com.vn</a></td></tr></tbody></table><table width="20%" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td style="font-size:13px;color:#5e5e5e;font-family:''Open Sans'',Arial,serif;line-height:1;vertical-align:top;text-align:right;font-style:italic;"><span>Follow us on</span><br><a href="https://www.facebook.com" target="_blank"><img src="https://ci5.googleusercontent.com/proxy/PMSfAkbhhMLEe-tDCLFilReG-hlq_DWsTblTQ2qp8Dsq9KFW1UyFcKTr_uwU3EqyR8AhiFIooeExoAw9Oe3G5c6hvIEoOnU=s0-d-e1-ft#https://www.livecoding.tv/static/img/email/fb.png" width="27" height="27" alt="Facebook logo" title="Facebook" border="0" style="padding:3px;"></a>&nbsp;<a href="https://twitter.com" target="_blank"><img src="https://ci3.googleusercontent.com/proxy/GNHxgrYKL99Apyic0XnGYk6IqVZAc-wFuhgCDxzBYMr80NGggmI1nRORIBVRIkPkJHbQHGGMrTFtbzTDoxk5dc0i_H0HOc0=s0-d-e1-ft#https://www.livecoding.tv/static/img/email/tw.png" width="27" height="27" alt="Twitter logo" title="Twitter" border="0" style="padding:3px;"></a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></div>', 0, '116.99.64.109', 'fa-briefcase', 1457694563, 1458900082),
-(2, 'Thái Huy Tô', '+84974779085', 'killlllme@yahoo.com', '<div marginwidth="0" marginheight="0" style="font-family:''Open Sans'',Arial,serif;"><table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="table-layout:fixed;"><tbody><tr><td width="100%" valign="top" bgcolor="#f5f5f5" style="border-top:3px solid #579902;padding:0;"><table border="0" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto;width:100%;"><tbody><tr><td bgcolor="white" style="padding:10px 0; text-align: center;"><a href="http://vodatours.com.vn" target="_blank"><img src="http://vodatours.com.vn/uploads/images/site/logo.png" style="max-height:70px;max-width:90%;" height="70" alt="Vodatours | Thương mại và dịch vụ du lịch" border="0"></a></td></tr></tbody></table><div style="min-height:35px">&nbsp;</div><table border="0" cellpadding="0" cellspacing="0" align="center" style="min-width:290px;margin:0 auto;font-size:13px;color:#666666;font-weight:normal;text-align:left;font-family:''Open Sans'',Arial,serif;line-height:18px;" width="620"><tbody><tr><td style="border-left:6px solid #fb651b;font-size:13px;color:#666666;font-weight:normal;text-align:left;font-family:''Open Sans'',Arial,serif;line-height:18px;vertical-align:top;padding:15px 8px 25px 20px;" bgcolor="#fdfdfd"><p style="margin: 10px 0">Chào <b> Thái Huy Tô</b>,</p><p style="margin: 10px 0">Xin chân thành cảm ơn Quý khách đã quan tâm và sử dụng dịch vụ của chúng tôi!<br>Yêu cầu của Quý khách đã gửi thành công. Chúng tôi sẽ phản hồi lại trong vòng 24h tới.</p><p style="margin: 10px 0"><b style="text-decoration:underline;">THÔNG TIN ĐẶT XE CỦA QUÝ KHÁCH:</b><br/><label style="font-weight:600;padding-left:12px;">Họ và tên: </label> Thái Huy Tô<br/><label style="font-weight:600;padding-left:12px;">Quốc tịch: </label> Vietnam<br/><label style="font-weight:600;padding-left:12px;">Địa chỉ: </label> 122/42/23, Phan Thanh, Thanh Khê, Đà Nẵng<br/><label style="font-weight:600;padding-left:12px;">Email: </label> killlllme@yahoo.com<br/><label style="font-weight:600;padding-left:12px;">Điện thoại: </label> +84974779085<br/><label style="font-weight:600;padding-left:12px;">Mục đích: </label> Thuê xe theo tháng<br/><label style="font-weight:600;padding-left:12px;">Ngày nhận: </label> 11/03/2016<br/><label style="font-weight:600;padding-left:12px;">Ngày trả: </label> 18/03/2016<br/><label style="font-weight:600;padding-left:12px;">Nơi đi: </label> Đà Nẵng<br/><label style="font-weight:600;padding-left:12px;">Nơi đến: </label> Hồ Chí Minh (TP<br/><label style="font-weight:600;padding-left:12px;">Chiều: </label> Khứ hồi<br/><label style="font-weight:600;padding-left:12px;">Yêu cầu: </label> Kiểm thử.<br/><label style="font-size:15px;font-weight:600;padding-left:12px;text-transform:uppercase;"><a href="http://vodatours.com.vn/xe-du-lich/thue-xe-du-lich/xe-audi-a7-sportback-se-executive-292.html" title="Xe Audi A7 Sportback SE Executive">Xe Audi A7 Sportback SE Executive</a></label><br><label style="font-weight:600;padding-left:12px;">Hình ảnh: </label><br><label style="padding-left:12px;"><a href="http://vodatours.com.vn/xe-du-lich/thue-xe-du-lich/xe-audi-a7-sportback-se-executive-292.html" title="Xe Audi A7 Sportback SE Executive"><img width="200" src="http://vodatours.com.vn/uploads/car/car-4u5qhzum1z9842r-292-audi-a7-sportback-se-executive.jpg" alt="Thuê xe du lịch 4 chỗ ngồi Audi A7 Sportback SE Executive" /></a></label><br><label class="sale" style="font-size:15px;font-weight:800;padding-left:12px;color:#fb651b;">Sale 10%</label><br><label style="font-weight:600;padding-left:12px;">Hiệu: </label> Audi<br><label style="font-weight:600;padding-left:12px;">Đời xe: </label> 2015<br><label style="font-weight:600;padding-left:12px;">Kiểu xe: </label> Xe 4 chỗ<br><label style="font-weight:600;padding-left:12px;">Màu xe: </label> Bạc - Đen - Trắng<br><label style="font-weight:600;padding-left:12px;">Giá thuê: </label> 1.800.000 (đ/ngày)<br><label style="font-weight:600;padding-left:12px;">IP truy cập: </label> 116.99.64.109<br/><label style="font-weight:600;padding-left:12px;">Ngày đặt: </label> 11/03/2016 18:14<br/></p><p style="margin: 10px 0">Đây là hộp thư tự động. Sau thời gian trên nếu quý khách chưa nhân được phản hồi của nhân viên <a href="http://vodatours.com.vn" target="_blank">VODATOURS.COM.VN</a>, rất có thể đã gặp sự cố nhỏ nào đó vì vậy Quý khách có thể liên hệ trực tiếp chúng tôi để nhận được những thông tin nhanh nhất.</p><p style="margin: 10px 0">Chân thành cảm ơn!</p></td></tr></tbody></table><div style="min-height:35px">&nbsp;</div><table width="100%" border="0" cellpadding="0" cellspacing="0" align="center"><tbody><tr><td bgcolor="#e1e1e1" style="padding:15px 10px 25px"><table border="0" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto;min-width:290px;" width="620"><tbody><tr><td><table width="75%" cellpadding="0" cellspacing="0" border="0" align="left"><tbody><tr><td valign="top" style="font-size:12px;color:#5e5e5e;font-family:''Open Sans'',Arial,serif;line-height:15px;"><b>VODATOUR Co., Ltd.</b><br>Số 83 Nguyễn Thị Minh Khai, Tp. Đà Nẵng<br>Hotline: (+84) 944.255.007, Tel: (+84) 511 3.823.660, Fax: (+84) 511 3.822.999<br>Email: booking@vodatours.com.vn, Website: <a href="http://vodatours.com.vn" target="_blank">www.vodatours.com.vn</a></td></tr></tbody></table><table width="20%" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td style="font-size:13px;color:#5e5e5e;font-family:''Open Sans'',Arial,serif;line-height:1;vertical-align:top;text-align:right;font-style:italic;"><span>Follow us on</span><br><a href="https://www.facebook.com" target="_blank"><img src="https://ci5.googleusercontent.com/proxy/PMSfAkbhhMLEe-tDCLFilReG-hlq_DWsTblTQ2qp8Dsq9KFW1UyFcKTr_uwU3EqyR8AhiFIooeExoAw9Oe3G5c6hvIEoOnU=s0-d-e1-ft#https://www.livecoding.tv/static/img/email/fb.png" width="27" height="27" alt="Facebook logo" title="Facebook" border="0" style="padding:3px;"></a>&nbsp;<a href="https://twitter.com" target="_blank"><img src="https://ci3.googleusercontent.com/proxy/GNHxgrYKL99Apyic0XnGYk6IqVZAc-wFuhgCDxzBYMr80NGggmI1nRORIBVRIkPkJHbQHGGMrTFtbzTDoxk5dc0i_H0HOc0=s0-d-e1-ft#https://www.livecoding.tv/static/img/email/tw.png" width="27" height="27" alt="Twitter logo" title="Twitter" border="0" style="padding:3px;"></a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></div>', 0, '116.99.64.109', 'fa-car', 1457694844, 1458900076),
-(3, 'Thái Huy Tô', '+84974779085', 'killlllme@yahoo.com', '<div marginwidth="0" marginheight="0" style="font-family:''Open Sans'',Arial,serif;"><table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="table-layout:fixed;"><tbody><tr><td width="100%" valign="top" bgcolor="#f5f5f5" style="border-top:3px solid #579902;padding:0;"><table border="0" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto;width:100%;"><tbody><tr><td bgcolor="white" style="padding:10px 0; text-align: center;"><a href="http://vodatours.com.vn" target="_blank"><img src="http://vodatours.com.vn/uploads/images/site/logo.png" style="max-height:70px;max-width:90%;" height="70" alt="Vodatours | Thương mại và dịch vụ du lịch" border="0"></a></td></tr></tbody></table><div style="min-height:35px">&nbsp;</div><table border="0" cellpadding="0" cellspacing="0" align="center" style="min-width:290px;margin:0 auto;font-size:13px;color:#666666;font-weight:normal;text-align:left;font-family:''Open Sans'',Arial,serif;line-height:18px;" width="620"><tbody><tr><td style="border-left:6px solid #fb651b;font-size:13px;color:#666666;font-weight:normal;text-align:left;font-family:''Open Sans'',Arial,serif;line-height:18px;vertical-align:top;padding:15px 8px 25px 20px;" bgcolor="#fdfdfd"><p style="margin: 10px 0">Chào <b> Thái Huy Tô</b>,</p><p style="margin: 10px 0">Xin chân thành cảm ơn Quý khách đã quan tâm và sử dụng dịch vụ của chúng tôi!<br>Yêu cầu của Quý khách đã gửi thành công. Chúng tôi sẽ phản hồi lại trong vòng 24h tới.</p><p style="margin: 10px 0"><b style="text-decoration:underline;">THÔNG TIN ĐẶT PHÒNG KHÁCH SẠN CỦA QUÝ KHÁCH:</b><br/><label style="font-weight:600;padding-left:12px;">Họ và tên: </label> Thái Huy Tô<br/><label style="font-weight:600;padding-left:12px;">Quốc tịch: </label> Vietnam<br/><label style="font-weight:600;padding-left:12px;">Địa chỉ: </label> 122/42/23, Phan Thanh, Thanh Khê, Đà Nẵng<br/><label style="font-weight:600;padding-left:12px;">Email: </label> killlllme@yahoo.com<br/><label style="font-weight:600;padding-left:12px;">Điện thoại: </label> +84974779085<br/><label style="font-weight:600;padding-left:12px;">Tiêu chuẩn: </label> 5 sao<br/><label style="font-weight:600;padding-left:12px;">Loại phòng: </label> Phòng đôi 2 giường<br/><label style="font-weight:600;padding-left:12px;">Ngày nhận phòng: </label> 11/03/2016<br/><label style="font-weight:600;padding-left:12px;">Ngày trả phòng: </label> 18/03/2016<br/><label style="font-weight:600;padding-left:12px;">Người lớn: </label> 3<br/><label style="font-weight:600;padding-left:12px;">Trẻ em: </label> 1<br/><label style="font-weight:600;padding-left:12px;">Yêu cầu: </label> Kiểm thử.<br/><label style="font-size:15px;font-weight:600;padding-left:12px;text-transform:uppercase;"><a href="http://vodatours.com.vn/phong-khach-san/nam-sao/khach-san-a-la-carte-da-nang-beach-725.html" title="Khách Sạn A La Carte Đà Nẵng Beach">Khách Sạn A La Carte Đà Nẵng Beach</a></label><br><label style="font-weight:600;padding-left:12px;">Hình ảnh: </label><br><label style="padding-left:12px;"><a href="http://vodatours.com.vn/phong-khach-san/nam-sao/khach-san-a-la-carte-da-nang-beach-725.html" title="Khách Sạn A La Carte Đà Nẵng Beach"><img width="200" src="http://vodatours.com.vn/uploads/article/hotel-xmz86o6diao0w3i-725-khach-san-a-la-carte-da-nang-beach.jpg" alt="Khách Sạn A La Carte Đà Nẵng Beach" /></a></label><br><label style="font-weight:600;padding-left:12px;">IP truy cập: </label> 116.99.64.109<br/><label style="font-weight:600;padding-left:12px;">Ngày đặt: </label> 11/03/2016 18:15<br/></p><p style="margin: 10px 0">Đây là hộp thư tự động. Sau thời gian trên nếu quý khách chưa nhân được phản hồi của nhân viên <a href="http://vodatours.com.vn" target="_blank">VODATOURS.COM.VN</a>, rất có thể đã gặp sự cố nhỏ nào đó vì vậy Quý khách có thể liên hệ trực tiếp chúng tôi để nhận được những thông tin nhanh nhất.</p><p style="margin: 10px 0">Chân thành cảm ơn!</p></td></tr></tbody></table><div style="min-height:35px">&nbsp;</div><table width="100%" border="0" cellpadding="0" cellspacing="0" align="center"><tbody><tr><td bgcolor="#e1e1e1" style="padding:15px 10px 25px"><table border="0" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto;min-width:290px;" width="620"><tbody><tr><td><table width="75%" cellpadding="0" cellspacing="0" border="0" align="left"><tbody><tr><td valign="top" style="font-size:12px;color:#5e5e5e;font-family:''Open Sans'',Arial,serif;line-height:15px;"><b>VODATOUR Co., Ltd.</b><br>Số 83 Nguyễn Thị Minh Khai, Tp. Đà Nẵng<br>Hotline: (+84) 944.255.007, Tel: (+84) 511 3.823.660, Fax: (+84) 511 3.822.999<br>Email: booking@vodatours.com.vn, Website: <a href="http://vodatours.com.vn" target="_blank">www.vodatours.com.vn</a></td></tr></tbody></table><table width="20%" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td style="font-size:13px;color:#5e5e5e;font-family:''Open Sans'',Arial,serif;line-height:1;vertical-align:top;text-align:right;font-style:italic;"><span>Follow us on</span><br><a href="https://www.facebook.com" target="_blank"><img src="https://ci5.googleusercontent.com/proxy/PMSfAkbhhMLEe-tDCLFilReG-hlq_DWsTblTQ2qp8Dsq9KFW1UyFcKTr_uwU3EqyR8AhiFIooeExoAw9Oe3G5c6hvIEoOnU=s0-d-e1-ft#https://www.livecoding.tv/static/img/email/fb.png" width="27" height="27" alt="Facebook logo" title="Facebook" border="0" style="padding:3px;"></a>&nbsp;<a href="https://twitter.com" target="_blank"><img src="https://ci3.googleusercontent.com/proxy/GNHxgrYKL99Apyic0XnGYk6IqVZAc-wFuhgCDxzBYMr80NGggmI1nRORIBVRIkPkJHbQHGGMrTFtbzTDoxk5dc0i_H0HOc0=s0-d-e1-ft#https://www.livecoding.tv/static/img/email/tw.png" width="27" height="27" alt="Twitter logo" title="Twitter" border="0" style="padding:3px;"></a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></div>', 0, '116.99.64.109', 'fa-building', 1457694929, 1458900072);
+(1, 'Thái Huy Tô', '+84974779085', 'killlllme@yahoo.com', '<div marginwidth=\"0\" marginheight=\"0\" style=\"font-family:\'Open Sans\',Arial,serif;\"><table width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" style=\"table-layout:fixed;\"><tbody><tr><td width=\"100%\" valign=\"top\" bgcolor=\"#f5f5f5\" style=\"border-top:3px solid #579902;padding:0;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" style=\"margin:0 auto;width:100%;\"><tbody><tr><td bgcolor=\"white\" style=\"padding:10px 0; text-align: center;\"><a href=\"http://vodatours.com.vn\" target=\"_blank\"><img src=\"http://vodatours.com.vn/uploads/images/site/logo.png\" style=\"max-height:70px;max-width:90%;\" height=\"70\" alt=\"Vodatours | Thương mại và dịch vụ du lịch\" border=\"0\"></a></td></tr></tbody></table><div style=\"min-height:35px\">&nbsp;</div><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" style=\"min-width:290px;margin:0 auto;font-size:13px;color:#666666;font-weight:normal;text-align:left;font-family:\'Open Sans\',Arial,serif;line-height:18px;\" width=\"620\"><tbody><tr><td style=\"border-left:6px solid #fb651b;font-size:13px;color:#666666;font-weight:normal;text-align:left;font-family:\'Open Sans\',Arial,serif;line-height:18px;vertical-align:top;padding:15px 8px 25px 20px;\" bgcolor=\"#fdfdfd\"><p style=\"margin: 10px 0\">Chào <b> Thái Huy Tô</b>,</p><p style=\"margin: 10px 0\">Xin chân thành cảm ơn Quý khách đã quan tâm và sử dụng dịch vụ của chúng tôi!<br>Yêu cầu của Quý khách đã gửi thành công. Chúng tôi sẽ phản hồi lại trong vòng 24h tới.</p><p style=\"margin: 10px 0\"><b style=\"text-decoration:underline;\">THÔNG TIN ĐẶT TOUR CỦA QUÝ KHÁCH:</b><br/><label style=\"font-weight:600;padding-left:12px;\">Họ và tên: </label> Thái Huy Tô<br/><label style=\"font-weight:600;padding-left:12px;\">Quốc tịch: </label> Vietnam<br/><label style=\"font-weight:600;padding-left:12px;\">Địa chỉ: </label> 122/42/23, Phan Thanh, Thanh Khê, Đà Nẵng<br/><label style=\"font-weight:600;padding-left:12px;\">Email: </label> killlllme@yahoo.com<br/><label style=\"font-weight:600;padding-left:12px;\">Điện thoại: </label> +84974779085<br/><label style=\"font-weight:600;padding-left:12px;\">Tiêu chuẩn: </label> 3 sao<br/><label style=\"font-weight:600;padding-left:12px;\">Loại phòng: </label> Phòng đôi 2 giường<br/><label style=\"font-weight:600;padding-left:12px;\">Ngày đi: </label> 11/03/2016<br/><label style=\"font-weight:600;padding-left:12px;\">Ngày về: </label> 17/03/2016<br/><label style=\"font-weight:600;padding-left:12px;\">Người lớn: </label> 3<br/><label style=\"font-weight:600;padding-left:12px;\">Trẻ em: </label> 1<br/><label style=\"font-weight:600;padding-left:12px;\">Yêu cầu: </label> <br/><label style=\"font-size:15px;font-weight:600;padding-left:12px;text-transform:uppercase;\"><a href=\"http://vodatours.com.vn/phong-khach-san/mien-trung/du-lich-hanh-huong-mien-trung-3-ngay-2-dem-11.html\" title=\"Du lịch hành hương miền Trung 3 ngày 2 đêm\">Du lịch hành hương miền Trung 3 ngày 2 đêm</a></label><br><label style=\"font-weight:600;padding-left:12px;\">Hình ảnh: </label><br><label style=\"padding-left:12px;\"><a href=\"http://vodatours.com.vn/phong-khach-san/mien-trung/du-lich-hanh-huong-mien-trung-3-ngay-2-dem-11.html\" title=\"Du lịch hành hương miền Trung 3 ngày 2 đêm\"><img width=\"200\" src=\"http://vodatours.com.vn/uploads/tour/tour-ql5ow73n5rot77m-3-tour-du-lich-hanh-huong-mien-trung-3-ngay-2-dem.jpg\" alt=\"Du lịch hành hương miền Trung 3 ngày 2 đêm\" /></a></label><br><label class=\"sale\" style=\"font-size:15px;font-weight:800;padding-left:12px;color:#fb651b;\">Sale 10%</label><br><label style=\"font-weight:600;padding-left:12px;\">Lịch trình: </label> 3 ngày 2 đêm<br><label style=\"font-weight:600;padding-left:12px;\">Ngày khởi hành: </label> Khởi hành hàng ngày<br><label style=\"font-weight:600;padding-left:12px;\">Phương tiện: </label> Xe ôtô<br><label style=\"font-weight:600;padding-left:12px;\">Loại hình du lịch: </label> Du lịch văn hóa, Du lịch nghỉ dưỡng<br><label style=\"font-weight:600;padding-left:12px;\">Điểm đến:: </label> Đà Nẵng, Quảng Trị, Huế<br><label style=\"font-weight:600;padding-left:12px;\">Giá tour: </label> 1.690.000 (đ/nngười)<br><label style=\"font-weight:600;padding-left:12px;\">IP truy cập: </label> 116.99.64.109<br/><label style=\"font-weight:600;padding-left:12px;\">Ngày đặt: </label> 11/03/2016 18:09<br/></p><p style=\"margin: 10px 0\">Đây là hộp thư tự động. Sau thời gian trên nếu quý khách chưa nhân được phản hồi của nhân viên <a href=\"http://vodatours.com.vn\" target=\"_blank\">VODATOURS.COM.VN</a>, rất có thể đã gặp sự cố nhỏ nào đó vì vậy Quý khách có thể liên hệ trực tiếp chúng tôi để nhận được những thông tin nhanh nhất.</p><p style=\"margin: 10px 0\">Chân thành cảm ơn!</p></td></tr></tbody></table><div style=\"min-height:35px\">&nbsp;</div><table width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\"><tbody><tr><td bgcolor=\"#e1e1e1\" style=\"padding:15px 10px 25px\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" style=\"margin:0 auto;min-width:290px;\" width=\"620\"><tbody><tr><td><table width=\"75%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" align=\"left\"><tbody><tr><td valign=\"top\" style=\"font-size:12px;color:#5e5e5e;font-family:\'Open Sans\',Arial,serif;line-height:15px;\"><b>VODATOUR Co., Ltd.</b><br>Số 83 Nguyễn Thị Minh Khai, Tp. Đà Nẵng<br>Hotline: (+84) 944.255.007, Tel: (+84) 511 3.823.660 & Fax: (+84) 511 3.822.999<br>Email: booking@vodatours.com.vn, Website: <a href=\"http://vodatours.com.vn\" target=\"_blank\">www.vodatours.com.vn</a></td></tr></tbody></table><table width=\"20%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><tbody><tr><td style=\"font-size:13px;color:#5e5e5e;font-family:\'Open Sans\',Arial,serif;line-height:1;vertical-align:top;text-align:right;font-style:italic;\"><span>Follow us on</span><br><a href=\"https://www.facebook.com\" target=\"_blank\"><img src=\"https://ci5.googleusercontent.com/proxy/PMSfAkbhhMLEe-tDCLFilReG-hlq_DWsTblTQ2qp8Dsq9KFW1UyFcKTr_uwU3EqyR8AhiFIooeExoAw9Oe3G5c6hvIEoOnU=s0-d-e1-ft#https://www.livecoding.tv/static/img/email/fb.png\" width=\"27\" height=\"27\" alt=\"Facebook logo\" title=\"Facebook\" border=\"0\" style=\"padding:3px;\"></a>&nbsp;<a href=\"https://twitter.com\" target=\"_blank\"><img src=\"https://ci3.googleusercontent.com/proxy/GNHxgrYKL99Apyic0XnGYk6IqVZAc-wFuhgCDxzBYMr80NGggmI1nRORIBVRIkPkJHbQHGGMrTFtbzTDoxk5dc0i_H0HOc0=s0-d-e1-ft#https://www.livecoding.tv/static/img/email/tw.png\" width=\"27\" height=\"27\" alt=\"Twitter logo\" title=\"Twitter\" border=\"0\" style=\"padding:3px;\"></a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></div>', 0, '116.99.64.109', 'fa-briefcase', 1457694563, 1458900082),
+(2, 'Thái Huy Tô', '+84974779085', 'killlllme@yahoo.com', '<div marginwidth=\"0\" marginheight=\"0\" style=\"font-family:\'Open Sans\',Arial,serif;\"><table width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" style=\"table-layout:fixed;\"><tbody><tr><td width=\"100%\" valign=\"top\" bgcolor=\"#f5f5f5\" style=\"border-top:3px solid #579902;padding:0;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" style=\"margin:0 auto;width:100%;\"><tbody><tr><td bgcolor=\"white\" style=\"padding:10px 0; text-align: center;\"><a href=\"http://vodatours.com.vn\" target=\"_blank\"><img src=\"http://vodatours.com.vn/uploads/images/site/logo.png\" style=\"max-height:70px;max-width:90%;\" height=\"70\" alt=\"Vodatours | Thương mại và dịch vụ du lịch\" border=\"0\"></a></td></tr></tbody></table><div style=\"min-height:35px\">&nbsp;</div><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" style=\"min-width:290px;margin:0 auto;font-size:13px;color:#666666;font-weight:normal;text-align:left;font-family:\'Open Sans\',Arial,serif;line-height:18px;\" width=\"620\"><tbody><tr><td style=\"border-left:6px solid #fb651b;font-size:13px;color:#666666;font-weight:normal;text-align:left;font-family:\'Open Sans\',Arial,serif;line-height:18px;vertical-align:top;padding:15px 8px 25px 20px;\" bgcolor=\"#fdfdfd\"><p style=\"margin: 10px 0\">Chào <b> Thái Huy Tô</b>,</p><p style=\"margin: 10px 0\">Xin chân thành cảm ơn Quý khách đã quan tâm và sử dụng dịch vụ của chúng tôi!<br>Yêu cầu của Quý khách đã gửi thành công. Chúng tôi sẽ phản hồi lại trong vòng 24h tới.</p><p style=\"margin: 10px 0\"><b style=\"text-decoration:underline;\">THÔNG TIN ĐẶT XE CỦA QUÝ KHÁCH:</b><br/><label style=\"font-weight:600;padding-left:12px;\">Họ và tên: </label> Thái Huy Tô<br/><label style=\"font-weight:600;padding-left:12px;\">Quốc tịch: </label> Vietnam<br/><label style=\"font-weight:600;padding-left:12px;\">Địa chỉ: </label> 122/42/23, Phan Thanh, Thanh Khê, Đà Nẵng<br/><label style=\"font-weight:600;padding-left:12px;\">Email: </label> killlllme@yahoo.com<br/><label style=\"font-weight:600;padding-left:12px;\">Điện thoại: </label> +84974779085<br/><label style=\"font-weight:600;padding-left:12px;\">Mục đích: </label> Thuê xe theo tháng<br/><label style=\"font-weight:600;padding-left:12px;\">Ngày nhận: </label> 11/03/2016<br/><label style=\"font-weight:600;padding-left:12px;\">Ngày trả: </label> 18/03/2016<br/><label style=\"font-weight:600;padding-left:12px;\">Nơi đi: </label> Đà Nẵng<br/><label style=\"font-weight:600;padding-left:12px;\">Nơi đến: </label> Hồ Chí Minh (TP<br/><label style=\"font-weight:600;padding-left:12px;\">Chiều: </label> Khứ hồi<br/><label style=\"font-weight:600;padding-left:12px;\">Yêu cầu: </label> Kiểm thử.<br/><label style=\"font-size:15px;font-weight:600;padding-left:12px;text-transform:uppercase;\"><a href=\"http://vodatours.com.vn/xe-du-lich/thue-xe-du-lich/xe-audi-a7-sportback-se-executive-292.html\" title=\"Xe Audi A7 Sportback SE Executive\">Xe Audi A7 Sportback SE Executive</a></label><br><label style=\"font-weight:600;padding-left:12px;\">Hình ảnh: </label><br><label style=\"padding-left:12px;\"><a href=\"http://vodatours.com.vn/xe-du-lich/thue-xe-du-lich/xe-audi-a7-sportback-se-executive-292.html\" title=\"Xe Audi A7 Sportback SE Executive\"><img width=\"200\" src=\"http://vodatours.com.vn/uploads/car/car-4u5qhzum1z9842r-292-audi-a7-sportback-se-executive.jpg\" alt=\"Thuê xe du lịch 4 chỗ ngồi Audi A7 Sportback SE Executive\" /></a></label><br><label class=\"sale\" style=\"font-size:15px;font-weight:800;padding-left:12px;color:#fb651b;\">Sale 10%</label><br><label style=\"font-weight:600;padding-left:12px;\">Hiệu: </label> Audi<br><label style=\"font-weight:600;padding-left:12px;\">Đời xe: </label> 2015<br><label style=\"font-weight:600;padding-left:12px;\">Kiểu xe: </label> Xe 4 chỗ<br><label style=\"font-weight:600;padding-left:12px;\">Màu xe: </label> Bạc - Đen - Trắng<br><label style=\"font-weight:600;padding-left:12px;\">Giá thuê: </label> 1.800.000 (đ/ngày)<br><label style=\"font-weight:600;padding-left:12px;\">IP truy cập: </label> 116.99.64.109<br/><label style=\"font-weight:600;padding-left:12px;\">Ngày đặt: </label> 11/03/2016 18:14<br/></p><p style=\"margin: 10px 0\">Đây là hộp thư tự động. Sau thời gian trên nếu quý khách chưa nhân được phản hồi của nhân viên <a href=\"http://vodatours.com.vn\" target=\"_blank\">VODATOURS.COM.VN</a>, rất có thể đã gặp sự cố nhỏ nào đó vì vậy Quý khách có thể liên hệ trực tiếp chúng tôi để nhận được những thông tin nhanh nhất.</p><p style=\"margin: 10px 0\">Chân thành cảm ơn!</p></td></tr></tbody></table><div style=\"min-height:35px\">&nbsp;</div><table width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\"><tbody><tr><td bgcolor=\"#e1e1e1\" style=\"padding:15px 10px 25px\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" style=\"margin:0 auto;min-width:290px;\" width=\"620\"><tbody><tr><td><table width=\"75%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" align=\"left\"><tbody><tr><td valign=\"top\" style=\"font-size:12px;color:#5e5e5e;font-family:\'Open Sans\',Arial,serif;line-height:15px;\"><b>VODATOUR Co., Ltd.</b><br>Số 83 Nguyễn Thị Minh Khai, Tp. Đà Nẵng<br>Hotline: (+84) 944.255.007, Tel: (+84) 511 3.823.660, Fax: (+84) 511 3.822.999<br>Email: booking@vodatours.com.vn, Website: <a href=\"http://vodatours.com.vn\" target=\"_blank\">www.vodatours.com.vn</a></td></tr></tbody></table><table width=\"20%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><tbody><tr><td style=\"font-size:13px;color:#5e5e5e;font-family:\'Open Sans\',Arial,serif;line-height:1;vertical-align:top;text-align:right;font-style:italic;\"><span>Follow us on</span><br><a href=\"https://www.facebook.com\" target=\"_blank\"><img src=\"https://ci5.googleusercontent.com/proxy/PMSfAkbhhMLEe-tDCLFilReG-hlq_DWsTblTQ2qp8Dsq9KFW1UyFcKTr_uwU3EqyR8AhiFIooeExoAw9Oe3G5c6hvIEoOnU=s0-d-e1-ft#https://www.livecoding.tv/static/img/email/fb.png\" width=\"27\" height=\"27\" alt=\"Facebook logo\" title=\"Facebook\" border=\"0\" style=\"padding:3px;\"></a>&nbsp;<a href=\"https://twitter.com\" target=\"_blank\"><img src=\"https://ci3.googleusercontent.com/proxy/GNHxgrYKL99Apyic0XnGYk6IqVZAc-wFuhgCDxzBYMr80NGggmI1nRORIBVRIkPkJHbQHGGMrTFtbzTDoxk5dc0i_H0HOc0=s0-d-e1-ft#https://www.livecoding.tv/static/img/email/tw.png\" width=\"27\" height=\"27\" alt=\"Twitter logo\" title=\"Twitter\" border=\"0\" style=\"padding:3px;\"></a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></div>', 0, '116.99.64.109', 'fa-car', 1457694844, 1458900076),
+(3, 'Thái Huy Tô', '+84974779085', 'killlllme@yahoo.com', '<div marginwidth=\"0\" marginheight=\"0\" style=\"font-family:\'Open Sans\',Arial,serif;\"><table width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" style=\"table-layout:fixed;\"><tbody><tr><td width=\"100%\" valign=\"top\" bgcolor=\"#f5f5f5\" style=\"border-top:3px solid #579902;padding:0;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" style=\"margin:0 auto;width:100%;\"><tbody><tr><td bgcolor=\"white\" style=\"padding:10px 0; text-align: center;\"><a href=\"http://vodatours.com.vn\" target=\"_blank\"><img src=\"http://vodatours.com.vn/uploads/images/site/logo.png\" style=\"max-height:70px;max-width:90%;\" height=\"70\" alt=\"Vodatours | Thương mại và dịch vụ du lịch\" border=\"0\"></a></td></tr></tbody></table><div style=\"min-height:35px\">&nbsp;</div><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" style=\"min-width:290px;margin:0 auto;font-size:13px;color:#666666;font-weight:normal;text-align:left;font-family:\'Open Sans\',Arial,serif;line-height:18px;\" width=\"620\"><tbody><tr><td style=\"border-left:6px solid #fb651b;font-size:13px;color:#666666;font-weight:normal;text-align:left;font-family:\'Open Sans\',Arial,serif;line-height:18px;vertical-align:top;padding:15px 8px 25px 20px;\" bgcolor=\"#fdfdfd\"><p style=\"margin: 10px 0\">Chào <b> Thái Huy Tô</b>,</p><p style=\"margin: 10px 0\">Xin chân thành cảm ơn Quý khách đã quan tâm và sử dụng dịch vụ của chúng tôi!<br>Yêu cầu của Quý khách đã gửi thành công. Chúng tôi sẽ phản hồi lại trong vòng 24h tới.</p><p style=\"margin: 10px 0\"><b style=\"text-decoration:underline;\">THÔNG TIN ĐẶT PHÒNG KHÁCH SẠN CỦA QUÝ KHÁCH:</b><br/><label style=\"font-weight:600;padding-left:12px;\">Họ và tên: </label> Thái Huy Tô<br/><label style=\"font-weight:600;padding-left:12px;\">Quốc tịch: </label> Vietnam<br/><label style=\"font-weight:600;padding-left:12px;\">Địa chỉ: </label> 122/42/23, Phan Thanh, Thanh Khê, Đà Nẵng<br/><label style=\"font-weight:600;padding-left:12px;\">Email: </label> killlllme@yahoo.com<br/><label style=\"font-weight:600;padding-left:12px;\">Điện thoại: </label> +84974779085<br/><label style=\"font-weight:600;padding-left:12px;\">Tiêu chuẩn: </label> 5 sao<br/><label style=\"font-weight:600;padding-left:12px;\">Loại phòng: </label> Phòng đôi 2 giường<br/><label style=\"font-weight:600;padding-left:12px;\">Ngày nhận phòng: </label> 11/03/2016<br/><label style=\"font-weight:600;padding-left:12px;\">Ngày trả phòng: </label> 18/03/2016<br/><label style=\"font-weight:600;padding-left:12px;\">Người lớn: </label> 3<br/><label style=\"font-weight:600;padding-left:12px;\">Trẻ em: </label> 1<br/><label style=\"font-weight:600;padding-left:12px;\">Yêu cầu: </label> Kiểm thử.<br/><label style=\"font-size:15px;font-weight:600;padding-left:12px;text-transform:uppercase;\"><a href=\"http://vodatours.com.vn/phong-khach-san/nam-sao/khach-san-a-la-carte-da-nang-beach-725.html\" title=\"Khách Sạn A La Carte Đà Nẵng Beach\">Khách Sạn A La Carte Đà Nẵng Beach</a></label><br><label style=\"font-weight:600;padding-left:12px;\">Hình ảnh: </label><br><label style=\"padding-left:12px;\"><a href=\"http://vodatours.com.vn/phong-khach-san/nam-sao/khach-san-a-la-carte-da-nang-beach-725.html\" title=\"Khách Sạn A La Carte Đà Nẵng Beach\"><img width=\"200\" src=\"http://vodatours.com.vn/uploads/article/hotel-xmz86o6diao0w3i-725-khach-san-a-la-carte-da-nang-beach.jpg\" alt=\"Khách Sạn A La Carte Đà Nẵng Beach\" /></a></label><br><label style=\"font-weight:600;padding-left:12px;\">IP truy cập: </label> 116.99.64.109<br/><label style=\"font-weight:600;padding-left:12px;\">Ngày đặt: </label> 11/03/2016 18:15<br/></p><p style=\"margin: 10px 0\">Đây là hộp thư tự động. Sau thời gian trên nếu quý khách chưa nhân được phản hồi của nhân viên <a href=\"http://vodatours.com.vn\" target=\"_blank\">VODATOURS.COM.VN</a>, rất có thể đã gặp sự cố nhỏ nào đó vì vậy Quý khách có thể liên hệ trực tiếp chúng tôi để nhận được những thông tin nhanh nhất.</p><p style=\"margin: 10px 0\">Chân thành cảm ơn!</p></td></tr></tbody></table><div style=\"min-height:35px\">&nbsp;</div><table width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\"><tbody><tr><td bgcolor=\"#e1e1e1\" style=\"padding:15px 10px 25px\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" style=\"margin:0 auto;min-width:290px;\" width=\"620\"><tbody><tr><td><table width=\"75%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" align=\"left\"><tbody><tr><td valign=\"top\" style=\"font-size:12px;color:#5e5e5e;font-family:\'Open Sans\',Arial,serif;line-height:15px;\"><b>VODATOUR Co., Ltd.</b><br>Số 83 Nguyễn Thị Minh Khai, Tp. Đà Nẵng<br>Hotline: (+84) 944.255.007, Tel: (+84) 511 3.823.660, Fax: (+84) 511 3.822.999<br>Email: booking@vodatours.com.vn, Website: <a href=\"http://vodatours.com.vn\" target=\"_blank\">www.vodatours.com.vn</a></td></tr></tbody></table><table width=\"20%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><tbody><tr><td style=\"font-size:13px;color:#5e5e5e;font-family:\'Open Sans\',Arial,serif;line-height:1;vertical-align:top;text-align:right;font-style:italic;\"><span>Follow us on</span><br><a href=\"https://www.facebook.com\" target=\"_blank\"><img src=\"https://ci5.googleusercontent.com/proxy/PMSfAkbhhMLEe-tDCLFilReG-hlq_DWsTblTQ2qp8Dsq9KFW1UyFcKTr_uwU3EqyR8AhiFIooeExoAw9Oe3G5c6hvIEoOnU=s0-d-e1-ft#https://www.livecoding.tv/static/img/email/fb.png\" width=\"27\" height=\"27\" alt=\"Facebook logo\" title=\"Facebook\" border=\"0\" style=\"padding:3px;\"></a>&nbsp;<a href=\"https://twitter.com\" target=\"_blank\"><img src=\"https://ci3.googleusercontent.com/proxy/GNHxgrYKL99Apyic0XnGYk6IqVZAc-wFuhgCDxzBYMr80NGggmI1nRORIBVRIkPkJHbQHGGMrTFtbzTDoxk5dc0i_H0HOc0=s0-d-e1-ft#https://www.livecoding.tv/static/img/email/tw.png\" width=\"27\" height=\"27\" alt=\"Twitter logo\" title=\"Twitter\" border=\"0\" style=\"padding:3px;\"></a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></div>', 0, '116.99.64.109', 'fa-building', 1457694929, 1458900072);
 
 -- --------------------------------------------------------
 
@@ -1684,8 +1619,8 @@ INSERT INTO `olala3w_order` (`order_id`, `name`, `phone`, `email`, `content`, `i
 -- Table structure for table `olala3w_others`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_others` (
-  `others_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_others` (
+  `others_id` int(11) NOT NULL,
   `others_menu_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `sort` int(11) NOT NULL DEFAULT '1',
@@ -1693,9 +1628,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_others` (
   `hot` int(1) NOT NULL DEFAULT '0',
   `created_time` int(11) NOT NULL DEFAULT '0',
   `modified_time` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`others_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=133 ;
+  `user_id` int(11) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `olala3w_others`
@@ -1819,8 +1753,8 @@ INSERT INTO `olala3w_others` (`others_id`, `others_menu_id`, `name`, `sort`, `is
 -- Table structure for table `olala3w_others_menu`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_others_menu` (
-  `others_menu_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_others_menu` (
+  `others_menu_id` int(11) NOT NULL,
   `category_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `parent` int(11) NOT NULL,
@@ -1829,9 +1763,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_others_menu` (
   `hot` int(1) NOT NULL DEFAULT '0',
   `created_time` int(11) NOT NULL DEFAULT '0',
   `modified_time` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`others_menu_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
+  `user_id` int(11) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `olala3w_others_menu`
@@ -1854,8 +1787,8 @@ INSERT INTO `olala3w_others_menu` (`others_menu_id`, `category_id`, `name`, `par
 -- Table structure for table `olala3w_page`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_page` (
-  `page_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_page` (
+  `page_id` int(11) NOT NULL,
   `alias` varchar(255) NOT NULL,
   `name` varchar(255) NOT NULL,
   `comment` text NOT NULL,
@@ -1863,9 +1796,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_page` (
   `is_active` int(1) NOT NULL DEFAULT '1',
   `views` bigint(20) NOT NULL DEFAULT '1',
   `modified_time` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`page_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=98 ;
+  `user_id` int(11) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `olala3w_page`
@@ -1873,8 +1805,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_page` (
 
 INSERT INTO `olala3w_page` (`page_id`, `alias`, `name`, `comment`, `content`, `is_active`, `views`, `modified_time`, `user_id`) VALUES
 (27, 'copyright', 'Copyright', '', '<p>© 2018&nbsp;D House&nbsp;<br />\r\nAll Rights Reserved.</p>\r\n', 1, 1, 1536910175, 25),
-(40, 'contact_maps', 'Bản đồ', '', '<p><iframe frameborder="0" height="400" scrolling="no" src="//maps.google.com/maps?q=16.083045, 108.222088&amp;num=1&amp;t=m&amp;ie=UTF8&amp;z=16&amp;output=embed" width="100%"></iframe></p>', 1, 1, 1454040298, 1),
-(83, 'contact_page', 'Thông tin liên hệ', '', '<h5 class=\\"cl-orange\\"><strong>NỘI THẤT D HOUSE</strong></h5>\r\n\r\n<p><strong>Trụ sở chính:</strong>&nbsp;...</p>\r\n\r\n<p><label><strong>Điện thoại:</strong>&nbsp;096 132 45 60</label></p>\r\n\r\n<p><strong>Email:</strong>&nbsp;....</p>\r\n\r\n<p><strong>Website</strong>: ....</p>\r\n', 1, 1, 1537239701, 25),
+(40, 'contact_maps', 'Bản đồ', '', '<p><iframe frameborder=\"0\" height=\"400\" scrolling=\"no\" src=\"//maps.google.com/maps?q=16.083045, 108.222088&amp;num=1&amp;t=m&amp;ie=UTF8&amp;z=16&amp;output=embed\" width=\"100%\"></iframe></p>', 1, 1, 1454040298, 1),
+(83, 'contact_page', 'Thông tin liên hệ', '', '<h5 class=\\\"cl-orange\\\"><strong>NỘI THẤT D HOUSE</strong></h5>\r\n\r\n<p><strong>Trụ sở chính:</strong>&nbsp;...</p>\r\n\r\n<p><label><strong>Điện thoại:</strong>&nbsp;096 132 45 60</label></p>\r\n\r\n<p><strong>Email:</strong>&nbsp;....</p>\r\n\r\n<p><strong>Website</strong>: ....</p>\r\n', 1, 1, 1537239701, 25),
 (97, 'phone', 'Số điện thoại', '', '<p>01202503009</p>\r\n', 1, 1, 1537157231, 25);
 
 -- --------------------------------------------------------
@@ -1883,8 +1815,8 @@ INSERT INTO `olala3w_page` (`page_id`, `alias`, `name`, `comment`, `content`, `i
 -- Table structure for table `olala3w_prjname`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_prjname` (
-  `prjname_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_prjname` (
+  `prjname_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `slug` varchar(255) NOT NULL,
   `sort` int(11) NOT NULL DEFAULT '1',
@@ -1892,14 +1824,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_prjname` (
   `hot` int(1) NOT NULL DEFAULT '0',
   `created_time` int(11) NOT NULL DEFAULT '0',
   `modified_time` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) DEFAULT '0',
-  PRIMARY KEY (`prjname_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
---
--- Dumping data for table `olala3w_prjname`
---
-
+  `user_id` int(11) DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -1907,8 +1833,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_prjname` (
 -- Table structure for table `olala3w_product`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_product` (
-  `product_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_product` (
+  `product_id` int(11) NOT NULL,
   `product_menu_id` int(11) NOT NULL,
   `type_show` int(1) NOT NULL DEFAULT '0',
   `name` varchar(255) NOT NULL,
@@ -1962,14 +1888,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_product` (
   `is_active` int(1) NOT NULL DEFAULT '1',
   `views` bigint(20) NOT NULL DEFAULT '1',
   `modified_time` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`product_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=483 ;
-
---
--- Dumping data for table `olala3w_product`
---
-
+  `user_id` int(11) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -1977,8 +1897,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_product` (
 -- Table structure for table `olala3w_product_menu`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_product_menu` (
-  `product_menu_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_product_menu` (
+  `product_menu_id` int(11) NOT NULL,
   `category_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `slug` varchar(255) NOT NULL DEFAULT 'not-found',
@@ -1992,14 +1912,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_product_menu` (
   `img` varchar(255) NOT NULL DEFAULT 'no',
   `created_time` int(11) NOT NULL DEFAULT '0',
   `modified_time` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`product_menu_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=152 ;
-
---
--- Dumping data for table `olala3w_product_menu`
---
-
+  `user_id` int(11) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -2007,8 +1921,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_product_menu` (
 -- Table structure for table `olala3w_project`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_project` (
-  `project_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_project` (
+  `project_id` int(11) NOT NULL,
   `project_menu_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `title` varchar(255) NOT NULL,
@@ -2022,14 +1936,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_project` (
   `views` bigint(20) NOT NULL DEFAULT '1',
   `created_time` int(11) NOT NULL DEFAULT '0',
   `modified_time` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`project_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=206 ;
-
---
--- Dumping data for table `olala3w_project`
---
-
+  `user_id` int(11) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -2037,8 +1945,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_project` (
 -- Table structure for table `olala3w_project_menu`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_project_menu` (
-  `project_menu_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_project_menu` (
+  `project_menu_id` int(11) NOT NULL,
   `category_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `slug` varchar(255) NOT NULL DEFAULT 'not-found',
@@ -2062,14 +1970,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_project_menu` (
   `project_involve` varchar(255) NOT NULL,
   `created_time` int(11) NOT NULL DEFAULT '0',
   `modified_time` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`project_menu_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=217 ;
-
---
--- Dumping data for table `olala3w_project_menu`
---
-
+  `user_id` int(11) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -2077,13 +1979,12 @@ CREATE TABLE IF NOT EXISTS `olala3w_project_menu` (
 -- Table structure for table `olala3w_register_email`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_register_email` (
-  `register_email_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_register_email` (
+  `register_email_id` int(11) NOT NULL,
   `email` varchar(255) NOT NULL,
   `ip` varchar(255) NOT NULL,
-  `created_time` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`register_email_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+  `created_time` int(11) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `olala3w_register_email`
@@ -2099,21 +2000,15 @@ INSERT INTO `olala3w_register_email` (`register_email_id`, `email`, `ip`, `creat
 -- Table structure for table `olala3w_register_try`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_register_try` (
-  `register_try_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_register_try` (
+  `register_try_id` int(11) NOT NULL,
   `full_name` varchar(255) NOT NULL DEFAULT 'no-name',
   `phone` varchar(20) NOT NULL,
   `email` varchar(255) NOT NULL,
   `address` varchar(255) NOT NULL DEFAULT 'no-address',
   `note` text NOT NULL,
-  `created_time` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`register_try_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
-
---
--- Dumping data for table `olala3w_register_try`
---
-
+  `created_time` int(11) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -2121,22 +2016,16 @@ CREATE TABLE IF NOT EXISTS `olala3w_register_try` (
 -- Table structure for table `olala3w_road`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_road` (
-  `road_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_road` (
+  `road_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `sort` int(11) NOT NULL DEFAULT '1',
   `is_active` int(1) NOT NULL DEFAULT '1',
   `hot` int(1) NOT NULL DEFAULT '0',
   `created_time` int(11) NOT NULL DEFAULT '0',
   `modified_time` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`road_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
---
--- Dumping data for table `olala3w_road`
---
-
+  `user_id` int(11) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -2144,8 +2033,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_road` (
 -- Table structure for table `olala3w_street`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_street` (
-  `street_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_street` (
+  `street_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `slug` varchar(255) NOT NULL,
   `sort` int(11) NOT NULL DEFAULT '1',
@@ -2153,14 +2042,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_street` (
   `hot` int(1) NOT NULL DEFAULT '0',
   `created_time` int(11) NOT NULL DEFAULT '0',
   `modified_time` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) DEFAULT '0',
-  PRIMARY KEY (`street_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
---
--- Dumping data for table `olala3w_street`
---
-
+  `user_id` int(11) DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -2168,8 +2051,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_street` (
 -- Table structure for table `olala3w_tour`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_tour` (
-  `tour_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_tour` (
+  `tour_id` int(11) NOT NULL,
   `tour_menu_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `img` varchar(255) NOT NULL DEFAULT 'no',
@@ -2197,32 +2080,31 @@ CREATE TABLE IF NOT EXISTS `olala3w_tour` (
   `keywords` text NOT NULL,
   `created_time` int(11) NOT NULL DEFAULT '0',
   `modified_time` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`tour_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=29 ;
+  `user_id` int(11) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `olala3w_tour`
 --
 
 INSERT INTO `olala3w_tour` (`tour_id`, `tour_menu_id`, `name`, `img`, `img_note`, `comment`, `tour_keys`, `price`, `date_schedule`, `date_departure`, `means`, `tour_type`, `destination`, `sale`, `schedule`, `price_list_service`, `upload_id`, `maps`, `video`, `is_active`, `hot`, `pin`, `views`, `title`, `description`, `keywords`, `created_time`, `modified_time`, `user_id`) VALUES
-(2, 146, 'TOUR SƠN TRÀ - NGŨ HÀNH SƠN - HỘI AN 1 NGÀY', 'htqjn5g8pa5qb6p-2-tour-son-tra-ngu-hanh-son-hoi-an-1-ngay.jpg', '', 'Du Lịch Hội An - Bước chân vào khu phố cổ, du khách sẽ ngỡ ngàng trước một thế giới biệt lập, tách khỏi mọi dòng chảy và sức phá huỷ của thời gian. Không có tiếng động cơ gầm rú cũng chẳng có những thương hiệu rực rỡ đèn màu. Tất cả đã lùi xa sau lưng, cả không gian và thời gian đều lắng đọng trong những nếp nhà gỗ cổ xưa. Cầu chùa, dãy phía bến sông Hoài, Hội quán Quảng Ðông, Phúc Kiến...  đang lặng lẽ tồn tại để con người nhà cổ hai tầng quay lưng hoài niệm về một thời quá khứ. Ðặc biệt, khu phố cổ mang một vẻ lãng mạng, sâu lắng và bình yên dưới ánh đèn lồng huyền ảo mỗi đêm 14 âm lịch hàng tháng.', 'HA01', 450000, '1/2 ngày (14h-21h)', 0, 'Xe ôtô', 'Du lịch khám phá,Du lịch sinh thái,Du lịch nghỉ dưỡng', 'Đà Nẵng,Hội An,Sơn Trà,Ngũ Hành Sơn', 10, '<p><strong>Chương trình tour</strong></p>\r\n\r\n<p><strong><em><u>Chiều: &nbsp;Đà Nẵng- Bán đảo Sơn Trà – Ngũ Hành Sơn (ăn tối)</u></em></strong></p>\r\n\r\n<p><strong>14</strong><strong>h</strong><strong>0</strong><strong>0</strong>: Xe đưa Quý khách hành trình thăm quan&nbsp;chùa Linh Ứng Bãi Bụt&nbsp;- ngôi chùa lớn nhất của thành phố Đà Nẵng, chiêm ngưỡng Tượng Phật&nbsp;Quan Thế Âm Bồ Tát&nbsp;cao nhất Việt Nam 67m.</p>\r\n\r\n<p>&nbsp;<strong>15</strong><strong>h</strong><strong>3</strong><strong>0</strong>: Rời Bán đảo Sơn Trà về Ngũ Hành Sơn, trên đường đi quý khách sẽ được nghe thuyết minh về các&nbsp;tuyến&nbsp;đường phố, bãi biển Mỹ Khê, resort 5 sao, sân bay nước mặn,…</p>\r\n\r\n<p><strong>16h0</strong><strong>0</strong>:&nbsp;Thăm quan&nbsp;Làng nghề điêu khắc đá Non Nước,&nbsp;Tháp Xá Lợi, viếng Chùa Linh Ứng I, động Tàng Chơn, động Huyền Không, Chùa Tam Thai&nbsp;và lên&nbsp;Vọng Giang Đài&nbsp;nơi có&nbsp;kính Viễn Vọng&nbsp;để thẩm nhận&nbsp;5 ngọn núi&nbsp;Kim, Mộc, Thủy, Hỏa, Thổ&nbsp;cũng như toàn cảnh&nbsp;sông Cổ Cò, làng đá mỹ nghệ Non Nước.</p>\r\n\r\n<p><strong>1</strong><strong>7</strong><strong>h</strong><strong>3</strong><strong>0</strong>: Quý khách ăn tối và nghỉ ngơi tại nhà hàng Hội An <em>(Quý khách sẽ được thưởng thức đặc sản nổi tiếng tại Hội An với món</em><em> Cơm gà-</em><em> Bánh Vạc – Hoành Thánh). </em></p>\r\n\r\n<p><strong><em><u>Tối</u></em></strong><strong><em><u>:</u></em></strong> &nbsp;<strong><em><u>Hội An Lung Linh Phố Cổ – Đà Nẵng (Ăn tối)</u></em></strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>1</strong><strong>8</strong><strong>h</strong><strong>3</strong><strong>0</strong>: Quý khách tiếp tục hành trình tham quan khu Phố Cổ, HDV sẽ đưa Quý khách bách bộ tham quan :</p>\r\n\r\n<p><strong><em>- Chùa Cầu Nhật Bản</em></strong> -&nbsp; <em>là công trình kiến trúc đẹp và ấn tượng tại TP. Hội An - công trình là biểu tượng tiêu biểu của quá trình giao lưu văn hóa giữa 3 dân tộc Hoa – Việt – Nhật.</em></p>\r\n\r\n<p><strong><em>- Bảo tàng văn hóa Sa Huỳnh</em></strong> – <em>nơi lưu giữ những hiện vật có giá trị tiêu biểu thuộc nền văn hóa Sa Huỳnh ở miền Trung Việt Nam. </em></p>\r\n\r\n<p><strong><em>- Nhà Cổ Tấn Ký</em></strong> hàng trăm năm tuổi – <em>một trong những ngôi nhà cổ xưa nhất và có kiến trúc đẹp nhất tại Hội An.</em></p>\r\n\r\n<p>- <strong><em>Hội quán Phước Kiến</em></strong> – <em>một trong những hội quán có kiến trúc đẹp và lớn nhất của người Hoa tại Hội An.</em></p>\r\n\r\n<p><strong>20</strong><strong>h30</strong>: Quý khách tập trung về lại Đà Nẵng.</p>\r\n\r\n<p><strong>21</strong><strong>h00</strong>: Kết thúc chương trình. Đưa Quý khách về lại điểm đón ban đầu.</p>\r\n\r\n<p>Chào tạm biệt !&nbsp;</p>\r\n', '<table border="1" cellpadding="0" cellspacing="0" style="width:100%;">\r\n	<tbody>\r\n		<tr>\r\n			<td style="text-align: center; padding: 5px;"><strong>khách Việt Nam</strong></td>\r\n			<td style="text-align: center; padding: 5px;"><b>Foreign tourist</b></td>\r\n		</tr>\r\n		<tr>\r\n			<td style="text-align: right; padding: 5px;">450.000 đ/khách Vn</td>\r\n			<td style="text-align: right; padding: 5px;">550.000Vnđ/pax</td>\r\n		</tr>\r\n		<tr>\r\n			<td style="text-align: right; padding: 5px;">225.000 đ/trẻ em</td>\r\n			<td style="text-align: right; padding: 5px;">275.000VNđ/Child</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n', 1283, '<p><iframe frameborder="0" height="400px" scrolling="no" src="//maps.google.com/maps?q=16.0496128,108.1819923&amp;num=1&amp;t=m&amp;ie=UTF8&amp;z=14&amp;output=embed" width="100%"></iframe></p>\r\n', '<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;"><object height="480" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" width="640"><param name="movie" value="//www.youtube.com/v/JpoCJdieOAQ?rel=0&amp;hl=vi&amp;version=3" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /><embed allowfullscreen="true" allowscriptaccess="always" height="480" src="//www.youtube.com/v/JpoCJdieOAQ?rel=0&amp;hl=vi&amp;version=3" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" type="application/x-shockwave-flash" width="640"></embed></object></div>\r\n', 1, 1, 1, 52, '', '', 'du lịch Hội An giá rẻ ,du lịch Đà Nẵng ,tour phố cổ Hội An ,tour Hội An giá rẻ ', 1457524620, 1458203039, 25),
-(3, 146, 'BÀ NÀ HILLS 1 NGÀY', 'srmhdb1v1y409e0-3-du-lich-ba-na-1-ngay-gia-re.jpg', '', 'Bà Nà Hill’s được mệnh danh là Sapa của miền Trung với khí hâu quanh năm mát mẻ, nhiệt độ trung bình vào khoảng 18oC, Bà Nà – Núi Chúa là khu du lịch sinh thái nghỉ dưỡng lý tưởng ở miền Trung. Du khách đến khu du lich Bà Nà không chỉ được tận hưởng không khí trong lành, xanh, sạch, đẹp mà còn được chiêm ngưỡng những cảnh quan đẹp mà hiếm vùng nghỉ mát nào có được. Ở Bà Nà một ngày có 4 mùa riêng biệt: buổi sang iết xuân, buổi trưa vào hạ, buổi chiều se se sang thu và đêm về lạnh giá như giữa đông.', 'BN01', 650000, '1 ngày (8h-17h)', 0, 'Xe ôtô', 'Du lịch văn hóa,Du lịch nghỉ dưỡng', 'Bà Nà Hills', 10, '<p><strong>Đà Nẵng</strong><br />\r\n&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>0</strong><strong>8</strong><strong>h</strong><strong>0</strong><strong>0 :</strong> Xe &amp; Hướng dẫn viên đón Quý khách tại khách sạn (hoặc điểm hẹn), khởi hành đi tham quan khu du lịch <em>Bà Nà – Núi Chúa, mệnh danh là Đà Lạt/ Sa Pa thứ 2 tại miền Trung</em>, với khí hậu tuyệt vời được <em>ví như mùa Xuân của nước Pháp.</em></p>\r\n\r\n<p><strong>08h45 : </strong>Cùng nhau thưởng ngoạn khung cảnh Bà Nà trên cao bằng <em>hệ thống cáp treo hiện đại nhất Đông Nam Á.</em> 20 phút du ngoạn trên cáp treo, <em>du khách sẽ được chiêm ngưỡng Suối Mơ hùng vĩ, cảnh núi rừng nguyên sinh của khu bảo tồn thiên nhiên Bà Nà với hệ sinh thái phong phú và đa dạng</em> . Du khách sẽ được tận hưởng <em>sự thay đổi thời tiết rõ rệt khi đi qua Cổng Trời</em> hay có cơ hội trải nghiệm cảm giác phiêu lưu đầy ấn tượng chìm trong sương mờ. Chinh phục đỉnh núi Chúa ở độ cao 1.487m so với mực nước biển<em>, giữ </em><em>4</em><em> kỉ lục thế giới (hệ thống cáp treo một dây dài nhất thế giới 5.042m và độ cao chênh lệch giữa ga trên và ga dưới cao nhất thế giới 1.291m)</em> chiêm ngưỡng quang cảnh núi rừng Bà Nà và toàn cảnh Quảng Nam - Đà Nẵng từ trên cao. Tham quan <em>khu Le Jardin</em> <em>với các di tích của người Pháp</em> như: <em>khu buộc ngựa của Pháp, cây bưởi gần 100 tuổi, vết tích các khu biệt thự cổ. Đặc biệt là Hầm rượu Debay, hầm rượu được người Pháp xây dựng từ năm 1923, trải qua gần một thế kỷ, hầm rượu vẫn giữ được nét hoang sơ, kì bí, là công trình duy nhất của người Pháp còn lại khá nguyên vẹn tại Bà Nà.</em></p>\r\n\r\n<p><em>Viếng chùa Linh Ứng Bà Nà</em> chiêm ngưỡng <em>tượng Phật Thích Ca cao 27m</em> và thả mình vào khung cảnh thanh tịnh của chốn thiền môn, tham quan <em>Vườn Lộc Uyển, Quan Âm Các</em></p>\r\n\r\n<p><strong>10h00 :</strong> Hướng dẫn viên đưa đoàn vào tham quan <em>khu vui chơi Fantasy Park</em> – <em>khu vui chơi giải trí trong nhà lớn nhất Việt Nam.</em>.</p>\r\n\r\n<p><strong>12h00 :</strong> Quý khách ăn trưa và nghỉ ngơi tại nhà hàng, dùng buffet tại Bà Nà (chi phí tự túc)</p>\r\n\r\n<p><strong>13h00 :</strong> Chinh phục đỉnh <em>Núi Chúa</em> – <em>nóc nhà của thành phố, thăm viếng Lĩnh Chúa Linh</em> Từ nằm ở độ cao 1487m, Ngắm toàn cảnh thành phố Đà Nẵng và vịnh Đà Nẵng lúc ẩn, lúc hiện dưới một biển mây trắng.</p>\r\n\r\n<p><strong>1</strong><strong>5</strong><strong>h</strong><strong>0</strong><strong>0 :</strong> Đón chuyến cáp và xuống lại Ga Suối Mơ kết thúc chương trình</p>\r\n\r\n<p><strong>17h00</strong>: Về lại TP Đà Nẵng, trả khách về lại điểm đón ban đầu và chào tạm biệt !</p>\r\n', '<p>Điểm nổi bật</p>\r\n\r\n<p><strong>DỊCH VỤ BAO GỒM</strong></p>\r\n\r\n<p>-&nbsp; Xe du lịch tiêu chuẩn phục vụ suốt tuyến</p>\r\n\r\n<p>-&nbsp; Hướng dẫn viên kinh nghiệm, nhiệt tình&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>\r\n\r\n<p>-&nbsp;Vé cáp treo khu du lịch Bà Nà Hills (550k/vé)</p>\r\n\r\n<p>-&nbsp;Nước suối 1 chai/người/ngày</p>\r\n\r\n<p>-&nbsp;Bảo hiếm du lịch</p>\r\n\r\n<p>- vé tham quan và chơi trò chơi ở khu Fantasy Park</p>\r\n\r\n<p><strong>KHÔNG BAO GỒM</strong></p>\r\n\r\n<p>- Thuế VAT</p>\r\n\r\n<p>- ăn trưa buffet ( 180k/ suất)</p>\r\n\r\n<p>- vé thưởng thức rượu Vang tại Hầm rượu Debay</p>\r\n\r\n<p>- vé tàu hỏa leo núi</p>\r\n\r\n<p>- vé bảo tang tượng sáp</p>\r\n\r\n<p><strong>GHI CHÚ</strong></p>\r\n\r\n<p>- Đối với chương trình tour Bà Nà, giá áp dụng cho trẻ em cụ thể như sau:</p>\r\n\r\n<p>- Đối với trẻ em&nbsp; dưới&nbsp; 1m: Miễn phí</p>\r\n\r\n<p>- Trên 1m đến 1m29: 75% giá tour</p>\r\n\r\n<p>- Trên 1m3 tính vé người&nbsp; lớn</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h4 class="title cl-green">Giá tour cơ bản</h4>\r\n\r\n<table border="1" cellpadding="0" cellspacing="0" style="width:100%;">\r\n	<tbody>\r\n		<tr>\r\n			<td style="text-align: right; padding: 5px;">người lớn</td>\r\n			<td style="text-align: right; padding: 5px;">650/000đ</td>\r\n		</tr>\r\n		<tr>\r\n			<td style="text-align: right; padding: 5px;">trẻ em&nbsp;</td>\r\n			<td style="text-align: right; padding: 5px;"><strong>500.000₫</strong></td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h4 class="title cl-green">Phụ thu phòng đơn(VND₫)</h4>\r\n\r\n<table border="1" cellpadding="0" cellspacing="0" style="width:100%;">\r\n	<tbody>\r\n		<tr>\r\n			<td style="text-align: right; padding: 5px;">Việt Nam</td>\r\n		</tr>\r\n		<tr>\r\n			<td style="text-align: right; padding: 5px;">&nbsp;</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n', 1284, '<p><iframe frameborder="0" height="400px" scrolling="no" src="//maps.google.com/maps?q=16.047076,108.1712097&amp;num=1&amp;t=m&amp;ie=UTF8&amp;z=14&amp;output=embed" width="100%"></iframe></p>\r\n', '<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;"><object height="480" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" width="640"><param name="movie" value="//www.youtube.com/v/o1INttWSy_A?rel=0&amp;hl=vi&amp;version=3" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /><embed allowfullscreen="true" allowscriptaccess="always" height="480" src="//www.youtube.com/v/o1INttWSy_A?rel=0&amp;hl=vi&amp;version=3" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" type="application/x-shockwave-flash" width="640"></embed></object></div>\r\n', 1, 1, 1, 77, '', '', 'du lịch Bà Nà giá rẻ ,tour Bà Nà chất lượng ,tour Bà Nà Hills ,tour Đà Nẵng uy tín ,tour Bà Nà giá rẻ ', 1457533200, 1458786014, 1),
-(28, 146, 'DU LỊCH ĐẢO LÝ SƠN 2 NGÀY 1 ĐÊM', 'bo5cokmzle168uo-28-du-lich-dao-ly-son-2-ngay-1-dem.jpg', '', 'Bạn chỉ mới nghe đến vẻ đẹp của Đảo Lý Sơn? bạn muốn khám phá Lý Sơn nhưng chưa biết bằng cách nào và chi phí ra sao? Hãy để chúng tôi, Vodatours sẽ đồng hành cùng chuyến đi của bạn. Với kinh nghiệm và sự nhiệt tình của đội ngũ nhân viên Vodatours - chúng tôi sẽ mang đến cho bạn những khoảnh khắc tuyệt vời nhất.\r\n"Vodatours - Thỏa lòng nơi bạn đến"', 'LS201', 1400000, '', 1464022800, 'Ô tô,tàu cao tốc', 'Du lịch nghỉ dưỡng,Du lịch khám phá', 'Đảo Lý Sơn,Cảng Sa Kỳ,Khu chứng tích Sơn Mỹ,Tượng Mẹ Thứ', 10, '<table align="center" border="1" cellpadding="0" cellspacing="0">\r\n	<tbody>\r\n		<tr>\r\n			<td style="width:566px;">\r\n			<p align="center"><strong><u>ĐÀ&nbsp; NẴNG -&nbsp; QUẢNG NGÃI – LÝ SƠN(Ăn</u></strong><strong><u> sáng, trưa</u></strong><strong><u> tối)</u></strong></p>\r\n\r\n			<p style="margin-left:1.7pt;"><strong><u>04h30</u></strong>: Xe và HDV đón khách <strong><em>khởi hành đi Quảng Ngãi </em></strong>khởi hành xuống <strong><em>Cảng Sa Kỳ. <u>(Đón khách tại Tam Kỳ/Chu Lai theo lịch hẹn)</u></em> </strong></p>\r\n\r\n			<p><strong><em><u>(Quý khách ăn sáng, uống café tại Khu vực Cảng tự túc trong lúc chờ đợi lên tàu -chi phí tự túc)</u></em></strong></p>\r\n\r\n			<p style="margin-left:1.7pt;"><strong><u>07h30 – 08h30</u></strong><strong>:&nbsp; </strong>Đoàn lên tàu ra <strong><em>Đảo Lý Sơn</em></strong>. Sau khoảng hơn nửa giờ du thuyền trên biển, đoàn đến <strong><em>Đảo Lý Sơn</em></strong>. Quý khách nhận phòng, nghỉ ngơi, tự do dạo quanh đảo. Sau đó dùng cơm trưa.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>\r\n\r\n			<p style="margin-left:1.7pt;"><strong><u>13h00</u></strong><strong>:</strong>&nbsp; Đoàn khởi hành tham quan Đảo với những địa danh gắn liền với những minh chứng về chủ quyền biển đảo như: <strong><em>Đình Làng Lý Hải, Chùa Hang, nhà trưng bày Hải Đội Hoàng Sa(dâng hương và làm lể tưởng niệm các chiến sĩ Hải Đội Hoàng Sa) Chùa Tư Quang</em></strong><em>, <strong>Ngọn Hải Đăng</strong>, <strong>Miệng Núi Lửa</strong></em>, <strong><em>Cột Cờ…</em></strong>cùng nhau chinh phục ngọn <strong><em>Núi Thới Lới.</em></strong></p>\r\n\r\n			<p style="margin-left:1.7pt;"><strong><em>Nghe HDV giới thiệu về Biển, đảo Việt Nam, tìm hiểu chủ quyền về quần đảo Hoàng Sa thiêng liêng</em></strong></p>\r\n\r\n			<p style="margin-left:48.0pt;"><strong><u>Tối</u></strong><strong>:&nbsp;&nbsp;&nbsp;&nbsp; Ăn tối, nghỉ ngơi tự do.</strong></p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td style="width:566px;">\r\n			<p align="center"><strong><u>LÝ SƠN - ĐÀ NẴNG (ăn sáng,)</u></strong></p>\r\n\r\n			<p><strong><u>06h00</u></strong>: Làm thủ tục trả phòng, Quý khách dùng điểm tâm sáng. Sau đó đoàn tự do đi chợ mua đặc sản vùng Đảo: <strong><em>Hành, tỏi, đặc sản&nbsp; biển</em></strong>,....</p>\r\n\r\n			<p><strong><u>07h40</u></strong>: Khởi hành ra Bến Tàu về lại <strong><em>Cảng Sa Kỳ</em></strong>. Xe đón đoàn tại Cảng. &nbsp;&nbsp;</p>\r\n\r\n			<p><strong><u>80h40</u></strong>:&nbsp; Khởi hành về lại Đà Nẵng, <strong><em>trên đường ghé tham quan khu chứng tích Sơn Mỹ - nơi xãy ra vụ thảm sát kinh hoàng sáng ngày 16 /03/1968 làm chết 504 thường dân vô tội.</em></strong></p>\r\n\r\n			<ul>\r\n				<li><strong><em>Ghé Viếng tượng Mẹ Việt Nam Anh Hùng tại Tp Tam Kỳ </em></strong></li>\r\n			</ul>\r\n\r\n			<p style="margin-left:1.7pt;"><strong><u>11h30</u></strong>&nbsp; Đến Đà Nẵng kết thúc chương trình tham quan. Chia tay và hẹn gặp lại.</p>\r\n			</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n\r\n<div style="clear:both;">&nbsp;</div>\r\n', '<table align="center" border="1" cellpadding="0" cellspacing="0" width="716">\r\n	<tbody>\r\n		<tr>\r\n			<td style="width:168px;height:66px;">\r\n			<p align="center"><strong>Lịch trình</strong></p>\r\n			</td>\r\n			<td style="width:80px;height:66px;">\r\n			<p align="center"><strong>Khởi hành</strong></p>\r\n			</td>\r\n			<td style="width:106px;height:66px;">\r\n			<p align="center"><strong>Giá Tour dành cho khách từ 11 tuổi trở lên</strong></p>\r\n			</td>\r\n			<td style="width:95px;height:66px;">\r\n			<p align="center"><strong>trẻ em từ 6-10 tuổi</strong></p>\r\n			</td>\r\n			<td style="width:113px;height:66px;">\r\n			<p align="center"><strong>Phụ thu phòng đơn</strong></p>\r\n			</td>\r\n			<td style="width:155px;height:66px;">\r\n			<p align="center"><strong>Quà Tặng </strong></p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td style="width:168px;height:44px;">\r\n			<p><em>Tour 2 ngày 1 đêm: Đà Nẵng – Quảng Ngãi – Sa kỳ - Lý Sơn – Sơn Mỹ - Mẹ Thứ - Đà Nẵng </em></p>\r\n			</td>\r\n			<td style="width:80px;height:44px;">\r\n			<p align="center">HẰNG NGÀY</p>\r\n			</td>\r\n			<td style="width:106px;height:44px;">\r\n			<p align="center">&nbsp;</p>\r\n\r\n			<p align="center">1.400.000</p>\r\n\r\n			<p align="center">&nbsp;</p>\r\n			</td>\r\n			<td style="width:95px;height:44px;">\r\n			<p align="center">700.000</p>\r\n			</td>\r\n			<td style="width:113px;height:44px;">\r\n			<p align="center">150.000</p>\r\n			</td>\r\n			<td style="width:155px;height:44px;">\r\n			<p align="center">Áo đỏ sao vàng</p>\r\n\r\n			<p align="center">&nbsp;</p>\r\n			</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n\r\n<div style="clear:both;">&nbsp;</div>\r\n', 1320, '', '', 1, 1, 1, 7, '', '', 'Du lịch Lý Sơn,Tour Lý Sơn,Đảo Lý Sơn', 1458701700, 1458785941, 1),
+(2, 146, 'TOUR SƠN TRÀ - NGŨ HÀNH SƠN - HỘI AN 1 NGÀY', 'htqjn5g8pa5qb6p-2-tour-son-tra-ngu-hanh-son-hoi-an-1-ngay.jpg', '', 'Du Lịch Hội An - Bước chân vào khu phố cổ, du khách sẽ ngỡ ngàng trước một thế giới biệt lập, tách khỏi mọi dòng chảy và sức phá huỷ của thời gian. Không có tiếng động cơ gầm rú cũng chẳng có những thương hiệu rực rỡ đèn màu. Tất cả đã lùi xa sau lưng, cả không gian và thời gian đều lắng đọng trong những nếp nhà gỗ cổ xưa. Cầu chùa, dãy phía bến sông Hoài, Hội quán Quảng Ðông, Phúc Kiến...  đang lặng lẽ tồn tại để con người nhà cổ hai tầng quay lưng hoài niệm về một thời quá khứ. Ðặc biệt, khu phố cổ mang một vẻ lãng mạng, sâu lắng và bình yên dưới ánh đèn lồng huyền ảo mỗi đêm 14 âm lịch hàng tháng.', 'HA01', 450000, '1/2 ngày (14h-21h)', 0, 'Xe ôtô', 'Du lịch khám phá,Du lịch sinh thái,Du lịch nghỉ dưỡng', 'Đà Nẵng,Hội An,Sơn Trà,Ngũ Hành Sơn', 10, '<p><strong>Chương trình tour</strong></p>\r\n\r\n<p><strong><em><u>Chiều: &nbsp;Đà Nẵng- Bán đảo Sơn Trà – Ngũ Hành Sơn (ăn tối)</u></em></strong></p>\r\n\r\n<p><strong>14</strong><strong>h</strong><strong>0</strong><strong>0</strong>: Xe đưa Quý khách hành trình thăm quan&nbsp;chùa Linh Ứng Bãi Bụt&nbsp;- ngôi chùa lớn nhất của thành phố Đà Nẵng, chiêm ngưỡng Tượng Phật&nbsp;Quan Thế Âm Bồ Tát&nbsp;cao nhất Việt Nam 67m.</p>\r\n\r\n<p>&nbsp;<strong>15</strong><strong>h</strong><strong>3</strong><strong>0</strong>: Rời Bán đảo Sơn Trà về Ngũ Hành Sơn, trên đường đi quý khách sẽ được nghe thuyết minh về các&nbsp;tuyến&nbsp;đường phố, bãi biển Mỹ Khê, resort 5 sao, sân bay nước mặn,…</p>\r\n\r\n<p><strong>16h0</strong><strong>0</strong>:&nbsp;Thăm quan&nbsp;Làng nghề điêu khắc đá Non Nước,&nbsp;Tháp Xá Lợi, viếng Chùa Linh Ứng I, động Tàng Chơn, động Huyền Không, Chùa Tam Thai&nbsp;và lên&nbsp;Vọng Giang Đài&nbsp;nơi có&nbsp;kính Viễn Vọng&nbsp;để thẩm nhận&nbsp;5 ngọn núi&nbsp;Kim, Mộc, Thủy, Hỏa, Thổ&nbsp;cũng như toàn cảnh&nbsp;sông Cổ Cò, làng đá mỹ nghệ Non Nước.</p>\r\n\r\n<p><strong>1</strong><strong>7</strong><strong>h</strong><strong>3</strong><strong>0</strong>: Quý khách ăn tối và nghỉ ngơi tại nhà hàng Hội An <em>(Quý khách sẽ được thưởng thức đặc sản nổi tiếng tại Hội An với món</em><em> Cơm gà-</em><em> Bánh Vạc – Hoành Thánh). </em></p>\r\n\r\n<p><strong><em><u>Tối</u></em></strong><strong><em><u>:</u></em></strong> &nbsp;<strong><em><u>Hội An Lung Linh Phố Cổ – Đà Nẵng (Ăn tối)</u></em></strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>1</strong><strong>8</strong><strong>h</strong><strong>3</strong><strong>0</strong>: Quý khách tiếp tục hành trình tham quan khu Phố Cổ, HDV sẽ đưa Quý khách bách bộ tham quan :</p>\r\n\r\n<p><strong><em>- Chùa Cầu Nhật Bản</em></strong> -&nbsp; <em>là công trình kiến trúc đẹp và ấn tượng tại TP. Hội An - công trình là biểu tượng tiêu biểu của quá trình giao lưu văn hóa giữa 3 dân tộc Hoa – Việt – Nhật.</em></p>\r\n\r\n<p><strong><em>- Bảo tàng văn hóa Sa Huỳnh</em></strong> – <em>nơi lưu giữ những hiện vật có giá trị tiêu biểu thuộc nền văn hóa Sa Huỳnh ở miền Trung Việt Nam. </em></p>\r\n\r\n<p><strong><em>- Nhà Cổ Tấn Ký</em></strong> hàng trăm năm tuổi – <em>một trong những ngôi nhà cổ xưa nhất và có kiến trúc đẹp nhất tại Hội An.</em></p>\r\n\r\n<p>- <strong><em>Hội quán Phước Kiến</em></strong> – <em>một trong những hội quán có kiến trúc đẹp và lớn nhất của người Hoa tại Hội An.</em></p>\r\n\r\n<p><strong>20</strong><strong>h30</strong>: Quý khách tập trung về lại Đà Nẵng.</p>\r\n\r\n<p><strong>21</strong><strong>h00</strong>: Kết thúc chương trình. Đưa Quý khách về lại điểm đón ban đầu.</p>\r\n\r\n<p>Chào tạm biệt !&nbsp;</p>\r\n', '<table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:100%;\">\r\n	<tbody>\r\n		<tr>\r\n			<td style=\"text-align: center; padding: 5px;\"><strong>khách Việt Nam</strong></td>\r\n			<td style=\"text-align: center; padding: 5px;\"><b>Foreign tourist</b></td>\r\n		</tr>\r\n		<tr>\r\n			<td style=\"text-align: right; padding: 5px;\">450.000 đ/khách Vn</td>\r\n			<td style=\"text-align: right; padding: 5px;\">550.000Vnđ/pax</td>\r\n		</tr>\r\n		<tr>\r\n			<td style=\"text-align: right; padding: 5px;\">225.000 đ/trẻ em</td>\r\n			<td style=\"text-align: right; padding: 5px;\">275.000VNđ/Child</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n', 1283, '<p><iframe frameborder=\"0\" height=\"400px\" scrolling=\"no\" src=\"//maps.google.com/maps?q=16.0496128,108.1819923&amp;num=1&amp;t=m&amp;ie=UTF8&amp;z=14&amp;output=embed\" width=\"100%\"></iframe></p>\r\n', '<div style=\"position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;\"><object height=\"480\" style=\"position: absolute;top: 0;left: 0;width: 100%;height: 100%;\" width=\"640\"><param name=\"movie\" value=\"//www.youtube.com/v/JpoCJdieOAQ?rel=0&amp;hl=vi&amp;version=3\" /><param name=\"allowFullScreen\" value=\"true\" /><param name=\"allowscriptaccess\" value=\"always\" /><embed allowfullscreen=\"true\" allowscriptaccess=\"always\" height=\"480\" src=\"//www.youtube.com/v/JpoCJdieOAQ?rel=0&amp;hl=vi&amp;version=3\" style=\"position: absolute;top: 0;left: 0;width: 100%;height: 100%;\" type=\"application/x-shockwave-flash\" width=\"640\"></embed></object></div>\r\n', 1, 1, 1, 52, '', '', 'du lịch Hội An giá rẻ ,du lịch Đà Nẵng ,tour phố cổ Hội An ,tour Hội An giá rẻ ', 1457524620, 1458203039, 25),
+(3, 146, 'BÀ NÀ HILLS 1 NGÀY', 'srmhdb1v1y409e0-3-du-lich-ba-na-1-ngay-gia-re.jpg', '', 'Bà Nà Hill’s được mệnh danh là Sapa của miền Trung với khí hâu quanh năm mát mẻ, nhiệt độ trung bình vào khoảng 18oC, Bà Nà – Núi Chúa là khu du lịch sinh thái nghỉ dưỡng lý tưởng ở miền Trung. Du khách đến khu du lich Bà Nà không chỉ được tận hưởng không khí trong lành, xanh, sạch, đẹp mà còn được chiêm ngưỡng những cảnh quan đẹp mà hiếm vùng nghỉ mát nào có được. Ở Bà Nà một ngày có 4 mùa riêng biệt: buổi sang iết xuân, buổi trưa vào hạ, buổi chiều se se sang thu và đêm về lạnh giá như giữa đông.', 'BN01', 650000, '1 ngày (8h-17h)', 0, 'Xe ôtô', 'Du lịch văn hóa,Du lịch nghỉ dưỡng', 'Bà Nà Hills', 10, '<p><strong>Đà Nẵng</strong><br />\r\n&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>0</strong><strong>8</strong><strong>h</strong><strong>0</strong><strong>0 :</strong> Xe &amp; Hướng dẫn viên đón Quý khách tại khách sạn (hoặc điểm hẹn), khởi hành đi tham quan khu du lịch <em>Bà Nà – Núi Chúa, mệnh danh là Đà Lạt/ Sa Pa thứ 2 tại miền Trung</em>, với khí hậu tuyệt vời được <em>ví như mùa Xuân của nước Pháp.</em></p>\r\n\r\n<p><strong>08h45 : </strong>Cùng nhau thưởng ngoạn khung cảnh Bà Nà trên cao bằng <em>hệ thống cáp treo hiện đại nhất Đông Nam Á.</em> 20 phút du ngoạn trên cáp treo, <em>du khách sẽ được chiêm ngưỡng Suối Mơ hùng vĩ, cảnh núi rừng nguyên sinh của khu bảo tồn thiên nhiên Bà Nà với hệ sinh thái phong phú và đa dạng</em> . Du khách sẽ được tận hưởng <em>sự thay đổi thời tiết rõ rệt khi đi qua Cổng Trời</em> hay có cơ hội trải nghiệm cảm giác phiêu lưu đầy ấn tượng chìm trong sương mờ. Chinh phục đỉnh núi Chúa ở độ cao 1.487m so với mực nước biển<em>, giữ </em><em>4</em><em> kỉ lục thế giới (hệ thống cáp treo một dây dài nhất thế giới 5.042m và độ cao chênh lệch giữa ga trên và ga dưới cao nhất thế giới 1.291m)</em> chiêm ngưỡng quang cảnh núi rừng Bà Nà và toàn cảnh Quảng Nam - Đà Nẵng từ trên cao. Tham quan <em>khu Le Jardin</em> <em>với các di tích của người Pháp</em> như: <em>khu buộc ngựa của Pháp, cây bưởi gần 100 tuổi, vết tích các khu biệt thự cổ. Đặc biệt là Hầm rượu Debay, hầm rượu được người Pháp xây dựng từ năm 1923, trải qua gần một thế kỷ, hầm rượu vẫn giữ được nét hoang sơ, kì bí, là công trình duy nhất của người Pháp còn lại khá nguyên vẹn tại Bà Nà.</em></p>\r\n\r\n<p><em>Viếng chùa Linh Ứng Bà Nà</em> chiêm ngưỡng <em>tượng Phật Thích Ca cao 27m</em> và thả mình vào khung cảnh thanh tịnh của chốn thiền môn, tham quan <em>Vườn Lộc Uyển, Quan Âm Các</em></p>\r\n\r\n<p><strong>10h00 :</strong> Hướng dẫn viên đưa đoàn vào tham quan <em>khu vui chơi Fantasy Park</em> – <em>khu vui chơi giải trí trong nhà lớn nhất Việt Nam.</em>.</p>\r\n\r\n<p><strong>12h00 :</strong> Quý khách ăn trưa và nghỉ ngơi tại nhà hàng, dùng buffet tại Bà Nà (chi phí tự túc)</p>\r\n\r\n<p><strong>13h00 :</strong> Chinh phục đỉnh <em>Núi Chúa</em> – <em>nóc nhà của thành phố, thăm viếng Lĩnh Chúa Linh</em> Từ nằm ở độ cao 1487m, Ngắm toàn cảnh thành phố Đà Nẵng và vịnh Đà Nẵng lúc ẩn, lúc hiện dưới một biển mây trắng.</p>\r\n\r\n<p><strong>1</strong><strong>5</strong><strong>h</strong><strong>0</strong><strong>0 :</strong> Đón chuyến cáp và xuống lại Ga Suối Mơ kết thúc chương trình</p>\r\n\r\n<p><strong>17h00</strong>: Về lại TP Đà Nẵng, trả khách về lại điểm đón ban đầu và chào tạm biệt !</p>\r\n', '<p>Điểm nổi bật</p>\r\n\r\n<p><strong>DỊCH VỤ BAO GỒM</strong></p>\r\n\r\n<p>-&nbsp; Xe du lịch tiêu chuẩn phục vụ suốt tuyến</p>\r\n\r\n<p>-&nbsp; Hướng dẫn viên kinh nghiệm, nhiệt tình&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>\r\n\r\n<p>-&nbsp;Vé cáp treo khu du lịch Bà Nà Hills (550k/vé)</p>\r\n\r\n<p>-&nbsp;Nước suối 1 chai/người/ngày</p>\r\n\r\n<p>-&nbsp;Bảo hiếm du lịch</p>\r\n\r\n<p>- vé tham quan và chơi trò chơi ở khu Fantasy Park</p>\r\n\r\n<p><strong>KHÔNG BAO GỒM</strong></p>\r\n\r\n<p>- Thuế VAT</p>\r\n\r\n<p>- ăn trưa buffet ( 180k/ suất)</p>\r\n\r\n<p>- vé thưởng thức rượu Vang tại Hầm rượu Debay</p>\r\n\r\n<p>- vé tàu hỏa leo núi</p>\r\n\r\n<p>- vé bảo tang tượng sáp</p>\r\n\r\n<p><strong>GHI CHÚ</strong></p>\r\n\r\n<p>- Đối với chương trình tour Bà Nà, giá áp dụng cho trẻ em cụ thể như sau:</p>\r\n\r\n<p>- Đối với trẻ em&nbsp; dưới&nbsp; 1m: Miễn phí</p>\r\n\r\n<p>- Trên 1m đến 1m29: 75% giá tour</p>\r\n\r\n<p>- Trên 1m3 tính vé người&nbsp; lớn</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h4 class=\"title cl-green\">Giá tour cơ bản</h4>\r\n\r\n<table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:100%;\">\r\n	<tbody>\r\n		<tr>\r\n			<td style=\"text-align: right; padding: 5px;\">người lớn</td>\r\n			<td style=\"text-align: right; padding: 5px;\">650/000đ</td>\r\n		</tr>\r\n		<tr>\r\n			<td style=\"text-align: right; padding: 5px;\">trẻ em&nbsp;</td>\r\n			<td style=\"text-align: right; padding: 5px;\"><strong>500.000₫</strong></td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h4 class=\"title cl-green\">Phụ thu phòng đơn(VND₫)</h4>\r\n\r\n<table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:100%;\">\r\n	<tbody>\r\n		<tr>\r\n			<td style=\"text-align: right; padding: 5px;\">Việt Nam</td>\r\n		</tr>\r\n		<tr>\r\n			<td style=\"text-align: right; padding: 5px;\">&nbsp;</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n', 1284, '<p><iframe frameborder=\"0\" height=\"400px\" scrolling=\"no\" src=\"//maps.google.com/maps?q=16.047076,108.1712097&amp;num=1&amp;t=m&amp;ie=UTF8&amp;z=14&amp;output=embed\" width=\"100%\"></iframe></p>\r\n', '<div style=\"position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;\"><object height=\"480\" style=\"position: absolute;top: 0;left: 0;width: 100%;height: 100%;\" width=\"640\"><param name=\"movie\" value=\"//www.youtube.com/v/o1INttWSy_A?rel=0&amp;hl=vi&amp;version=3\" /><param name=\"allowFullScreen\" value=\"true\" /><param name=\"allowscriptaccess\" value=\"always\" /><embed allowfullscreen=\"true\" allowscriptaccess=\"always\" height=\"480\" src=\"//www.youtube.com/v/o1INttWSy_A?rel=0&amp;hl=vi&amp;version=3\" style=\"position: absolute;top: 0;left: 0;width: 100%;height: 100%;\" type=\"application/x-shockwave-flash\" width=\"640\"></embed></object></div>\r\n', 1, 1, 1, 77, '', '', 'du lịch Bà Nà giá rẻ ,tour Bà Nà chất lượng ,tour Bà Nà Hills ,tour Đà Nẵng uy tín ,tour Bà Nà giá rẻ ', 1457533200, 1458786014, 1),
+(28, 146, 'DU LỊCH ĐẢO LÝ SƠN 2 NGÀY 1 ĐÊM', 'bo5cokmzle168uo-28-du-lich-dao-ly-son-2-ngay-1-dem.jpg', '', 'Bạn chỉ mới nghe đến vẻ đẹp của Đảo Lý Sơn? bạn muốn khám phá Lý Sơn nhưng chưa biết bằng cách nào và chi phí ra sao? Hãy để chúng tôi, Vodatours sẽ đồng hành cùng chuyến đi của bạn. Với kinh nghiệm và sự nhiệt tình của đội ngũ nhân viên Vodatours - chúng tôi sẽ mang đến cho bạn những khoảnh khắc tuyệt vời nhất.\r\n\"Vodatours - Thỏa lòng nơi bạn đến\"', 'LS201', 1400000, '', 1464022800, 'Ô tô,tàu cao tốc', 'Du lịch nghỉ dưỡng,Du lịch khám phá', 'Đảo Lý Sơn,Cảng Sa Kỳ,Khu chứng tích Sơn Mỹ,Tượng Mẹ Thứ', 10, '<table align=\"center\" border=\"1\" cellpadding=\"0\" cellspacing=\"0\">\r\n	<tbody>\r\n		<tr>\r\n			<td style=\"width:566px;\">\r\n			<p align=\"center\"><strong><u>ĐÀ&nbsp; NẴNG -&nbsp; QUẢNG NGÃI – LÝ SƠN(Ăn</u></strong><strong><u> sáng, trưa</u></strong><strong><u> tối)</u></strong></p>\r\n\r\n			<p style=\"margin-left:1.7pt;\"><strong><u>04h30</u></strong>: Xe và HDV đón khách <strong><em>khởi hành đi Quảng Ngãi </em></strong>khởi hành xuống <strong><em>Cảng Sa Kỳ. <u>(Đón khách tại Tam Kỳ/Chu Lai theo lịch hẹn)</u></em> </strong></p>\r\n\r\n			<p><strong><em><u>(Quý khách ăn sáng, uống café tại Khu vực Cảng tự túc trong lúc chờ đợi lên tàu -chi phí tự túc)</u></em></strong></p>\r\n\r\n			<p style=\"margin-left:1.7pt;\"><strong><u>07h30 – 08h30</u></strong><strong>:&nbsp; </strong>Đoàn lên tàu ra <strong><em>Đảo Lý Sơn</em></strong>. Sau khoảng hơn nửa giờ du thuyền trên biển, đoàn đến <strong><em>Đảo Lý Sơn</em></strong>. Quý khách nhận phòng, nghỉ ngơi, tự do dạo quanh đảo. Sau đó dùng cơm trưa.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>\r\n\r\n			<p style=\"margin-left:1.7pt;\"><strong><u>13h00</u></strong><strong>:</strong>&nbsp; Đoàn khởi hành tham quan Đảo với những địa danh gắn liền với những minh chứng về chủ quyền biển đảo như: <strong><em>Đình Làng Lý Hải, Chùa Hang, nhà trưng bày Hải Đội Hoàng Sa(dâng hương và làm lể tưởng niệm các chiến sĩ Hải Đội Hoàng Sa) Chùa Tư Quang</em></strong><em>, <strong>Ngọn Hải Đăng</strong>, <strong>Miệng Núi Lửa</strong></em>, <strong><em>Cột Cờ…</em></strong>cùng nhau chinh phục ngọn <strong><em>Núi Thới Lới.</em></strong></p>\r\n\r\n			<p style=\"margin-left:1.7pt;\"><strong><em>Nghe HDV giới thiệu về Biển, đảo Việt Nam, tìm hiểu chủ quyền về quần đảo Hoàng Sa thiêng liêng</em></strong></p>\r\n\r\n			<p style=\"margin-left:48.0pt;\"><strong><u>Tối</u></strong><strong>:&nbsp;&nbsp;&nbsp;&nbsp; Ăn tối, nghỉ ngơi tự do.</strong></p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td style=\"width:566px;\">\r\n			<p align=\"center\"><strong><u>LÝ SƠN - ĐÀ NẴNG (ăn sáng,)</u></strong></p>\r\n\r\n			<p><strong><u>06h00</u></strong>: Làm thủ tục trả phòng, Quý khách dùng điểm tâm sáng. Sau đó đoàn tự do đi chợ mua đặc sản vùng Đảo: <strong><em>Hành, tỏi, đặc sản&nbsp; biển</em></strong>,....</p>\r\n\r\n			<p><strong><u>07h40</u></strong>: Khởi hành ra Bến Tàu về lại <strong><em>Cảng Sa Kỳ</em></strong>. Xe đón đoàn tại Cảng. &nbsp;&nbsp;</p>\r\n\r\n			<p><strong><u>80h40</u></strong>:&nbsp; Khởi hành về lại Đà Nẵng, <strong><em>trên đường ghé tham quan khu chứng tích Sơn Mỹ - nơi xãy ra vụ thảm sát kinh hoàng sáng ngày 16 /03/1968 làm chết 504 thường dân vô tội.</em></strong></p>\r\n\r\n			<ul>\r\n				<li><strong><em>Ghé Viếng tượng Mẹ Việt Nam Anh Hùng tại Tp Tam Kỳ </em></strong></li>\r\n			</ul>\r\n\r\n			<p style=\"margin-left:1.7pt;\"><strong><u>11h30</u></strong>&nbsp; Đến Đà Nẵng kết thúc chương trình tham quan. Chia tay và hẹn gặp lại.</p>\r\n			</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n\r\n<div style=\"clear:both;\">&nbsp;</div>\r\n', '<table align=\"center\" border=\"1\" cellpadding=\"0\" cellspacing=\"0\" width=\"716\">\r\n	<tbody>\r\n		<tr>\r\n			<td style=\"width:168px;height:66px;\">\r\n			<p align=\"center\"><strong>Lịch trình</strong></p>\r\n			</td>\r\n			<td style=\"width:80px;height:66px;\">\r\n			<p align=\"center\"><strong>Khởi hành</strong></p>\r\n			</td>\r\n			<td style=\"width:106px;height:66px;\">\r\n			<p align=\"center\"><strong>Giá Tour dành cho khách từ 11 tuổi trở lên</strong></p>\r\n			</td>\r\n			<td style=\"width:95px;height:66px;\">\r\n			<p align=\"center\"><strong>trẻ em từ 6-10 tuổi</strong></p>\r\n			</td>\r\n			<td style=\"width:113px;height:66px;\">\r\n			<p align=\"center\"><strong>Phụ thu phòng đơn</strong></p>\r\n			</td>\r\n			<td style=\"width:155px;height:66px;\">\r\n			<p align=\"center\"><strong>Quà Tặng </strong></p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td style=\"width:168px;height:44px;\">\r\n			<p><em>Tour 2 ngày 1 đêm: Đà Nẵng – Quảng Ngãi – Sa kỳ - Lý Sơn – Sơn Mỹ - Mẹ Thứ - Đà Nẵng </em></p>\r\n			</td>\r\n			<td style=\"width:80px;height:44px;\">\r\n			<p align=\"center\">HẰNG NGÀY</p>\r\n			</td>\r\n			<td style=\"width:106px;height:44px;\">\r\n			<p align=\"center\">&nbsp;</p>\r\n\r\n			<p align=\"center\">1.400.000</p>\r\n\r\n			<p align=\"center\">&nbsp;</p>\r\n			</td>\r\n			<td style=\"width:95px;height:44px;\">\r\n			<p align=\"center\">700.000</p>\r\n			</td>\r\n			<td style=\"width:113px;height:44px;\">\r\n			<p align=\"center\">150.000</p>\r\n			</td>\r\n			<td style=\"width:155px;height:44px;\">\r\n			<p align=\"center\">Áo đỏ sao vàng</p>\r\n\r\n			<p align=\"center\">&nbsp;</p>\r\n			</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n\r\n<div style=\"clear:both;\">&nbsp;</div>\r\n', 1320, '', '', 1, 1, 1, 7, '', '', 'Du lịch Lý Sơn,Tour Lý Sơn,Đảo Lý Sơn', 1458701700, 1458785941, 1),
 (7, 153, 'Du lịch Nhật Bản lễ 30/4 ngắm hoa anh đào giá rẻ', 'w9jhuxax0zk1h84-7-du-lich-nhat-ban-le-30-4-ngam-hoa-anh-dao-gia-re.jpg', '', 'our du lịch Nhật Bản lễ 30/4 ngắm hoa anh đào giá rẻ sẽ giúp quý khách có một kì nghỉ lễ thú vị tại xứ Phù Tang. Bên cạnh việc ngắm nhìn loài hoa anh đào nổi tiếng thì quý khách còn có thời gian tự do mua sắm và tham quan nhiều địa danh như núi Phú Sĩ, chùa cổ Asakusa Kannon,…', '', 30900000, '5 ngày 4 đêm', 1461690000, 'Máy bay,Xe ôtô', 'Du lịch mua sắm,Du lịch khám phá,Du lịch nghỉ dưỡng', 'Nhật Bản,Tokyo', 20, '<p>Đang cập nhật...</p>\r\n', '', 1288, '', '', 1, 0, 1, 27, '', '', '', 1457365140, 1459733996, 25),
 (8, 152, 'Du lịch Campuchia – ghé thăm xứ sở chùa Tháp lễ 30/4', 'cpf21zdz2pbb6hy-8-du-lich-campuchia-ghe-tham-xu-so-chua-thap-le-30-4.jpg', '', 'Tour du lịch Campuchia – ghé thăm xứ sở chùa Tháp lễ 30/4 sẽ giúp quý khách có một kì nghỉ lễ thật thú vị, đầy bất ngờ. Quý khách được ghé thăm thủ đô Phnôm Pênh với nhiều công trình kiến trúc nổi bật và thành phố biển Sihanoukville mát mẻ, thoáng đãng. Bên cạnh đó còn khám phá Đảo Koh Rong Saloem – thiên đường biển nổi tiếng ở khu vực Đông Nam Á.', '', 3990000, '4 ngày 3 đêm', 1461949200, 'Xe ôtô', 'Du lịch khám phá,Du lịch sinh thái,Du lịch văn hóa,Du lịch nghỉ dưỡng', 'Phnôm Pênh,Sihanoukville,Campuchia', 10, '<p>Đang cập nhật...</p>\r\n', '', 1289, '', '', 1, 0, 0, 4, '', '', '', 1457365320, 1457538500, 25),
-(10, 146, 'TOUR CÙ LAO CHÀM - HỘI AN 1 NGÀY', 'rbsfo2w4hgp1zcv-10-tour-cu-lao-cham-hoi-an-1-ngay.jpg', '', 'Được ví như một "hòn ngọc chưa được gọt giũa", Cù lao Chàm (Hội An, Quảng Nam) vẫn giữ được vẻ đẹp hoang sơ và những người dân hiền hòa, thân thiện Nằm cách Hội An chưa tới 20 km về phía đông, Cù Lao Chàm thuộc xã đảo Tân Hiệp (Hội An, Quảng Nam) gồm 8 đảo, lớn nhất là Hòn Lao, tổng diện tích 15 km2. Hòn Lao cũng là nơi có cư dân tập trung sinh sống chủ yếu. Hiện nay, Cù Lao Chàm trở thành khu bảo tồn biển thí điểm thứ hai trong cả nước (sau Hòn Mun, Nha Trang), Cù Lao Chàm được đánh giá là một hòn ngọc với cảnh quan thiên nhiên, hệ sinh thái quan trọng và có sự nổi bật về đa dạng sinh học: rừng tự nhiên, bãi biển đẹp, rạn san hô được bảo tồn, thảm cỏ biển, rong biển và nhiều loài thủy sản có giá trị …', 'CLHA01', 580000, '1 ngày (8h-17h)', 0, 'Xe ôtô,Cano', 'Du lịch khám phá,Du lịch sinh thái,Du lịch nghỉ dưỡng', 'Đà Nẵng,Hội An,Cù Lao Chàm', 10, '<p><u><strong>Chương trình tour</strong></u></p>\r\n\r\n<p><strong>07h30:</strong> Xe đón khách tại điểm hẹn. Khởi hành đi vào bến cảng sông Hoài, Hội An.</p>\r\n\r\n<p><strong>08h15:</strong> Cano khởi hành đi Cù Lao Chàm. Qúy khách tận hưởng cảm giác bồng bềnh trên sông nước.<br />\r\n<strong>08h45:</strong> Đến Cù Lao Chàm. Qúy khách tham quan <strong><em>Khu bảo tồn biển Khu dân cư Bãi Làng, Âu thuyền – khu vực tránh bảo của ngư dân.và tiếp tục tham quan Chùa Hải Tạng một ngôi chùa cổ hơn 400 năm tuổi, chợ Tân Hiệp và mua sắm.</em><br />\r\n10h30:</strong> Du khách <strong><em>tham gia lặn và ngắm san hô, sinh vật biển.</em></strong><br />\r\n<strong>11h30: </strong>Ăn trưa và nghỉ ngơi tại nhà hàng. Quý khách tự do tham quan nghỉ ngơi, tắm biển, tắm nắng tại đây.<br />\r\n<strong>14h30:</strong> Tạm biệt Cù Lao Chàm về tham quan Phố cổ Hội An<br />\r\n<strong>15h00:</strong> Đoàn khởi hành bách bộ tham quan phố cổ <strong><em>Hội An - Di Sản Văn Hoá </em></strong>với các công trình kiến trúc nổi tiếng :</p>\r\n\r\n<p><strong><em>- Chùa Cầu Nhật Bản</em></strong> -&nbsp; <em>là công trình kiến trúc đẹp và ấn tượng tại TP. Hội An - công trình là biểu tượng tiêu biểu của quá trình giao lưu văn hóa giữa 3 dân tộc Hoa – Việt – Nhật.</em></p>\r\n\r\n<p><strong><em>- Bảo tàng văn hóa Sa Huỳnh</em></strong> – <em>nơi lưu giữ những hiện vật có giá trị tiêu biểu thuộc nền văn hóa Sa Huỳnh ở miền Trung Việt Nam. </em></p>\r\n\r\n<p><strong><em>- Nhà Cổ Tấn Ký</em></strong> hàng trăm năm tuổi – <em>một trong những ngôi nhà cổ xưa nhất và có kiến trúc đẹp nhất tại Hội An.</em></p>\r\n\r\n<p>- <strong><em>Hội quán Phước Kiến</em></strong> – <em>một trong những hội quán có kiến trúc đẹp và lớn nhất của người Hoa tại Hội An.</em></p>\r\n\r\n<p><strong>16</strong><strong>h</strong><strong>0</strong><strong>0 :</strong> HDV đưa quý khách dạo bộ đến làng nghề làm đèn lồng, dệt tơ tằm truyền thống của người dân Hội An.</p>\r\n\r\n<p><strong>17h00</strong> : về lại Đà Nẵng kết thúc chương trình. Chào tạm biệt !</p>\r\n', '<table border="1" cellpadding="0" cellspacing="0" style="width:100%;">\r\n	<tbody>\r\n		<tr>\r\n			<td style="text-align: center; padding: 5px;"><strong>Giá công bố</strong></td>\r\n			<td style="text-align: center; padding: 5px;"><strong>KHÁCH QUỐC TẾ</strong></td>\r\n		</tr>\r\n		<tr>\r\n			<td style="text-align: right; padding: 5px;">580.000 đ/khách</td>\r\n			<td style="text-align: right; padding: 5px;">650.000 đ</td>\r\n		</tr>\r\n		<tr>\r\n			<td style="text-align: right; padding: 5px;">&nbsp;</td>\r\n			<td style="text-align: right; padding: 5px;">&nbsp;</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n', 1283, '<p><iframe frameborder="0" height="400px" scrolling="no" src="//maps.google.com/maps?q=16.0496128,108.1819923&amp;num=1&amp;t=m&amp;ie=UTF8&amp;z=14&amp;output=embed" width="100%"></iframe></p>\r\n', '<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;"><object height="480" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" width="640"><param name="movie" value="//www.youtube.com/v/JpoCJdieOAQ?rel=0&amp;hl=vi&amp;version=3" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /><embed allowfullscreen="true" allowscriptaccess="always" height="480" src="//www.youtube.com/v/JpoCJdieOAQ?rel=0&amp;hl=vi&amp;version=3" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" type="application/x-shockwave-flash" width="640"></embed></object></div>\r\n', 1, 1, 1, 26, '', '', 'du lịch Cù Lao Chàm,du lịch Hội An', 1457395320, 1458207802, 1),
-(11, 146, 'CITY HUẾ 1 NGÀY', '30zspzysqejdqi7-11-du-lich-hanh-huong-mien-trung-3-ngay-2-dem.jpg', '', 'Đến Huế, nhiều người vẫn trầm trồ trước vẻ thơ mộng, hữu tình của cảnh sắc nơi đây, đan xen vào đó là vẻ cổ kính, ưu tư trước những thành quách đền đài xưa cũ. Nằm ở bờ Bắc con sông Hương thơ mộng, tổng thể kiến trúc của Kinh thành Huế được xây dựng trên một mặt bằng diện tích hơn 500ha, bao gồm Hoàng Thành và Tử Cấm Thành, được gọi chung là Đại Nội. Đây là trung tâm hành chính, chính trị của triều đình Nguyễn và nơi sinh hoạt của hoàng gia. (Liên hệ đặt Tour Mr Võ 0935.114.177 - Ms Thảo 0934.888.717)', 'MÃ TOUR: VDO-04', 750000, '1 ngày (8h -17h)', 0, 'Xe ôtô', 'Du lịch văn hóa,Du lịch nghỉ dưỡng', 'Đà Nẵng,Huế,Chùa Thiên Mụ ,Lăng Khải Định ,Chợ Đông Ba ,Kinh Thành Huế,Lăng Cô', 10, '<p><strong>Đà Nẵng</strong><br />\r\n<em>Số bữa ăn(2 bữa): Ăn trưa, Ăn tối</em></p>\r\n\r\n<p>7<strong>h</strong><strong>30</strong>: Xe và HDV đón quý khách tại điểm hẹn, khởi hành đến Tỉnh Thừa Thiên Huế, nơi đã từng là Cố đô của nước Việt Nam&nbsp; trong triều đại phong kiến cuối cùng và ẩn chứa nhiều câu chuyện của chốn thâm cung.<br />\r\n-Trên đường đi, quý khách sẽ không khỏi trầm trồ với <strong>H</strong><strong>ầm đường bộ</strong><strong> Hải Vân</strong> dài 6,3 km xuyên qua đèo Hải Vân hùng vĩ và cũng là biên giới giữa thành phố Đà Nẵng và tỉnh Thừa Thiên.<br />\r\n-Không chỉ thế, Vịnh Lăng Cô hiện ra trước mắt quý khách với phong cảnh biển xanh ngát và đầy thơ mộng.<br />\r\n-Qúy khách sẽ có dịp mục kích cảnh núi rùng hùng vĩ khi vượt qua hai ngọn đèo nổi tiếng là Phú Gia và Phước Tượng, đồng thời HDV sẽ kể cho quý khách nghe về Phá Tam Giang và Truông nhà Hồ khi xe đi ngang qua khu vực Phá Tam Giang.&nbsp;</p>\r\n\r\n<p><strong>9h30 </strong>: Hướng dẫn viên đưa đoàn đến tham quan&nbsp; thưởng thức cảnh đẹp cổ kính của <strong>Đại Nội</strong> hòa mình với vẻ đẹp cổ xưa và được HDV thuyết minh kể lại lịch sử của các vị vua triều nhà Nguyễn, tham quan&nbsp; Cổng Ngọ Môn, Lầu Ngũ Phụng, Cung Diên Thọ, Cung Trường Sanh, Hiển Lâm Các và Thế Miếu...</p>\r\n\r\n<p><strong>12h00: </strong>HDV sẽ đưa quý khách đến nhà hàng dùng bữa trưa.</p>\r\n\r\n<p><strong>Buổi Chiều</strong></p>\r\n\r\n<p>&nbsp; Xe và HDV sẽ đưa quý khách đến viếng chùa Thiên Mụ, một ngôi chùa cổ tại xứ Huế được xây dựng từ thời Tiên chúa Nguyễn Hoàng, một chứng tích của lịch sử đã trải qua những thăng trầm trong những giai đoạn lịch sử đầy biến động.</p>\r\n\r\n<p><strong>14h30</strong> Xe và HDV sẽ đưa quý khách đến tham quan <strong>lăng Khải Định</strong>, nơi chôn cất một vị vua gần cuối đời nhà Nguyễn, lăng Khải Định với kiến trúc pha lẫn giữa nét hiện đại phương Tây và cổ điển Phương Đông sẽ làm quý khách không khỏi ngạc nhiên.<br />\r\n<strong>1</strong><strong>6h00:</strong>&nbsp;Xe đưa quý khách khởi hành về lại Đà Nẵng Kết thúc chương trình.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n', '<p><strong>DỊCH VỤ BAO GỒM</strong><br />\r\n-&nbsp; Xe du lịch - &nbsp; Hướng dẫn viên-&nbsp; Ăn theo chương trình<br />\r\n-&nbsp; Vé tham quan các điểm theo chương trình<br />\r\n-&nbsp; Nước suối-&nbsp; Bảo hiếm du lịch</p>\r\n\r\n<p><strong>KHÔNG BAO GỒM</strong><br />\r\n- Thuế VAT<br />\r\n- Các chi phí ngoài chương trình</p>\r\n\r\n<p><strong>GHI CHÚ:</strong><br />\r\n- Cung cấp danh sách đoàn gồm đầy đủ các thông tin cá nhân, điện thoại liên lạc.<br />\r\n- Trẻ em từ 1 đến 5 tuổi miễn phí, 6 đến 10tuổi tính 50% giá tour, trên 11tuổi tính như người lớn.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h4 class="title cl-green">Giá tour cơ bản</h4>\r\n\r\n<table border="1" cellpadding="0" cellspacing="0" style="width:100%;">\r\n	<tbody>\r\n		<tr>\r\n			<td style="text-align: right; padding: 5px;"><span style="text-align: right;">Người lớn&nbsp;</span>(VND₫)</td>\r\n			<td style="text-align: right; padding: 5px;">Quốc tế</td>\r\n		</tr>\r\n		<tr>\r\n			<td style="text-align: right; padding: 5px;">750.000đ/ khách</td>\r\n			<td style="text-align: right; padding: 5px;"><strong>850.000đ/khách</strong></td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n\r\n<p>&nbsp;</p>\r\n', 1284, '<p><iframe frameborder="0" height="400px" scrolling="no" src="//maps.google.com/maps?q=16.047076,108.1712097&amp;num=1&amp;t=m&amp;ie=UTF8&amp;z=14&amp;output=embed" width="100%"></iframe></p>\r\n', '<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;"><object height="480" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" width="640"><param name="movie" value="//www.youtube.com/v/o1INttWSy_A?rel=0&amp;hl=vi&amp;version=3" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /><embed allowfullscreen="true" allowscriptaccess="always" height="480" src="//www.youtube.com/v/o1INttWSy_A?rel=0&amp;hl=vi&amp;version=3" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" type="application/x-shockwave-flash" width="640"></embed></object></div>\r\n', 1, 1, 1, 30, '', '', 'Du lịch Huế,tour Huế 1 ngày,khám phá Huế,City Huế 1 ngày', 1457405280, 1458208137, 1),
+(10, 146, 'TOUR CÙ LAO CHÀM - HỘI AN 1 NGÀY', 'rbsfo2w4hgp1zcv-10-tour-cu-lao-cham-hoi-an-1-ngay.jpg', '', 'Được ví như một \"hòn ngọc chưa được gọt giũa\", Cù lao Chàm (Hội An, Quảng Nam) vẫn giữ được vẻ đẹp hoang sơ và những người dân hiền hòa, thân thiện Nằm cách Hội An chưa tới 20 km về phía đông, Cù Lao Chàm thuộc xã đảo Tân Hiệp (Hội An, Quảng Nam) gồm 8 đảo, lớn nhất là Hòn Lao, tổng diện tích 15 km2. Hòn Lao cũng là nơi có cư dân tập trung sinh sống chủ yếu. Hiện nay, Cù Lao Chàm trở thành khu bảo tồn biển thí điểm thứ hai trong cả nước (sau Hòn Mun, Nha Trang), Cù Lao Chàm được đánh giá là một hòn ngọc với cảnh quan thiên nhiên, hệ sinh thái quan trọng và có sự nổi bật về đa dạng sinh học: rừng tự nhiên, bãi biển đẹp, rạn san hô được bảo tồn, thảm cỏ biển, rong biển và nhiều loài thủy sản có giá trị …', 'CLHA01', 580000, '1 ngày (8h-17h)', 0, 'Xe ôtô,Cano', 'Du lịch khám phá,Du lịch sinh thái,Du lịch nghỉ dưỡng', 'Đà Nẵng,Hội An,Cù Lao Chàm', 10, '<p><u><strong>Chương trình tour</strong></u></p>\r\n\r\n<p><strong>07h30:</strong> Xe đón khách tại điểm hẹn. Khởi hành đi vào bến cảng sông Hoài, Hội An.</p>\r\n\r\n<p><strong>08h15:</strong> Cano khởi hành đi Cù Lao Chàm. Qúy khách tận hưởng cảm giác bồng bềnh trên sông nước.<br />\r\n<strong>08h45:</strong> Đến Cù Lao Chàm. Qúy khách tham quan <strong><em>Khu bảo tồn biển Khu dân cư Bãi Làng, Âu thuyền – khu vực tránh bảo của ngư dân.và tiếp tục tham quan Chùa Hải Tạng một ngôi chùa cổ hơn 400 năm tuổi, chợ Tân Hiệp và mua sắm.</em><br />\r\n10h30:</strong> Du khách <strong><em>tham gia lặn và ngắm san hô, sinh vật biển.</em></strong><br />\r\n<strong>11h30: </strong>Ăn trưa và nghỉ ngơi tại nhà hàng. Quý khách tự do tham quan nghỉ ngơi, tắm biển, tắm nắng tại đây.<br />\r\n<strong>14h30:</strong> Tạm biệt Cù Lao Chàm về tham quan Phố cổ Hội An<br />\r\n<strong>15h00:</strong> Đoàn khởi hành bách bộ tham quan phố cổ <strong><em>Hội An - Di Sản Văn Hoá </em></strong>với các công trình kiến trúc nổi tiếng :</p>\r\n\r\n<p><strong><em>- Chùa Cầu Nhật Bản</em></strong> -&nbsp; <em>là công trình kiến trúc đẹp và ấn tượng tại TP. Hội An - công trình là biểu tượng tiêu biểu của quá trình giao lưu văn hóa giữa 3 dân tộc Hoa – Việt – Nhật.</em></p>\r\n\r\n<p><strong><em>- Bảo tàng văn hóa Sa Huỳnh</em></strong> – <em>nơi lưu giữ những hiện vật có giá trị tiêu biểu thuộc nền văn hóa Sa Huỳnh ở miền Trung Việt Nam. </em></p>\r\n\r\n<p><strong><em>- Nhà Cổ Tấn Ký</em></strong> hàng trăm năm tuổi – <em>một trong những ngôi nhà cổ xưa nhất và có kiến trúc đẹp nhất tại Hội An.</em></p>\r\n\r\n<p>- <strong><em>Hội quán Phước Kiến</em></strong> – <em>một trong những hội quán có kiến trúc đẹp và lớn nhất của người Hoa tại Hội An.</em></p>\r\n\r\n<p><strong>16</strong><strong>h</strong><strong>0</strong><strong>0 :</strong> HDV đưa quý khách dạo bộ đến làng nghề làm đèn lồng, dệt tơ tằm truyền thống của người dân Hội An.</p>\r\n\r\n<p><strong>17h00</strong> : về lại Đà Nẵng kết thúc chương trình. Chào tạm biệt !</p>\r\n', '<table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:100%;\">\r\n	<tbody>\r\n		<tr>\r\n			<td style=\"text-align: center; padding: 5px;\"><strong>Giá công bố</strong></td>\r\n			<td style=\"text-align: center; padding: 5px;\"><strong>KHÁCH QUỐC TẾ</strong></td>\r\n		</tr>\r\n		<tr>\r\n			<td style=\"text-align: right; padding: 5px;\">580.000 đ/khách</td>\r\n			<td style=\"text-align: right; padding: 5px;\">650.000 đ</td>\r\n		</tr>\r\n		<tr>\r\n			<td style=\"text-align: right; padding: 5px;\">&nbsp;</td>\r\n			<td style=\"text-align: right; padding: 5px;\">&nbsp;</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n', 1283, '<p><iframe frameborder=\"0\" height=\"400px\" scrolling=\"no\" src=\"//maps.google.com/maps?q=16.0496128,108.1819923&amp;num=1&amp;t=m&amp;ie=UTF8&amp;z=14&amp;output=embed\" width=\"100%\"></iframe></p>\r\n', '<div style=\"position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;\"><object height=\"480\" style=\"position: absolute;top: 0;left: 0;width: 100%;height: 100%;\" width=\"640\"><param name=\"movie\" value=\"//www.youtube.com/v/JpoCJdieOAQ?rel=0&amp;hl=vi&amp;version=3\" /><param name=\"allowFullScreen\" value=\"true\" /><param name=\"allowscriptaccess\" value=\"always\" /><embed allowfullscreen=\"true\" allowscriptaccess=\"always\" height=\"480\" src=\"//www.youtube.com/v/JpoCJdieOAQ?rel=0&amp;hl=vi&amp;version=3\" style=\"position: absolute;top: 0;left: 0;width: 100%;height: 100%;\" type=\"application/x-shockwave-flash\" width=\"640\"></embed></object></div>\r\n', 1, 1, 1, 26, '', '', 'du lịch Cù Lao Chàm,du lịch Hội An', 1457395320, 1458207802, 1),
+(11, 146, 'CITY HUẾ 1 NGÀY', '30zspzysqejdqi7-11-du-lich-hanh-huong-mien-trung-3-ngay-2-dem.jpg', '', 'Đến Huế, nhiều người vẫn trầm trồ trước vẻ thơ mộng, hữu tình của cảnh sắc nơi đây, đan xen vào đó là vẻ cổ kính, ưu tư trước những thành quách đền đài xưa cũ. Nằm ở bờ Bắc con sông Hương thơ mộng, tổng thể kiến trúc của Kinh thành Huế được xây dựng trên một mặt bằng diện tích hơn 500ha, bao gồm Hoàng Thành và Tử Cấm Thành, được gọi chung là Đại Nội. Đây là trung tâm hành chính, chính trị của triều đình Nguyễn và nơi sinh hoạt của hoàng gia. (Liên hệ đặt Tour Mr Võ 0935.114.177 - Ms Thảo 0934.888.717)', 'MÃ TOUR: VDO-04', 750000, '1 ngày (8h -17h)', 0, 'Xe ôtô', 'Du lịch văn hóa,Du lịch nghỉ dưỡng', 'Đà Nẵng,Huế,Chùa Thiên Mụ ,Lăng Khải Định ,Chợ Đông Ba ,Kinh Thành Huế,Lăng Cô', 10, '<p><strong>Đà Nẵng</strong><br />\r\n<em>Số bữa ăn(2 bữa): Ăn trưa, Ăn tối</em></p>\r\n\r\n<p>7<strong>h</strong><strong>30</strong>: Xe và HDV đón quý khách tại điểm hẹn, khởi hành đến Tỉnh Thừa Thiên Huế, nơi đã từng là Cố đô của nước Việt Nam&nbsp; trong triều đại phong kiến cuối cùng và ẩn chứa nhiều câu chuyện của chốn thâm cung.<br />\r\n-Trên đường đi, quý khách sẽ không khỏi trầm trồ với <strong>H</strong><strong>ầm đường bộ</strong><strong> Hải Vân</strong> dài 6,3 km xuyên qua đèo Hải Vân hùng vĩ và cũng là biên giới giữa thành phố Đà Nẵng và tỉnh Thừa Thiên.<br />\r\n-Không chỉ thế, Vịnh Lăng Cô hiện ra trước mắt quý khách với phong cảnh biển xanh ngát và đầy thơ mộng.<br />\r\n-Qúy khách sẽ có dịp mục kích cảnh núi rùng hùng vĩ khi vượt qua hai ngọn đèo nổi tiếng là Phú Gia và Phước Tượng, đồng thời HDV sẽ kể cho quý khách nghe về Phá Tam Giang và Truông nhà Hồ khi xe đi ngang qua khu vực Phá Tam Giang.&nbsp;</p>\r\n\r\n<p><strong>9h30 </strong>: Hướng dẫn viên đưa đoàn đến tham quan&nbsp; thưởng thức cảnh đẹp cổ kính của <strong>Đại Nội</strong> hòa mình với vẻ đẹp cổ xưa và được HDV thuyết minh kể lại lịch sử của các vị vua triều nhà Nguyễn, tham quan&nbsp; Cổng Ngọ Môn, Lầu Ngũ Phụng, Cung Diên Thọ, Cung Trường Sanh, Hiển Lâm Các và Thế Miếu...</p>\r\n\r\n<p><strong>12h00: </strong>HDV sẽ đưa quý khách đến nhà hàng dùng bữa trưa.</p>\r\n\r\n<p><strong>Buổi Chiều</strong></p>\r\n\r\n<p>&nbsp; Xe và HDV sẽ đưa quý khách đến viếng chùa Thiên Mụ, một ngôi chùa cổ tại xứ Huế được xây dựng từ thời Tiên chúa Nguyễn Hoàng, một chứng tích của lịch sử đã trải qua những thăng trầm trong những giai đoạn lịch sử đầy biến động.</p>\r\n\r\n<p><strong>14h30</strong> Xe và HDV sẽ đưa quý khách đến tham quan <strong>lăng Khải Định</strong>, nơi chôn cất một vị vua gần cuối đời nhà Nguyễn, lăng Khải Định với kiến trúc pha lẫn giữa nét hiện đại phương Tây và cổ điển Phương Đông sẽ làm quý khách không khỏi ngạc nhiên.<br />\r\n<strong>1</strong><strong>6h00:</strong>&nbsp;Xe đưa quý khách khởi hành về lại Đà Nẵng Kết thúc chương trình.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n', '<p><strong>DỊCH VỤ BAO GỒM</strong><br />\r\n-&nbsp; Xe du lịch - &nbsp; Hướng dẫn viên-&nbsp; Ăn theo chương trình<br />\r\n-&nbsp; Vé tham quan các điểm theo chương trình<br />\r\n-&nbsp; Nước suối-&nbsp; Bảo hiếm du lịch</p>\r\n\r\n<p><strong>KHÔNG BAO GỒM</strong><br />\r\n- Thuế VAT<br />\r\n- Các chi phí ngoài chương trình</p>\r\n\r\n<p><strong>GHI CHÚ:</strong><br />\r\n- Cung cấp danh sách đoàn gồm đầy đủ các thông tin cá nhân, điện thoại liên lạc.<br />\r\n- Trẻ em từ 1 đến 5 tuổi miễn phí, 6 đến 10tuổi tính 50% giá tour, trên 11tuổi tính như người lớn.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h4 class=\"title cl-green\">Giá tour cơ bản</h4>\r\n\r\n<table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:100%;\">\r\n	<tbody>\r\n		<tr>\r\n			<td style=\"text-align: right; padding: 5px;\"><span style=\"text-align: right;\">Người lớn&nbsp;</span>(VND₫)</td>\r\n			<td style=\"text-align: right; padding: 5px;\">Quốc tế</td>\r\n		</tr>\r\n		<tr>\r\n			<td style=\"text-align: right; padding: 5px;\">750.000đ/ khách</td>\r\n			<td style=\"text-align: right; padding: 5px;\"><strong>850.000đ/khách</strong></td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n\r\n<p>&nbsp;</p>\r\n', 1284, '<p><iframe frameborder=\"0\" height=\"400px\" scrolling=\"no\" src=\"//maps.google.com/maps?q=16.047076,108.1712097&amp;num=1&amp;t=m&amp;ie=UTF8&amp;z=14&amp;output=embed\" width=\"100%\"></iframe></p>\r\n', '<div style=\"position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;\"><object height=\"480\" style=\"position: absolute;top: 0;left: 0;width: 100%;height: 100%;\" width=\"640\"><param name=\"movie\" value=\"//www.youtube.com/v/o1INttWSy_A?rel=0&amp;hl=vi&amp;version=3\" /><param name=\"allowFullScreen\" value=\"true\" /><param name=\"allowscriptaccess\" value=\"always\" /><embed allowfullscreen=\"true\" allowscriptaccess=\"always\" height=\"480\" src=\"//www.youtube.com/v/o1INttWSy_A?rel=0&amp;hl=vi&amp;version=3\" style=\"position: absolute;top: 0;left: 0;width: 100%;height: 100%;\" type=\"application/x-shockwave-flash\" width=\"640\"></embed></object></div>\r\n', 1, 1, 1, 30, '', '', 'Du lịch Huế,tour Huế 1 ngày,khám phá Huế,City Huế 1 ngày', 1457405280, 1458208137, 1),
 (15, 153, 'Du lịch Nhật Bản lễ 30/4 ngắm hoa anh đào giá rẻ', 'w9jhuxax0zk1h84-7-du-lich-nhat-ban-le-30-4-ngam-hoa-anh-dao-gia-re.jpg', '', 'our du lịch Nhật Bản lễ 30/4 ngắm hoa anh đào giá rẻ sẽ giúp quý khách có một kì nghỉ lễ thú vị tại xứ Phù Tang. Bên cạnh việc ngắm nhìn loài hoa anh đào nổi tiếng thì quý khách còn có thời gian tự do mua sắm và tham quan nhiều địa danh như núi Phú Sĩ, chùa cổ Asakusa Kannon,…', '', 30900000, '5 ngày 4 đêm', 1461690000, 'Máy bay,Xe ôtô', 'Du lịch mua sắm,Du lịch khám phá,Du lịch nghỉ dưỡng', 'Nhật Bản,Tokyo', 20, '<p>Đang cập nhật...</p>\r\n', '', 1288, '', '', 1, 0, 0, 9, '', '', '', 1457388900, 1457660074, 25),
 (16, 152, 'Du lịch Campuchia – ghé thăm xứ sở chùa Tháp lễ 30/4', 'cpf21zdz2pbb6hy-8-du-lich-campuchia-ghe-tham-xu-so-chua-thap-le-30-4.jpg', '', 'Tour du lịch Campuchia – ghé thăm xứ sở chùa Tháp lễ 30/4 sẽ giúp quý khách có một kì nghỉ lễ thật thú vị, đầy bất ngờ. Quý khách được ghé thăm thủ đô Phnôm Pênh với nhiều công trình kiến trúc nổi bật và thành phố biển Sihanoukville mát mẻ, thoáng đãng. Bên cạnh đó còn khám phá Đảo Koh Rong Saloem – thiên đường biển nổi tiếng ở khu vực Đông Nam Á.', '', 3990000, '4 ngày 3 đêm', 1461949200, 'Xe ôtô', 'Du lịch khám phá,Du lịch sinh thái,Du lịch văn hóa,Du lịch nghỉ dưỡng', 'Phnôm Pênh,Sihanoukville,Campuchia', 10, '<p>Đang cập nhật...</p>\r\n', '', 1289, '', '', 1, 0, 0, 2, '', '', '', 1457485320, 1459733982, 25),
-(18, 146, 'CITY TOUR ĐÀ NẴNG', 'urofpz7jb17y510-18-city-tour-da-nang.jpg', '', 'Du lịch Đà Nẵng nên đi đâu, Ăn gì, Chơi gì, Ở đâu? Hiện nay với dịch vụ trọn gói có rất nhiều người thân, người bạn của mình đa số đều đặt qua các công ty lữ hành. Còn nếu các bạn muốn tự tổ chức một chuyến du lịch cùng gia đình hay bạn bè của mình thì các bạn phải lên được kế hoạch cho 4 câu hỏi đó thì mới có thể tung tăng tới đây được.', 'MÃ TOUR: VDO-06', 450000, '1 ngày (8h-16h)', 0, 'Xe ôtô', 'Du lịch khám phá,Du lịch sinh thái,Du lịch nghỉ dưỡng,Du lịch tâm linh', 'Đà Nẵng,Sơn Trà,Ngũ Hành Sơn ,Bảo Tàng Chăm ,Chợ Hàn', 20, '<p><strong>Chương trình tour (</strong><span style="text-align: right;">450.000đ/khách)</span></p>\r\n\r\n<p><strong>8h00</strong>:&nbsp;Xe và hướng dẫn viên đón khách theo điểm hẹn khởi hành tham quan&nbsp;thành phố Đà Nẵng. Trên đường đi quý khách sẽ được nghe thuyết minh về các&nbsp;tuyến&nbsp;đường phố, bãi biển Mỹ Khê, resort 5 sao, sân bay nước mặn,…</p>\r\n\r\n<p><strong>8h30</strong>:&nbsp;Thăm quan&nbsp;Làng nghề điêu khắc đá Non Nước,&nbsp;Tháp Xá Lợi, viếng Chùa Linh Ứng I, động Tàng Chơn, động Huyền Không, Chùa Tam Thai&nbsp;và lên&nbsp;Vọng Giang Đài&nbsp;nơi có&nbsp;kính Viễn Vọng&nbsp;để thẩm nhận&nbsp;5 ngọn núi&nbsp;Kim, Mộc, Thủy, Hỏa, Thổ&nbsp;cũng như toàn cảnh&nbsp;sông Cổ Cò, làng đá mỹ nghệ Non Nước.</p>\r\n\r\n<p><strong>10h00</strong>:&nbsp;Xe đưa Quý khách hành trình thăm quan&nbsp;chùa Linh Ứng Bãi Bụt&nbsp;- ngôi chùa lớn nhất của thành phố Đà Nẵng, chiêm ngưỡng Tượng Phật&nbsp;Quan Thế Âm Bồ Tát&nbsp;cao nhất Việt Nam 67m.</p>\r\n\r\n<p><strong>11h00</strong>:&nbsp;Đoàn tập trung về thăm quan&nbsp;cầu Thuận Phước&nbsp;một trong những cây cầu treo dây võng dài nhất Việt Nam. Tại đây, quý khách có thể ngắm nhìn cầu&nbsp;sông Hàn, Vũng Thùng&nbsp;và chiêm ngưỡng&nbsp;cặp mắt thần Đông Dương.</p>\r\n\r\n<p><strong>11h45</strong>:&nbsp;Ăn trưa tại nhà hàng. Nghỉ ngơi tự do.</p>\r\n\r\n<p><strong>13h30</strong>:&nbsp;Quý khách khởi hành đến&nbsp;bảo tàng Điêu khắc ChămPa</p>\r\n\r\n<p><strong>15h00:</strong>&nbsp;Đoàn khởi hành&nbsp;đến&nbsp;<strong><em>chợ Hàn</em></strong>&nbsp;- chợ nổi tiếng nhất ở Đà Nẵng và có từ thời Pháp, tại đây du khách có thể mua những đặc sản của Đà Nẵng như: Mực một nắng, bánh khô Mè, vải may áo dài,…</p>\r\n\r\n<p><strong>16h00:</strong>&nbsp;Đoàn tập trung, Xe đưa Quý khách về điểm đón ban đầu. Chào thân ái. Kết thúc chương trình.</p>\r\n\r\n<p><strong>*<em><u>Bao gồm:</u></em></strong></p>\r\n\r\n<p>- Xe phục vụ theo chương trình.</p>\r\n\r\n<p>- Hướng dẫn viên tận tình.</p>\r\n\r\n<p>- Ăn trưa.</p>\r\n\r\n<p>- Vé thăm quan các điểm.</p>\r\n\r\n<p>- Bảo hiểm du lịch. Khăn lạnh, nước.</p>\r\n\r\n<p><strong>*&nbsp;<em><u>Không bao gồm:</u></em></strong></p>\r\n\r\n<p>- Các chi phí cá nhân. Thuế VAT.</p>\r\n\r\n<p><strong>*&nbsp;<em><u>Ghi chú:</u></em></strong></p>\r\n\r\n<p>- Cung cấp danh sách đoàn gồm đầy đủ các thông tin cá nhân, điện thoại liên lạc.<br />\r\n- Trẻ em từ 1 đến 5 tuổi miễn phí, 6 đến 10tuổi tính 70% giá tour, trên 11tuổi tính như người lớn.</p>\r\n', '<table border="1" cellpadding="0" cellspacing="0" style="width:100%;">\r\n	<tbody>\r\n		<tr>\r\n			<td style="text-align: center; padding: 5px;"><strong>Giá công bố</strong></td>\r\n			<td style="text-align: center; padding: 5px;"><strong>khách Quốc Tế</strong></td>\r\n		</tr>\r\n		<tr>\r\n			<td style="text-align: right; padding: 5px;">450.000đ</td>\r\n			<td style="text-align: right; padding: 5px;">550.000đ</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n\r\n<p>&nbsp;</p>\r\n', 1283, '<p><iframe frameborder="0" height="400px" scrolling="no" src="//maps.google.com/maps?q=16.0496128,108.1819923&amp;num=1&amp;t=m&amp;ie=UTF8&amp;z=14&amp;output=embed" width="100%"></iframe></p>\r\n', '<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;"><object height="480" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" width="640"><param name="movie" value="//www.youtube.com/v/JpoCJdieOAQ?rel=0&amp;hl=vi&amp;version=3" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /><embed allowfullscreen="true" allowscriptaccess="always" height="480" src="//www.youtube.com/v/JpoCJdieOAQ?rel=0&amp;hl=vi&amp;version=3" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" type="application/x-shockwave-flash" width="640"></embed></object></div>\r\n', 1, 1, 1, 18, '', '', 'Du lịch Đà Nẵng ,tham quan Đà Nẵng ,Du lịch Đà Nẵng 1 ngày', 1457505300, 1458785900, 1),
-(26, 146, 'DU LỊCH ĐÀ NẴNG 4 NGÀY 3 ĐÊM', 'x2xovdkdjai4c6x-26-du-lich-da-nang-4-ngay-3-dem.jpg', '', 'ĐÀ NẴNG – SƠN TRÀ - BÀ NÀ - CÙ LAO CHÀM – HỘI AN', 'DN4', 2850000, '4 ngày 3 đêm', 0, 'ô tô du lịch,ca nô,cáp treo', 'Du lịch tâm linh,Du lịch nghỉ dưỡng,du lịch khám phá', 'Đà Nẵng,Bán đảo Sơn Trà,Bà Nà Hills,Cù Lao Chàm,Hội An,Ngũ Hành Sơn,Chùa Linh Ứng', 10, '<p align="center"><strong>ĐÀ NẴNG – SƠN TRÀ - BÀ NÀ - CÙ LAO CHÀM – HỘI AN</strong></p>\r\n\r\n<p align="center">&nbsp;</p>\r\n\r\n<p align="center">&nbsp;</p>\r\n\r\n<p><strong><u>NGÀY 01: ĐÓN KHÁCH-&nbsp; ĐÀ NẴNG -SƠN TRÀ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (ĂN TRƯA-TỐI--)</u></strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p style="margin-left:.55in;"><strong>- </strong><strong>Trưa: </strong>Xe &amp; HDV đón quý khách tại Ga và sân bay Đà Nẵng (<strong>từ 07h00 đến 13h00, sau thời gian này vui lòng tự túc nhập đoàn</strong>) đưa đi dùng bữa trưa với đặc sản nổi tiếng Đà Nẵng “Bánh tráng thịt heo 2 đầu da &amp; Mỳ Quảng”.&nbsp; Nhận phòng K/sạn nghỉ ngơi.</p>\r\n\r\n<p style="margin-left:.55in;"><strong>- Chiều:</strong>Khởi hành đi Bán Đảo Sơn Trà (Monkey Mountain) quay một vòng quanh Bán Đảo để thưởng ngoạn toàn cảnh phố biển Đà Nẵng trên cao. Xe đưa quý khách dọc theo triền núi Đông Nam để chiêm ngưỡng vẻ đẹp tuyệt mỹ của biển Đà Nẵng, viếng <strong>Linh Ứng Tự</strong> - nơi có tượng Phật Bà 65m cao nhất Việt Nam&nbsp; và tắm biển <strong>Mỹ Khê</strong>.</p>\r\n\r\n<p><strong>- Tối:</strong>&nbsp; Ăn tối nhà hàng. Quý khách ngồi thuyền trên sông Hàn <strong>(Chi phí tự túc)</strong> ngắm thành phố <strong>Đà Nẵng</strong> lung linh về đêm với hàng loạt cây Cầu độc đáo và nổi tiếng.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong><u>NGÀY 02: ĐÀ NẴNG –BÀ NÀ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (ĂN SÁNG- TRƯA-TỐI)</u></strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p style="margin-left:.55in;"><strong>- Sáng:</strong>Điểm tâm. Khởi hành đi khu du lịch Bà Nà (Tự túc chi phí vé cáp treo 550.000đ/khách) , nơi mà quý khách khám phá những khoảnh khắc giao mùa bất ngờ Xuân – Hạ - Thu – Đông trong 1 ngày.&nbsp; Ngồi cáp treo dài nhất thế giới (gần 6.000m), tham quan Đồi Vọng Nguyệt, chùa Linh Ứng, Thích Ca Phật Đài, khu chuồng ngựa cũ của Pháp, vườn tịnh tâm và đỉnh nhà rông.</p>\r\n\r\n<p>- Trưa:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ăn trưa nhà hàng.</p>\r\n\r\n<p><strong>- Chiều: </strong>&nbsp;Quý khách tự do tham quan,chụp ảnh và tắm biển Mỹ Khê.</p>\r\n\r\n<p><strong>- Tối:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ăn tối nhà hàng. Quý khách chiêm ngưỡng vẻ đẹp Đà Nẵng từ trên cao khi tham quan Vòng Quay Mặt Trời (Chi phí tự túc)</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong><u>NGÀY 03: ĐÀ NẴNG- CÙ LAO CHÀM-HỘI AN&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ĂN SÁNG-TRƯA-TỐI)</u></strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>- Sáng:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong>Điểm tâm. Khởi hành vào Hội An ngồi tàu Cao Tốc tại biển Cửa Đại - Hội An đi Cù Lao Chàm, khu dự trữ sinh quyển Thế giới gồm cụm đảo ngoài khơi biển Đông cách Hội An 12 hải lý. Tham quan chùa Hải Tạng hơn 400 năm tuổi, Âu thuyền – khu vực tránh bão của ngư dân, Khu dân cư &amp; các lăng miếu cổ.</p>\r\n\r\n<p><strong>- Trưa:</strong> Ăn trưa nhà hàng tại Cù Lao Chàm.</p>\r\n\r\n<p>- Chiều:Tiếp tục thăm khu bảo tồn biển tại bãi Bắc, hòn Dài và tham gia các hoạt động lặn biển (Snokelling). Về lại Hội An tham quan Phố Cổ.</p>\r\n\r\n<p><strong>- Tối:</strong>&nbsp; Ăn tối nhà hàng. Xe đưa quý khách về lại Đà Nẵng. Ngủ KS tại Đà Nẵng.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong><u>NGÀY 04: ĐÀ NẴNG- NGŨ HÀNH SƠN –TIỄN KHÁCH&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;(ĂN SÁNG-TRƯA)</u></strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>- Sáng:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong>Điểm tâm. Sáng tham quan Ngũ Hành Sơn, tham quan Làng đá Non Nước. Mua sắm tại Siêu Thị Đặc Sản Miền Trung.</p>\r\n\r\n<p><strong>- Trưa:</strong>&nbsp; Ăn trưa nhà hàng.</p>\r\n\r\n<p><strong>- Chiều:</strong>Tiễn khách sân bay Đà Nẵng (chuyến bay từ 15h00 đến 23h00). Chào thân ái.&nbsp; Kết thúc chương trình.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong><u>* </u></strong><strong><u>TOUR BAO GỒM: </u></strong></p>\r\n\r\n<p>-Xe vận chuyển tốt đời mới đón - tiễn và phục vụ theo chương trình.</p>\r\n\r\n<p>(16, 29, 35, 45 chỗ tùy theo số lượng khách của mỗi tour)</p>\r\n\r\n<p>-Ngủ 2khách/phòng khách sạn tiện nghi 3 sao hoặc 4 sao :hệ thống máy nước nóng lạnh, ĐT, phòng tắm riêng, phòng 2-3 người…&nbsp; Trường hợp đi 1 người phải phụ thu phòng đơn</p>\r\n\r\n<p>-Ăn các bữa theo tour: 03 bữa sáng buffet + 04 bữa trưa + 03 bữa tối tiêu chuẩn 120,000 VNĐ/suất.</p>\r\n\r\n<p>-Vé tham quan các điểm.</p>\r\n\r\n<p>-Dịch vụ snorkelling Cù Lao Chàm</p>\r\n\r\n<p>-Hướng dẫn viên tiếng Việt phục vụ tận tình.</p>\r\n\r\n<p>-Phục vụ 02nước0.5l/khách /ngày.</p>\r\n\r\n<p>-Bảo hiểm du lịch.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong><u>* KHÔNG BAO GỒM: </u></strong></p>\r\n\r\n<p>-Chi phí cá nhân, thức uống tự gọi trong các bữa ăn,..</p>\r\n\r\n<p>-Vé tham quan Vòng Quay Mặt Trời, Vé Du thuyền Sông Hàn, vé tham quan Bà Nà.</p>\r\n\r\n<p>-Vé máy bay/tàu/ô tô khứ hồi: SGN/HAN/NHA-DAD/HUI-SGN/HAN/NHA.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Giá tour trẻ em </strong></p>\r\n\r\n<table border="1" cellpadding="0" cellspacing="0" style="width:669px;" width="836">\r\n	<tbody>\r\n		<tr>\r\n			<td style="width:134px;">\r\n			<p>Trẻ em 1 - 4 tuổi:</p>\r\n			</td>\r\n			<td style="width:54px;">\r\n			<p>Free</p>\r\n			</td>\r\n			<td style="width:481px;">\r\n			<p>Gia đình tự lo ăn uống, chỗ ngủ cho bé. Nếu phát sinh chi phí cáp treo Bà Nà bố mẹ tự thanh toán trực tiếp (Trẻ em dưới 1 m miễn phí)</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td style="width:134px;">\r\n			<p>Trẻ em 5 - 9 tuổi</p>\r\n			</td>\r\n			<td style="width:54px;">\r\n			<p>50%</p>\r\n			</td>\r\n			<td style="width:481px;">\r\n			<p>Ăn suất riêng và ngủ chung với bố mẹ.</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td style="width:134px;">\r\n			<p>Trẻ em từ 10 tuổi</p>\r\n			</td>\r\n			<td style="width:54px;">\r\n			<p>100%</p>\r\n			</td>\r\n			<td style="width:481px;">\r\n			<p>Tiêu chuẩn như người lớn</p>\r\n			</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n\r\n<p>&nbsp;</p>\r\n', '<p>khách sạn 2 sao: 2.850.000đ/ khách</p>\r\n\r\n<p>Khách sạn 3 sao: 2.950.000đ/ khách</p>\r\n\r\n<p>khách sạn 4 sao : 4.200.000đ/khách</p>\r\n', 1316, '', '', 1, 1, 1, 16, '', '', 'Du lịch Đà Nẵng 4 ngày,Tour Bà Nà,tour Cù Lao Chàm giá rẻ', 1458360420, 1458873054, 1);
-INSERT INTO `olala3w_tour` (`tour_id`, `tour_menu_id`, `name`, `img`, `img_note`, `comment`, `tour_keys`, `price`, `date_schedule`, `date_departure`, `means`, `tour_type`, `destination`, `sale`, `schedule`, `price_list_service`, `upload_id`, `maps`, `video`, `is_active`, `hot`, `pin`, `views`, `title`, `description`, `keywords`, `created_time`, `modified_time`, `user_id`) VALUES
-(19, 146, 'TOUR CÙ LAO CHÀM 1 NGÀY', 'pgqim4hh5xo73lx-19-tour-cu-lao-cham-1-ngay.jpg', '', 'Được ví như một "hòn ngọc chưa được gọt giũa", Cù lao Chàm (Hội An, Quảng Nam) vẫn giữ được vẻ đẹp hoang sơ và những người dân hiền hòa, thân thiện Nằm cách Hội An chưa tới 20 km về phía đông, Cù Lao Chàm thuộc xã đảo Tân Hiệp (Hội An, Quảng Nam) gồm 8 đảo, lớn nhất là Hòn Lao, tổng diện tích 15 km2. Hòn Lao cũng là nơi có cư dân tập trung sinh sống chủ yếu. Hiện nay, Cù Lao Chàm trở thành khu bảo tồn biển thí điểm thứ hai trong cả nước (sau Hòn Mun, Nha Trang), Cù Lao Chàm được đánh giá là một hòn ngọc với cảnh quan thiên nhiên, hệ sinh thái quan trọng và có sự nổi bật về đa dạng sinh học: rừng tự nhiên, bãi biển đẹp, rạn san hô được bảo tồn, thảm cỏ biển, rong biển và nhiều loài thủy sản có giá trị …', 'CLC01', 450000, '1 ngày (8h-15h)', 0, 'Xe ôtô,Cano cao tốc ', 'Du lịch văn hóa,Du lịch nghỉ dưỡng', 'Đà Nẵng,Cù Lao Chàm ', 10, '<p><strong>07h30:</strong> Xe đón khách tại điểm hẹn. Khởi hành đi vào bến cảng sông Hoài, Hội An.<br />\r\n<strong>08h15:</strong> Cano khởi hành đi Cù Lao Chàm. Qúy khách tận hưởng cảm giác bồng bềnh trên sông nước.<br />\r\n<strong>08h45:</strong> Đến Cù Lao Chàm. Qúy khách tham quan <strong><em>Khu bảo tồn biển Khu dân cư Bãi Làng, Âu thuyền – khu vực tránh bảo của ngư dân.và tiếp tục tham quan Chùa Hải Tạng một ngôi chùa cổ hơn 400 năm tuổi, chợ Tân Hiệp và mua sắm.</em><br />\r\n10h30:</strong> Du khách <strong><em>tham gia lặn và ngắm san hô, sinh vật biển.</em></strong><br />\r\n<strong>11h30: </strong>Ăn trưa và nghỉ ngơi tại nhà hàng. Quý khách tự do tham quan nghỉ ngơi, tắm biển, tắm nắng tại đây.<br />\r\n<strong>14h30:</strong> Tạm biệt Cù Lao Chàm xe đón quý khách về Đà Nẵng - &nbsp;Chào Kết thúc chương trình.</p>\r\n', '<p><strong><u>DỊCH VỤ BAO GỒM</u></strong><br />\r\n-&nbsp; Xe du lịch</p>\r\n\r\n<p>- &nbsp; Hướng dẫn viên</p>\r\n\r\n<p>-&nbsp; Ăn uống theo chương trình<br />\r\n-&nbsp; Vé tham quan các điểm theo chương trình<br />\r\n-&nbsp; Nước suối-&nbsp; Bảo hiếm du lịch</p>\r\n\r\n<p><strong><u>KHÔNG BAO GỒM</u></strong><br />\r\n- Thuế VAT<br />\r\n- Các chi phí ngoài chương trình</p>\r\n\r\n<ul>\r\n	<li><strong><u>GHI CHÚ:</u></strong><br />\r\n	- Cung cấp danh sách đoàn gồm đầy đủ các thông tin cá nhân, điện thoại liên lạc.<br />\r\n	- Trẻ em từ 1 đến 5 tuổi miễn phí, 6 đến 10tuổi tính 50% giá tour, trên 11tuổi tính như người lớn.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h4 class="title cl-green">Giá tour cơ bản</h4>\r\n\r\n<table border="1" cellpadding="0" cellspacing="0" style="width:100%;">\r\n	<tbody>\r\n		<tr>\r\n			<td style="text-align: right; padding: 5px;">(VND₫)</td>\r\n			<td style="text-align: right; padding: 5px;">Việt Nam</td>\r\n		</tr>\r\n		<tr>\r\n			<td style="text-align: right; padding: 5px;">Người lớn</td>\r\n			<td style="text-align: right; padding: 5px;"><strong>450.000₫</strong></td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h4 class="title cl-green">Phụ thu phòng đơn(VND₫)</h4>\r\n\r\n<table border="1" cellpadding="0" cellspacing="0" style="width:100%;">\r\n	<tbody>\r\n		<tr>\r\n			<td style="text-align: right; padding: 5px;">Việt Nam</td>\r\n		</tr>\r\n		<tr>\r\n			<td style="text-align: right; padding: 5px;"><strong>400.000₫</strong></td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n', 1284, '<p><iframe frameborder="0" height="400px" scrolling="no" src="//maps.google.com/maps?q=16.047076,108.1712097&amp;num=1&amp;t=m&amp;ie=UTF8&amp;z=14&amp;output=embed" width="100%"></iframe></p>\r\n', '<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;"><object height="480" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" width="640"><param name="movie" value="//www.youtube.com/v/o1INttWSy_A?rel=0&amp;hl=vi&amp;version=3" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /><embed allowfullscreen="true" allowscriptaccess="always" height="480" src="//www.youtube.com/v/o1INttWSy_A?rel=0&amp;hl=vi&amp;version=3" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" type="application/x-shockwave-flash" width="640"></embed></object></div>\r\n', 1, 1, 1, 20, '', '', 'Tour Cù Lao Chàm giá rẻ ,du lịch Cù Lao Chàm giá rẻ ,Tour Đảo Cù Lao Chàm ,Cù Lao Chàm ', 1457515320, 1457756667, 1),
+(18, 146, 'CITY TOUR ĐÀ NẴNG', 'urofpz7jb17y510-18-city-tour-da-nang.jpg', '', 'Du lịch Đà Nẵng nên đi đâu, Ăn gì, Chơi gì, Ở đâu? Hiện nay với dịch vụ trọn gói có rất nhiều người thân, người bạn của mình đa số đều đặt qua các công ty lữ hành. Còn nếu các bạn muốn tự tổ chức một chuyến du lịch cùng gia đình hay bạn bè của mình thì các bạn phải lên được kế hoạch cho 4 câu hỏi đó thì mới có thể tung tăng tới đây được.', 'MÃ TOUR: VDO-06', 450000, '1 ngày (8h-16h)', 0, 'Xe ôtô', 'Du lịch khám phá,Du lịch sinh thái,Du lịch nghỉ dưỡng,Du lịch tâm linh', 'Đà Nẵng,Sơn Trà,Ngũ Hành Sơn ,Bảo Tàng Chăm ,Chợ Hàn', 20, '<p><strong>Chương trình tour (</strong><span style=\"text-align: right;\">450.000đ/khách)</span></p>\r\n\r\n<p><strong>8h00</strong>:&nbsp;Xe và hướng dẫn viên đón khách theo điểm hẹn khởi hành tham quan&nbsp;thành phố Đà Nẵng. Trên đường đi quý khách sẽ được nghe thuyết minh về các&nbsp;tuyến&nbsp;đường phố, bãi biển Mỹ Khê, resort 5 sao, sân bay nước mặn,…</p>\r\n\r\n<p><strong>8h30</strong>:&nbsp;Thăm quan&nbsp;Làng nghề điêu khắc đá Non Nước,&nbsp;Tháp Xá Lợi, viếng Chùa Linh Ứng I, động Tàng Chơn, động Huyền Không, Chùa Tam Thai&nbsp;và lên&nbsp;Vọng Giang Đài&nbsp;nơi có&nbsp;kính Viễn Vọng&nbsp;để thẩm nhận&nbsp;5 ngọn núi&nbsp;Kim, Mộc, Thủy, Hỏa, Thổ&nbsp;cũng như toàn cảnh&nbsp;sông Cổ Cò, làng đá mỹ nghệ Non Nước.</p>\r\n\r\n<p><strong>10h00</strong>:&nbsp;Xe đưa Quý khách hành trình thăm quan&nbsp;chùa Linh Ứng Bãi Bụt&nbsp;- ngôi chùa lớn nhất của thành phố Đà Nẵng, chiêm ngưỡng Tượng Phật&nbsp;Quan Thế Âm Bồ Tát&nbsp;cao nhất Việt Nam 67m.</p>\r\n\r\n<p><strong>11h00</strong>:&nbsp;Đoàn tập trung về thăm quan&nbsp;cầu Thuận Phước&nbsp;một trong những cây cầu treo dây võng dài nhất Việt Nam. Tại đây, quý khách có thể ngắm nhìn cầu&nbsp;sông Hàn, Vũng Thùng&nbsp;và chiêm ngưỡng&nbsp;cặp mắt thần Đông Dương.</p>\r\n\r\n<p><strong>11h45</strong>:&nbsp;Ăn trưa tại nhà hàng. Nghỉ ngơi tự do.</p>\r\n\r\n<p><strong>13h30</strong>:&nbsp;Quý khách khởi hành đến&nbsp;bảo tàng Điêu khắc ChămPa</p>\r\n\r\n<p><strong>15h00:</strong>&nbsp;Đoàn khởi hành&nbsp;đến&nbsp;<strong><em>chợ Hàn</em></strong>&nbsp;- chợ nổi tiếng nhất ở Đà Nẵng và có từ thời Pháp, tại đây du khách có thể mua những đặc sản của Đà Nẵng như: Mực một nắng, bánh khô Mè, vải may áo dài,…</p>\r\n\r\n<p><strong>16h00:</strong>&nbsp;Đoàn tập trung, Xe đưa Quý khách về điểm đón ban đầu. Chào thân ái. Kết thúc chương trình.</p>\r\n\r\n<p><strong>*<em><u>Bao gồm:</u></em></strong></p>\r\n\r\n<p>- Xe phục vụ theo chương trình.</p>\r\n\r\n<p>- Hướng dẫn viên tận tình.</p>\r\n\r\n<p>- Ăn trưa.</p>\r\n\r\n<p>- Vé thăm quan các điểm.</p>\r\n\r\n<p>- Bảo hiểm du lịch. Khăn lạnh, nước.</p>\r\n\r\n<p><strong>*&nbsp;<em><u>Không bao gồm:</u></em></strong></p>\r\n\r\n<p>- Các chi phí cá nhân. Thuế VAT.</p>\r\n\r\n<p><strong>*&nbsp;<em><u>Ghi chú:</u></em></strong></p>\r\n\r\n<p>- Cung cấp danh sách đoàn gồm đầy đủ các thông tin cá nhân, điện thoại liên lạc.<br />\r\n- Trẻ em từ 1 đến 5 tuổi miễn phí, 6 đến 10tuổi tính 70% giá tour, trên 11tuổi tính như người lớn.</p>\r\n', '<table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:100%;\">\r\n	<tbody>\r\n		<tr>\r\n			<td style=\"text-align: center; padding: 5px;\"><strong>Giá công bố</strong></td>\r\n			<td style=\"text-align: center; padding: 5px;\"><strong>khách Quốc Tế</strong></td>\r\n		</tr>\r\n		<tr>\r\n			<td style=\"text-align: right; padding: 5px;\">450.000đ</td>\r\n			<td style=\"text-align: right; padding: 5px;\">550.000đ</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n\r\n<p>&nbsp;</p>\r\n', 1283, '<p><iframe frameborder=\"0\" height=\"400px\" scrolling=\"no\" src=\"//maps.google.com/maps?q=16.0496128,108.1819923&amp;num=1&amp;t=m&amp;ie=UTF8&amp;z=14&amp;output=embed\" width=\"100%\"></iframe></p>\r\n', '<div style=\"position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;\"><object height=\"480\" style=\"position: absolute;top: 0;left: 0;width: 100%;height: 100%;\" width=\"640\"><param name=\"movie\" value=\"//www.youtube.com/v/JpoCJdieOAQ?rel=0&amp;hl=vi&amp;version=3\" /><param name=\"allowFullScreen\" value=\"true\" /><param name=\"allowscriptaccess\" value=\"always\" /><embed allowfullscreen=\"true\" allowscriptaccess=\"always\" height=\"480\" src=\"//www.youtube.com/v/JpoCJdieOAQ?rel=0&amp;hl=vi&amp;version=3\" style=\"position: absolute;top: 0;left: 0;width: 100%;height: 100%;\" type=\"application/x-shockwave-flash\" width=\"640\"></embed></object></div>\r\n', 1, 1, 1, 18, '', '', 'Du lịch Đà Nẵng ,tham quan Đà Nẵng ,Du lịch Đà Nẵng 1 ngày', 1457505300, 1458785900, 1),
+(26, 146, 'DU LỊCH ĐÀ NẴNG 4 NGÀY 3 ĐÊM', 'x2xovdkdjai4c6x-26-du-lich-da-nang-4-ngay-3-dem.jpg', '', 'ĐÀ NẴNG – SƠN TRÀ - BÀ NÀ - CÙ LAO CHÀM – HỘI AN', 'DN4', 2850000, '4 ngày 3 đêm', 0, 'ô tô du lịch,ca nô,cáp treo', 'Du lịch tâm linh,Du lịch nghỉ dưỡng,du lịch khám phá', 'Đà Nẵng,Bán đảo Sơn Trà,Bà Nà Hills,Cù Lao Chàm,Hội An,Ngũ Hành Sơn,Chùa Linh Ứng', 10, '<p align=\"center\"><strong>ĐÀ NẴNG – SƠN TRÀ - BÀ NÀ - CÙ LAO CHÀM – HỘI AN</strong></p>\r\n\r\n<p align=\"center\">&nbsp;</p>\r\n\r\n<p align=\"center\">&nbsp;</p>\r\n\r\n<p><strong><u>NGÀY 01: ĐÓN KHÁCH-&nbsp; ĐÀ NẴNG -SƠN TRÀ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (ĂN TRƯA-TỐI--)</u></strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p style=\"margin-left:.55in;\"><strong>- </strong><strong>Trưa: </strong>Xe &amp; HDV đón quý khách tại Ga và sân bay Đà Nẵng (<strong>từ 07h00 đến 13h00, sau thời gian này vui lòng tự túc nhập đoàn</strong>) đưa đi dùng bữa trưa với đặc sản nổi tiếng Đà Nẵng “Bánh tráng thịt heo 2 đầu da &amp; Mỳ Quảng”.&nbsp; Nhận phòng K/sạn nghỉ ngơi.</p>\r\n\r\n<p style=\"margin-left:.55in;\"><strong>- Chiều:</strong>Khởi hành đi Bán Đảo Sơn Trà (Monkey Mountain) quay một vòng quanh Bán Đảo để thưởng ngoạn toàn cảnh phố biển Đà Nẵng trên cao. Xe đưa quý khách dọc theo triền núi Đông Nam để chiêm ngưỡng vẻ đẹp tuyệt mỹ của biển Đà Nẵng, viếng <strong>Linh Ứng Tự</strong> - nơi có tượng Phật Bà 65m cao nhất Việt Nam&nbsp; và tắm biển <strong>Mỹ Khê</strong>.</p>\r\n\r\n<p><strong>- Tối:</strong>&nbsp; Ăn tối nhà hàng. Quý khách ngồi thuyền trên sông Hàn <strong>(Chi phí tự túc)</strong> ngắm thành phố <strong>Đà Nẵng</strong> lung linh về đêm với hàng loạt cây Cầu độc đáo và nổi tiếng.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong><u>NGÀY 02: ĐÀ NẴNG –BÀ NÀ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (ĂN SÁNG- TRƯA-TỐI)</u></strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p style=\"margin-left:.55in;\"><strong>- Sáng:</strong>Điểm tâm. Khởi hành đi khu du lịch Bà Nà (Tự túc chi phí vé cáp treo 550.000đ/khách) , nơi mà quý khách khám phá những khoảnh khắc giao mùa bất ngờ Xuân – Hạ - Thu – Đông trong 1 ngày.&nbsp; Ngồi cáp treo dài nhất thế giới (gần 6.000m), tham quan Đồi Vọng Nguyệt, chùa Linh Ứng, Thích Ca Phật Đài, khu chuồng ngựa cũ của Pháp, vườn tịnh tâm và đỉnh nhà rông.</p>\r\n\r\n<p>- Trưa:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ăn trưa nhà hàng.</p>\r\n\r\n<p><strong>- Chiều: </strong>&nbsp;Quý khách tự do tham quan,chụp ảnh và tắm biển Mỹ Khê.</p>\r\n\r\n<p><strong>- Tối:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ăn tối nhà hàng. Quý khách chiêm ngưỡng vẻ đẹp Đà Nẵng từ trên cao khi tham quan Vòng Quay Mặt Trời (Chi phí tự túc)</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong><u>NGÀY 03: ĐÀ NẴNG- CÙ LAO CHÀM-HỘI AN&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ĂN SÁNG-TRƯA-TỐI)</u></strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>- Sáng:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong>Điểm tâm. Khởi hành vào Hội An ngồi tàu Cao Tốc tại biển Cửa Đại - Hội An đi Cù Lao Chàm, khu dự trữ sinh quyển Thế giới gồm cụm đảo ngoài khơi biển Đông cách Hội An 12 hải lý. Tham quan chùa Hải Tạng hơn 400 năm tuổi, Âu thuyền – khu vực tránh bão của ngư dân, Khu dân cư &amp; các lăng miếu cổ.</p>\r\n\r\n<p><strong>- Trưa:</strong> Ăn trưa nhà hàng tại Cù Lao Chàm.</p>\r\n\r\n<p>- Chiều:Tiếp tục thăm khu bảo tồn biển tại bãi Bắc, hòn Dài và tham gia các hoạt động lặn biển (Snokelling). Về lại Hội An tham quan Phố Cổ.</p>\r\n\r\n<p><strong>- Tối:</strong>&nbsp; Ăn tối nhà hàng. Xe đưa quý khách về lại Đà Nẵng. Ngủ KS tại Đà Nẵng.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong><u>NGÀY 04: ĐÀ NẴNG- NGŨ HÀNH SƠN –TIỄN KHÁCH&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;(ĂN SÁNG-TRƯA)</u></strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>- Sáng:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong>Điểm tâm. Sáng tham quan Ngũ Hành Sơn, tham quan Làng đá Non Nước. Mua sắm tại Siêu Thị Đặc Sản Miền Trung.</p>\r\n\r\n<p><strong>- Trưa:</strong>&nbsp; Ăn trưa nhà hàng.</p>\r\n\r\n<p><strong>- Chiều:</strong>Tiễn khách sân bay Đà Nẵng (chuyến bay từ 15h00 đến 23h00). Chào thân ái.&nbsp; Kết thúc chương trình.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong><u>* </u></strong><strong><u>TOUR BAO GỒM: </u></strong></p>\r\n\r\n<p>-Xe vận chuyển tốt đời mới đón - tiễn và phục vụ theo chương trình.</p>\r\n\r\n<p>(16, 29, 35, 45 chỗ tùy theo số lượng khách của mỗi tour)</p>\r\n\r\n<p>-Ngủ 2khách/phòng khách sạn tiện nghi 3 sao hoặc 4 sao :hệ thống máy nước nóng lạnh, ĐT, phòng tắm riêng, phòng 2-3 người…&nbsp; Trường hợp đi 1 người phải phụ thu phòng đơn</p>\r\n\r\n<p>-Ăn các bữa theo tour: 03 bữa sáng buffet + 04 bữa trưa + 03 bữa tối tiêu chuẩn 120,000 VNĐ/suất.</p>\r\n\r\n<p>-Vé tham quan các điểm.</p>\r\n\r\n<p>-Dịch vụ snorkelling Cù Lao Chàm</p>\r\n\r\n<p>-Hướng dẫn viên tiếng Việt phục vụ tận tình.</p>\r\n\r\n<p>-Phục vụ 02nước0.5l/khách /ngày.</p>\r\n\r\n<p>-Bảo hiểm du lịch.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong><u>* KHÔNG BAO GỒM: </u></strong></p>\r\n\r\n<p>-Chi phí cá nhân, thức uống tự gọi trong các bữa ăn,..</p>\r\n\r\n<p>-Vé tham quan Vòng Quay Mặt Trời, Vé Du thuyền Sông Hàn, vé tham quan Bà Nà.</p>\r\n\r\n<p>-Vé máy bay/tàu/ô tô khứ hồi: SGN/HAN/NHA-DAD/HUI-SGN/HAN/NHA.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Giá tour trẻ em </strong></p>\r\n\r\n<table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:669px;\" width=\"836\">\r\n	<tbody>\r\n		<tr>\r\n			<td style=\"width:134px;\">\r\n			<p>Trẻ em 1 - 4 tuổi:</p>\r\n			</td>\r\n			<td style=\"width:54px;\">\r\n			<p>Free</p>\r\n			</td>\r\n			<td style=\"width:481px;\">\r\n			<p>Gia đình tự lo ăn uống, chỗ ngủ cho bé. Nếu phát sinh chi phí cáp treo Bà Nà bố mẹ tự thanh toán trực tiếp (Trẻ em dưới 1 m miễn phí)</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td style=\"width:134px;\">\r\n			<p>Trẻ em 5 - 9 tuổi</p>\r\n			</td>\r\n			<td style=\"width:54px;\">\r\n			<p>50%</p>\r\n			</td>\r\n			<td style=\"width:481px;\">\r\n			<p>Ăn suất riêng và ngủ chung với bố mẹ.</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td style=\"width:134px;\">\r\n			<p>Trẻ em từ 10 tuổi</p>\r\n			</td>\r\n			<td style=\"width:54px;\">\r\n			<p>100%</p>\r\n			</td>\r\n			<td style=\"width:481px;\">\r\n			<p>Tiêu chuẩn như người lớn</p>\r\n			</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n\r\n<p>&nbsp;</p>\r\n', '<p>khách sạn 2 sao: 2.850.000đ/ khách</p>\r\n\r\n<p>Khách sạn 3 sao: 2.950.000đ/ khách</p>\r\n\r\n<p>khách sạn 4 sao : 4.200.000đ/khách</p>\r\n', 1316, '', '', 1, 1, 1, 16, '', '', 'Du lịch Đà Nẵng 4 ngày,Tour Bà Nà,tour Cù Lao Chàm giá rẻ', 1458360420, 1458873054, 1),
+(19, 146, 'TOUR CÙ LAO CHÀM 1 NGÀY', 'pgqim4hh5xo73lx-19-tour-cu-lao-cham-1-ngay.jpg', '', 'Được ví như một \"hòn ngọc chưa được gọt giũa\", Cù lao Chàm (Hội An, Quảng Nam) vẫn giữ được vẻ đẹp hoang sơ và những người dân hiền hòa, thân thiện Nằm cách Hội An chưa tới 20 km về phía đông, Cù Lao Chàm thuộc xã đảo Tân Hiệp (Hội An, Quảng Nam) gồm 8 đảo, lớn nhất là Hòn Lao, tổng diện tích 15 km2. Hòn Lao cũng là nơi có cư dân tập trung sinh sống chủ yếu. Hiện nay, Cù Lao Chàm trở thành khu bảo tồn biển thí điểm thứ hai trong cả nước (sau Hòn Mun, Nha Trang), Cù Lao Chàm được đánh giá là một hòn ngọc với cảnh quan thiên nhiên, hệ sinh thái quan trọng và có sự nổi bật về đa dạng sinh học: rừng tự nhiên, bãi biển đẹp, rạn san hô được bảo tồn, thảm cỏ biển, rong biển và nhiều loài thủy sản có giá trị …', 'CLC01', 450000, '1 ngày (8h-15h)', 0, 'Xe ôtô,Cano cao tốc ', 'Du lịch văn hóa,Du lịch nghỉ dưỡng', 'Đà Nẵng,Cù Lao Chàm ', 10, '<p><strong>07h30:</strong> Xe đón khách tại điểm hẹn. Khởi hành đi vào bến cảng sông Hoài, Hội An.<br />\r\n<strong>08h15:</strong> Cano khởi hành đi Cù Lao Chàm. Qúy khách tận hưởng cảm giác bồng bềnh trên sông nước.<br />\r\n<strong>08h45:</strong> Đến Cù Lao Chàm. Qúy khách tham quan <strong><em>Khu bảo tồn biển Khu dân cư Bãi Làng, Âu thuyền – khu vực tránh bảo của ngư dân.và tiếp tục tham quan Chùa Hải Tạng một ngôi chùa cổ hơn 400 năm tuổi, chợ Tân Hiệp và mua sắm.</em><br />\r\n10h30:</strong> Du khách <strong><em>tham gia lặn và ngắm san hô, sinh vật biển.</em></strong><br />\r\n<strong>11h30: </strong>Ăn trưa và nghỉ ngơi tại nhà hàng. Quý khách tự do tham quan nghỉ ngơi, tắm biển, tắm nắng tại đây.<br />\r\n<strong>14h30:</strong> Tạm biệt Cù Lao Chàm xe đón quý khách về Đà Nẵng - &nbsp;Chào Kết thúc chương trình.</p>\r\n', '<p><strong><u>DỊCH VỤ BAO GỒM</u></strong><br />\r\n-&nbsp; Xe du lịch</p>\r\n\r\n<p>- &nbsp; Hướng dẫn viên</p>\r\n\r\n<p>-&nbsp; Ăn uống theo chương trình<br />\r\n-&nbsp; Vé tham quan các điểm theo chương trình<br />\r\n-&nbsp; Nước suối-&nbsp; Bảo hiếm du lịch</p>\r\n\r\n<p><strong><u>KHÔNG BAO GỒM</u></strong><br />\r\n- Thuế VAT<br />\r\n- Các chi phí ngoài chương trình</p>\r\n\r\n<ul>\r\n	<li><strong><u>GHI CHÚ:</u></strong><br />\r\n	- Cung cấp danh sách đoàn gồm đầy đủ các thông tin cá nhân, điện thoại liên lạc.<br />\r\n	- Trẻ em từ 1 đến 5 tuổi miễn phí, 6 đến 10tuổi tính 50% giá tour, trên 11tuổi tính như người lớn.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h4 class=\"title cl-green\">Giá tour cơ bản</h4>\r\n\r\n<table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:100%;\">\r\n	<tbody>\r\n		<tr>\r\n			<td style=\"text-align: right; padding: 5px;\">(VND₫)</td>\r\n			<td style=\"text-align: right; padding: 5px;\">Việt Nam</td>\r\n		</tr>\r\n		<tr>\r\n			<td style=\"text-align: right; padding: 5px;\">Người lớn</td>\r\n			<td style=\"text-align: right; padding: 5px;\"><strong>450.000₫</strong></td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h4 class=\"title cl-green\">Phụ thu phòng đơn(VND₫)</h4>\r\n\r\n<table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:100%;\">\r\n	<tbody>\r\n		<tr>\r\n			<td style=\"text-align: right; padding: 5px;\">Việt Nam</td>\r\n		</tr>\r\n		<tr>\r\n			<td style=\"text-align: right; padding: 5px;\"><strong>400.000₫</strong></td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n', 1284, '<p><iframe frameborder=\"0\" height=\"400px\" scrolling=\"no\" src=\"//maps.google.com/maps?q=16.047076,108.1712097&amp;num=1&amp;t=m&amp;ie=UTF8&amp;z=14&amp;output=embed\" width=\"100%\"></iframe></p>\r\n', '<div style=\"position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;\"><object height=\"480\" style=\"position: absolute;top: 0;left: 0;width: 100%;height: 100%;\" width=\"640\"><param name=\"movie\" value=\"//www.youtube.com/v/o1INttWSy_A?rel=0&amp;hl=vi&amp;version=3\" /><param name=\"allowFullScreen\" value=\"true\" /><param name=\"allowscriptaccess\" value=\"always\" /><embed allowfullscreen=\"true\" allowscriptaccess=\"always\" height=\"480\" src=\"//www.youtube.com/v/o1INttWSy_A?rel=0&amp;hl=vi&amp;version=3\" style=\"position: absolute;top: 0;left: 0;width: 100%;height: 100%;\" type=\"application/x-shockwave-flash\" width=\"640\"></embed></object></div>\r\n', 1, 1, 1, 20, '', '', 'Tour Cù Lao Chàm giá rẻ ,du lịch Cù Lao Chàm giá rẻ ,Tour Đảo Cù Lao Chàm ,Cù Lao Chàm ', 1457515320, 1457756667, 1),
 (23, 153, 'Du lịch Nhật Bản lễ 30/4 ngắm hoa anh đào giá rẻ', 'w9jhuxax0zk1h84-7-du-lich-nhat-ban-le-30-4-ngam-hoa-anh-dao-gia-re.jpg', '', 'our du lịch Nhật Bản lễ 30/4 ngắm hoa anh đào giá rẻ sẽ giúp quý khách có một kì nghỉ lễ thú vị tại xứ Phù Tang. Bên cạnh việc ngắm nhìn loài hoa anh đào nổi tiếng thì quý khách còn có thời gian tự do mua sắm và tham quan nhiều địa danh như núi Phú Sĩ, chùa cổ Asakusa Kannon,…', '', 30900000, '5 ngày 4 đêm', 1461690000, 'Máy bay,Xe ôtô', 'Du lịch mua sắm,Du lịch khám phá,Du lịch nghỉ dưỡng', 'Nhật Bản,Tokyo', 0, '<p>Đang cập nhật...</p>\r\n', '', 1288, '', '', 1, 0, 0, 241, '', '', '', 1457209680, 1458718190, 25),
-(24, 152, 'Du lịch Campuchia – ghé thăm xứ sở chùa Tháp lễ 30/4', 'cpf21zdz2pbb6hy-8-du-lich-campuchia-ghe-tham-xu-so-chua-thap-le-30-4.jpg', '', 'Tour du lịch Campuchia – ghé thăm xứ sở chùa Tháp lễ 30/4 sẽ giúp quý khách có một kì nghỉ lễ thật thú vị, đầy bất ngờ. Quý khách được ghé thăm thủ đô Phnôm Pênh với nhiều công trình kiến trúc nổi bật và thành phố biển Sihanoukville mát mẻ, thoáng đãng. Bên cạnh đó còn khám phá Đảo Koh Rong Saloem – thiên đường biển nổi tiếng ở khu vực Đông Nam Á.', '', 3990000, '4 ngày 3 đêm', 1461949200, 'Xe ôtô', 'Du lịch khám phá,Du lịch sinh thái,Du lịch văn hóa,Du lịch nghỉ dưỡng', 'Phnôm Pênh,Sihanoukville,Campuchia', 10, '<p>Đang cập nhật...</p>\r\n', '', 1289, '', '', 1, 0, 1, 10, '', '', '', 1457392500, 1459733976, 25),
-(25, 146, 'DU LỊCH ĐÀ NẴNG 3 NGÀY 2 ĐÊM', 'ofk2htuvdn42s5h-25-du-lich-da-nang-3-ngay-2-dem.jpg', '', 'Du lịch Đà Nẵng 3 ngày 2 đêm giá rẻ - Bà Nà - Cù Lao Chàm - Ngũ Hành Sơn - Hội An', 'VDS01', 2250000, '', 0, 'Xe du lịch,cáp treo,cano cao tốc ', 'Du lịch nghỉ dưỡng,Du lịch khám phá,du lịch tâm linh', 'Đà Nẵng,Hội An,Ngũ Hành Sơn,Cù Lao Chàm,Bà Nà', 10, '<p align="center"><strong>VDS301: ĐÀ NẴNG – BÀ NÀ- CÙ LAO CHÀM – HỘI AN</strong></p>\r\n\r\n<p align="center">&nbsp;</p>\r\n\r\n<p><strong><u>NGÀY 01: ĐÓN KHÁCH- ĐÀ NẴNG – BÀ NÀ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ĂN TRƯA-TỐI--)</u></strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>- </strong><strong>Trưa: </strong>Xe &amp; HDV đón quý khách tại Ga và sân bay Đà Nẵng (<strong>từ 07h00 đến 13h00, sau thời gian này vui lòng tự túc nhập đoàn</strong>)</p>\r\n\r\n<p style="margin-left:.55in;">Khởi hành đi khu du lịch Bà Nà , nơi mà quý khách khám phá những khoảnh khắc giao mùa bất ngờ Xuân – Hạ - Thu – Đông trong 1 ngày.&nbsp; Ngồi cáp treo dài nhất thế giới (gần 6.000m), tham quan Đồi Vọng Nguyệt, chùa Linh Ứng, Thích Ca Phật Đài, khu chuồng ngựa cũ của Pháp, vườn tịnh tâm và đỉnh nhà rông.</p>\r\n\r\n<p>- Trưa:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ăn trưa nhà hàng.</p>\r\n\r\n<p><strong>- Chiều: </strong>&nbsp;Quý khách tự do tham quan,chụp ảnh và tắm biển Mỹ Khê.</p>\r\n\r\n<p><strong>- Tối:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ăn tối nhà hàng. Quý khách chiêm ngưỡng vẻ đẹp Đà Nẵng từ trên cao khi tham quan Vòng Quay Mặt Trời (Chi phí tự túc)</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong><u>NGÀY 02: ĐÀ NẴNG- CÙ LAO CHÀM-HỘI AN&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ĂN SÁNG-TRƯA-TỐI)</u></strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>- Sáng:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong>Điểm tâm. Khởi hành vào Hội An ngồi tàu Cao Tốc tại biển Cửa Đại - Hội An đi Cù Lao Chàm, khu dự trữ sinh quyển Thế giới gồm cụm đảo ngoài khơi biển Đông cách Hội An 12 hải lý. Tham quan chùa Hải Tạng hơn 400 năm tuổi, Âu thuyền – khu vực tránh bão của ngư dân, Khu dân cư &amp; các lăng miếu cổ.</p>\r\n\r\n<p><strong>- Trưa:</strong> Ăn trưa nhà hàng tại Cù Lao Chàm.</p>\r\n\r\n<p>- Chiều:Tiếp tục thăm khu bảo tồn biển tại bãi Bắc, hòn Dài và tham gia các hoạt động lặn biển (Snokelling). Về lại Hội An tham quan Phố Cổ.</p>\r\n\r\n<p><strong>- Tối:</strong>&nbsp; Ăn tối nhà hàng. Xe đưa quý khách về lại Đà Nẵng. Nghỉ đêm tại khách sạn Đà Nẵng. Tự do thưởng thức phố biển về đêm.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong><u>NGÀY 03: NGŨ HÀNH SƠN – TIỄN KHÁCH &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ĂN SÁNG-TRƯA---)</u></strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>- Sáng:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong>Điểm tâm. Sáng tham quan Ngũ Hành Sơn, tham quan Làng đá Non Nước. Mua sắm tại Siêu Thị Đặc Sản Miền Trung.</p>\r\n\r\n<p><strong>- Trưa:</strong>&nbsp; Ăn trưa nhà hàng.</p>\r\n\r\n<p><strong>- Chiều:</strong>Tiễn khách sân bay Đà Nẵng &nbsp;Chào thân ái.&nbsp; Kết thúc chương trình.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong><u>* </u></strong><strong><u>TOUR BAO GỒM: </u></strong></p>\r\n\r\n<p>-Xe vận chuyển tốt đời mới đón - tiễn và phục vụ theo chương trình.</p>\r\n\r\n<p>(16, 29, 35, 45 chỗ tùy theo số lượng khách của mỗi tour)</p>\r\n\r\n<p>-Ngủ 2khách/phòng khách sạn tiện nghi 3 sao hoặc 4 sao :hệ thống máy nước nóng lạnh, ĐT, phòng tắm riêng, phòng 2-3 người…&nbsp; Trường hợp đi 1 người phải phụ thu phòng đơn</p>\r\n\r\n<p>-Ăn các bữa theo tour: 03 bữa sáng buffet + 04 bữa trưa + 03 bữa tối tiêu chuẩn 120,000 VNĐ/suất.</p>\r\n\r\n<p>-Vé tham quan các điểm.</p>\r\n\r\n<p>-Dịch vụ snorkelling Cù Lao Chàm</p>\r\n\r\n<p>-Hướng dẫn viên tiếng Việt phục vụ tận tình.</p>\r\n\r\n<p>-Phục vụ 02nước0.5l/khách /ngày.</p>\r\n\r\n<p>-Bảo hiểm du lịch.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong><u>* KHÔNG BAO GỒM: </u></strong></p>\r\n\r\n<p>-Chi phí cá nhân, thức uống tự gọi trong các bữa ăn,..</p>\r\n\r\n<p>-Vé tham quan Vòng Quay Mặt Trời, Vé Du thuyền Sông Hàn, vé tham quan Bà Nà.</p>\r\n\r\n<p>-Vé máy bay/tàu/ô tô khứ hồi: SGN/HAN/NHA-DAD/HUI-SGN/HAN/NHA.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Giá tour trẻ em </strong></p>\r\n\r\n<table border="1" cellpadding="0" cellspacing="0" style="width:669px;" width="836">\r\n	<tbody>\r\n		<tr>\r\n			<td style="width:134px;">\r\n			<p>Trẻ em 1 - 4 tuổi:</p>\r\n			</td>\r\n			<td style="width:54px;">\r\n			<p>Free</p>\r\n			</td>\r\n			<td style="width:481px;">\r\n			<p>Gia đình tự lo ăn uống, chỗ ngủ cho bé. Nếu phát sinh chi phí cáp treo Bà Nà bố mẹ tự thanh toán trực tiếp (Trẻ em dưới 1 m miễn phí)</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td style="width:134px;">\r\n			<p>Trẻ em 5 - 9 tuổi</p>\r\n			</td>\r\n			<td style="width:54px;">\r\n			<p>50%</p>\r\n			</td>\r\n			<td style="width:481px;">\r\n			<p>Ăn suất riêng và ngủ chung với bố mẹ.</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td style="width:134px;">\r\n			<p>Trẻ em từ 10 tuổi</p>\r\n			</td>\r\n			<td style="width:54px;">\r\n			<p>100%</p>\r\n			</td>\r\n			<td style="width:481px;">\r\n			<p>Tiêu chuẩn như người lớn</p>\r\n			</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n\r\n<p>&nbsp;</p>\r\n', '<table border="1" cellpadding="0" cellspacing="0" width="908">\r\n	<tbody>\r\n		<tr>\r\n			<td style="width:66px;">\r\n			<p style="margin-left:-4.5pt;">&nbsp;</p>\r\n\r\n			<p align="center" style="margin-left:-4.5pt;"><strong>thời gian</strong></p>\r\n			</td>\r\n			<td style="width:174px;">Chương trình</td>\r\n			<td style="width:96px;">\r\n			<p align="center" style="margin-left:-5.4pt;"><b><i>khách sạn 2 sao</i></b></p>\r\n			</td>\r\n			<td style="width:66px;">\r\n			<p align="center"><strong>khách sạn 3 sao</strong></p>\r\n			</td>\r\n			<td style="width:54px;">\r\n			<p align="center"><b>khách sạn&nbsp;4 sao</b></p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td style="width:66px;">\r\n			<p align="center" style="margin-left:-4.5pt;">&nbsp;</p>\r\n\r\n			<p align="center" style="margin-left:-4.5pt;"><strong>3N/2Đ</strong></p>\r\n			</td>\r\n			<td style="width:174px;">\r\n			<p><strong>ĐN - Bà Nà - Cù Lao Chàm - Hội An</strong></p>\r\n			</td>\r\n			<td style="width:96px;">&nbsp; &nbsp; &nbsp;2.250.000đ/ khách</td>\r\n			<td style="width:66px;">\r\n			<p align="center"><strong>2.450.000đ/ khách</strong></p>\r\n			</td>\r\n			<td style="width:54px;">\r\n			<p align="center"><strong>3.050.000đ/khách</strong></p>\r\n			</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n\r\n<p>&nbsp;</p>\r\n', 1315, '', '', 1, 1, 1, 11, '', '', 'Du lịch Đà Nẵng 3 ngày,du lịch Đà Nẵng giá rẻ,Cù Lao Chàm,Du lịch Bà Nà Hills', 1458358980, 1458872951, 1),
-(27, 146, 'DU LỊCH ĐÀ NẴNG 3 NGÀY 2 ĐÊM GIÁ RẺ', '3enlphg7ctjyjkj-27-du-lich-da-nang-3-ngay-2-dem-gia-re.jpg', '', 'Bạn đã lên kế hoạch cho kỳ nghỉ của mình? Bạn muốn khám phá Đà Nẵng - Thành phố của những cây cầu? hay bạn muốn biết tại sao Đà Nẵng được đánh giá là thành phố đáng sống và đáng đến nhất Việt Nam trong những năm trở lại đây, hãy để chúng tôi đồng hành cùng bạn trong chuyến đi này. "Vodatours - Thỏa lòng nơi bạn đến"', 'VDS302', 2550000, '3 ngày 2 đêm', 0, 'ô tô ,cáp treo', 'Du lịch tâm linh,du lịch nghỉ dưỡng,du lịch khám phá', 'Bà Nà,Ngũ Hành Sơn,Hội An,Sơn Trà,Bà Nà Hills', 10, '<p><strong><u>NGÀY 01: </u></strong>&nbsp;<strong><u>ĐÓN KHÁCH</u></strong> <strong><u>– </u></strong><strong><u>ĂN TRƯA – NGŨ HÀNH SƠN – HỘI AN</u></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>\r\n\r\n<p><strong>- Trưa:</strong> Xe &amp; HDV đón quý khách tại Ga và sân bay Đà Nẵng (từ 07h00 đến 13h00, sau thời gian này vui lòng tự túc nhập đoàn) ăn trưa - về nhận phòng khách sạn nghỉ ngơi</p>\r\n\r\n<p><strong>- Chiều</strong>: 15h00 Xe và HDV <strong>Vodatours </strong>đón Quý khách&nbsp;khởi hành&nbsp;tham quan Phố cổ&nbsp;Hội An&nbsp;</p>\r\n\r\n<p>Trên đường đến Hội An, Quý khách sẽ ghé thăm Ngũ Hành Sơn (nơi được mệnh là Hòn Non Bộ khổng lồ giữa lòng thành phố). Tại đây, quý khách được chiêm ngưỡng toàn cảnh Thành Phố Đà Nẵng, và tham quan Vọng Giang Đài, năm ngọn Kim - Mộc - Thủy - Hỏa - Thổ, thăm động Huyền Không, động Vân Thông, đường lên trời, tháp Xá Lợi, chùa Linh Ứng, làng đá mỹ nghệ Non Nước.</p>\r\n\r\n<p><strong>1</strong><strong>7</strong><strong>h</strong><strong>3</strong><strong>0</strong>: Quý khách ăn tối và nghỉ ngơi tại nhà hàng Hội An (Quý khách sẽ được thưởng thức đặc sản nổi tiếng tại Hội An với món Cơm gà- Bánh Vạc – Hoành Thánh).&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>\r\n\r\n<p><strong>1</strong><strong>9</strong><strong>h00</strong>: Quý khách tiếp tục hành trình tham quan khu Phố Cổ, HDV sẽ đưa Quý khách bách bộ tham quan :</p>\r\n\r\n<p>- Chùa Cầu Nhật Bản -&nbsp; là công trình kiến trúc đẹp và ấn tượng tại TP. Hội An - công trình là biểu tượng tiêu biểu của quá trình giao lưu văn hóa giữa 3 dân tộc Hoa – Việt – Nhật.</p>\r\n\r\n<p>- Bảo tàng văn hóa Sa Huỳnh – nơi lưu giữ những hiện vật có giá trị tiêu biểu thuộc nền văn hóa Sa Huỳnh ở miền Trung Việt Nam.</p>\r\n\r\n<p>- Nhà Cổ Tấn Ký hàng trăm năm tuổi – một trong những ngôi nhà cổ xưa nhất và có kiến trúc đẹp nhất tại Hội An.</p>\r\n\r\n<p>- Hội quán Phước Kiến – một trong những hội quán có kiến trúc đẹp và lớn nhất của người Hoa tại Hội An.</p>\r\n\r\n<p><strong>20</strong><strong>h30</strong>: Quý khách tập trung về lại Đà Nẵng tự do khám phá thành phố biển về đêm.</p>\r\n\r\n<p><strong><u>NGÀY 02: ĐÀ NẴNG</u></strong> <strong><u>-</u></strong> &nbsp;<strong><u>BÀ NÀ HILLS</u></strong>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>\r\n\r\n<p><strong>- Sáng: </strong>Điểm tâm tại khách sạn</p>\r\n\r\n<p><strong>08h00:</strong> Khởi hành đi tham quan khu du lịch Bà Nà – Núi Chúa, mệnh danh là Đà Lạt/ Sa Pa thứ 2 tại miền Trung, với khí hậu tuyệt vời được ví như mùa Xuân của nước Pháp.</p>\r\n\r\n<p><strong>08h45 : </strong>Cùng nhau thưởng ngoạn khung cảnh Bà Nà trên cao bằng hệ thống cáp treo hiện đại nhất Đông Nam Á. 20 phút du ngoạn trên cáp treo, du khách sẽ được chiêm ngưỡng Suối Mơ hùng vĩ, cảnh núi rừng nguyên sinh của khu bảo tồn thiên nhiên Bà Nà với hệ sinh thái phong phú và đa dạng . Du khách sẽ được tận hưởng sự thay đổi thời tiết rõ rệt khi đi qua Cổng Trời hay có cơ hội trải nghiệm cảm giác phiêu lưu đầy ấn tượng chìm trong sương mờ. Chinh phục đỉnh núi Chúa ở độ cao 1.487m so với mực nước biển, giữ 4 kỉ lục thế giới (hệ thống cáp treo một dây dài nhất thế giới 5.042m và độ cao chênh lệch giữa ga trên và ga dưới cao nhất thế giới 1.291m) chiêm ngưỡng quang cảnh núi rừng Bà Nà và toàn cảnh Quảng Nam - Đà Nẵng từ trên cao. Tham quan khu Le Jardin với các di tích của người Pháp như: khu buộc ngựa của Pháp, cây bưởi gần 100 tuổi, vết tích các khu biệt thự cổ. Đặc biệt là Hầm rượu Debay, hầm rượu được người Pháp xây dựng từ năm 1923, trải qua gần một thế kỷ, hầm rượu vẫn giữ được nét hoang sơ, kì bí, là công trình duy nhất của người Pháp còn lại khá nguyên vẹn tại Bà Nà.</p>\r\n\r\n<p>Viếng chùa Linh Ứng Bà Nà chiêm ngưỡng tượng Phật Thích Ca cao 27m và thả mình vào khung cảnh thanh tịnh của chốn thiền môn, tham quan Vườn Lộc Uyển, Quan Âm Các</p>\r\n\r\n<p><strong>1</strong><strong>1</strong><strong>h00 :</strong> Hướng dẫn viên đưa đoàn vào tham quan khu vui chơi Fantasy Park – khu vui chơi giải trí trong nhà lớn nhất Việt Nam..</p>\r\n\r\n<p><strong>12h00 :</strong> Quý khách ăn trưa và nghỉ ngơi tại nhà hàng, dùng buffet tại Bà Nà</p>\r\n\r\n<p><strong>13h00 :</strong> Chinh phục đỉnh Núi Chúa – nóc nhà của thành phố, thăm viếng Lĩnh Chúa Linh Từ nằm ở độ cao 1487m, Ngắm toàn cảnh thành phố Đà Nẵng và vịnh Đà Nẵng lúc ẩn, lúc hiện dưới một biển mây trắng.</p>\r\n\r\n<p><strong>1</strong><strong>5</strong><strong>h</strong><strong>0</strong><strong>0 :</strong> Đón chuyến cáp và xuống lại Ga Suối Mơ về khách sạn nghỉ ngơi.</p>\r\n\r\n<p><strong>- Tối:</strong>&nbsp; Ăn tối nhà hàng. Xe đưa quý khách về lại Đà Nẵng. Nghỉ đêm tại khách sạn Đà Nẵng. Tự do thưởng thức phố biển về đêm.</p>\r\n\r\n<p><strong><u>NGÀY 03: </u></strong><strong><u>BÁN ĐẢO SƠN TRÀ – MUA SẮM</u></strong><strong><u> – SÂN BAY</u></strong></p>\r\n\r\n<p><strong>- Sáng:</strong> Điểm tâm tại khách sạn – Hdv Vodatours đưa quý khách đi tham quan Bán đảo Sơn Trà – Chùa Linh Ứng Bãi Bụt. chiêm ngưỡng tượng Phật Quan Thế Âm cao nhất Việt Nam (67m) , Ngắm trạm Rada Sơn Trà.</p>\r\n\r\n<p>Dọc theo đường biển ngắm các cầu &nbsp;trên dòng Sông Hàn thơ mộng, Hdv đưa quý khách tham quan mua sắm đặc sản Đà Nẵng</p>\r\n\r\n<p><strong>- Trưa:</strong>&nbsp; Ăn trưa nhà hàng.</p>\r\n\r\n<p><strong>- Chiều:</strong>Tiễn khách sân bay/ nhà Ga Đà Nẵng &nbsp;- Chào thân ái.&nbsp; Kết thúc chương trình</p>\r\n\r\n<p><strong><u>* </u></strong><strong><u>TOUR BAO GỒM: </u></strong></p>\r\n\r\n<p>-Xe vận chuyển tốt đời mới đón - tiễn và phục vụ theo chương trình.</p>\r\n\r\n<p>(16, 29, 35, 45 chỗ tùy theo số lượng khách của mỗi tour)</p>\r\n\r\n<p>-Ngủ 2khách/phòng khách sạn tiện nghi 3 sao hoặc 4 sao :hệ thống máy nước nóng lạnh, ĐT, phòng tắm riêng, phòng 2-3 người…&nbsp; Trường hợp đi 1 người phải phụ thu phòng đơn</p>\r\n\r\n<p>-Ăn các bữa theo tour: 03 bữa sáng buffet + 04 bữa chính 120,000 VNĐ/suất và 1 bữa Buffet trưa Bà Nà 180,000đ/ suất.</p>\r\n\r\n<p>-Vé tham quan các điểm ( Ngũ Hành Sơn – Hội An – Bà Nà).</p>\r\n\r\n<p>-Hướng dẫn viên tiếng Việt phục vụ tận tình.</p>\r\n\r\n<p>-Phục vụ 02nước0.5l/khách /ngày.</p>\r\n\r\n<p>-Bảo hiểm du lịch.</p>\r\n\r\n<p><strong><u>* KHÔNG BAO GỒM: </u></strong></p>\r\n\r\n<p>-Chi phí cá nhân, thức uống tự gọi trong các bữa ăn,..</p>\r\n\r\n<p>-Vé tham quan Vòng Quay Mặt Trời, Vé Du thuyền Sông Hàn.</p>\r\n\r\n<p>-Vé máy bay/tàu/ô tô khứ hồi: SGN/HAN/NHA-DAD/HUI-SGN/HAN/NHA</p>\r\n', '<table border="1" cellpadding="0" cellspacing="0" style="width:669px;" width="669">\r\n	<tbody>\r\n		<tr>\r\n			<td style="width:134px;">Người lớn</td>\r\n			<td style="width:54px;">\r\n			<p>&nbsp;</p>\r\n			</td>\r\n			<td style="width:481px;">\r\n			<p>&nbsp; 2.550.000đ/ &nbsp;khách</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td style="width:134px;">\r\n			<p>Trẻ em 5 - 9 tuổi</p>\r\n			</td>\r\n			<td style="width:54px;">\r\n			<p>&nbsp;50%</p>\r\n			</td>\r\n			<td style="width:481px;">\r\n			<p>Ăn suất riêng và ngủ chung với bố mẹ.</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td style="width:134px;">\r\n			<p>Trẻ em từ 10 tuổi</p>\r\n			</td>\r\n			<td style="width:54px;">\r\n			<p>100%</p>\r\n			</td>\r\n			<td style="width:481px;">\r\n			<p>Tiêu chuẩn như người lớn</p>\r\n			</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n', 1319, '', '', 1, 1, 1, 8, '', '', 'Du lịch Đà Nẵng 3 ngày 2 đêm,Du lịch Bà Nà Hội An,Du lịch Đà Nẵng giá rẻ,Du lịch Đà Nẵng uy tín', 1458662040, 0, 1);
+(24, 152, 'Du lịch Campuchia – ghé thăm xứ sở chùa Tháp lễ 30/4', 'cpf21zdz2pbb6hy-8-du-lich-campuchia-ghe-tham-xu-so-chua-thap-le-30-4.jpg', '', 'Tour du lịch Campuchia – ghé thăm xứ sở chùa Tháp lễ 30/4 sẽ giúp quý khách có một kì nghỉ lễ thật thú vị, đầy bất ngờ. Quý khách được ghé thăm thủ đô Phnôm Pênh với nhiều công trình kiến trúc nổi bật và thành phố biển Sihanoukville mát mẻ, thoáng đãng. Bên cạnh đó còn khám phá Đảo Koh Rong Saloem – thiên đường biển nổi tiếng ở khu vực Đông Nam Á.', '', 3990000, '4 ngày 3 đêm', 1461949200, 'Xe ôtô', 'Du lịch khám phá,Du lịch sinh thái,Du lịch văn hóa,Du lịch nghỉ dưỡng', 'Phnôm Pênh,Sihanoukville,Campuchia', 10, '<p>Đang cập nhật...</p>\r\n', '', 1289, '', '', 1, 0, 1, 10, '', '', '', 1457392500, 1459733976, 25);
+INSERT INTO `olala3w_tour` (`tour_id`, `tour_menu_id`, `name`, `img`, `img_note`, `comment`, `tour_keys`, `price`, `date_schedule`, `date_departure`, `means`, `tour_type`, `destination`, `sale`, `schedule`, `price_list_service`, `upload_id`, `maps`, `video`, `is_active`, `hot`, `pin`, `views`, `title`, `description`, `keywords`, `created_time`, `modified_time`, `user_id`) VALUES
+(25, 146, 'DU LỊCH ĐÀ NẴNG 3 NGÀY 2 ĐÊM', 'ofk2htuvdn42s5h-25-du-lich-da-nang-3-ngay-2-dem.jpg', '', 'Du lịch Đà Nẵng 3 ngày 2 đêm giá rẻ - Bà Nà - Cù Lao Chàm - Ngũ Hành Sơn - Hội An', 'VDS01', 2250000, '', 0, 'Xe du lịch,cáp treo,cano cao tốc ', 'Du lịch nghỉ dưỡng,Du lịch khám phá,du lịch tâm linh', 'Đà Nẵng,Hội An,Ngũ Hành Sơn,Cù Lao Chàm,Bà Nà', 10, '<p align=\"center\"><strong>VDS301: ĐÀ NẴNG – BÀ NÀ- CÙ LAO CHÀM – HỘI AN</strong></p>\r\n\r\n<p align=\"center\">&nbsp;</p>\r\n\r\n<p><strong><u>NGÀY 01: ĐÓN KHÁCH- ĐÀ NẴNG – BÀ NÀ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ĂN TRƯA-TỐI--)</u></strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>- </strong><strong>Trưa: </strong>Xe &amp; HDV đón quý khách tại Ga và sân bay Đà Nẵng (<strong>từ 07h00 đến 13h00, sau thời gian này vui lòng tự túc nhập đoàn</strong>)</p>\r\n\r\n<p style=\"margin-left:.55in;\">Khởi hành đi khu du lịch Bà Nà , nơi mà quý khách khám phá những khoảnh khắc giao mùa bất ngờ Xuân – Hạ - Thu – Đông trong 1 ngày.&nbsp; Ngồi cáp treo dài nhất thế giới (gần 6.000m), tham quan Đồi Vọng Nguyệt, chùa Linh Ứng, Thích Ca Phật Đài, khu chuồng ngựa cũ của Pháp, vườn tịnh tâm và đỉnh nhà rông.</p>\r\n\r\n<p>- Trưa:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ăn trưa nhà hàng.</p>\r\n\r\n<p><strong>- Chiều: </strong>&nbsp;Quý khách tự do tham quan,chụp ảnh và tắm biển Mỹ Khê.</p>\r\n\r\n<p><strong>- Tối:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ăn tối nhà hàng. Quý khách chiêm ngưỡng vẻ đẹp Đà Nẵng từ trên cao khi tham quan Vòng Quay Mặt Trời (Chi phí tự túc)</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong><u>NGÀY 02: ĐÀ NẴNG- CÙ LAO CHÀM-HỘI AN&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ĂN SÁNG-TRƯA-TỐI)</u></strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>- Sáng:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong>Điểm tâm. Khởi hành vào Hội An ngồi tàu Cao Tốc tại biển Cửa Đại - Hội An đi Cù Lao Chàm, khu dự trữ sinh quyển Thế giới gồm cụm đảo ngoài khơi biển Đông cách Hội An 12 hải lý. Tham quan chùa Hải Tạng hơn 400 năm tuổi, Âu thuyền – khu vực tránh bão của ngư dân, Khu dân cư &amp; các lăng miếu cổ.</p>\r\n\r\n<p><strong>- Trưa:</strong> Ăn trưa nhà hàng tại Cù Lao Chàm.</p>\r\n\r\n<p>- Chiều:Tiếp tục thăm khu bảo tồn biển tại bãi Bắc, hòn Dài và tham gia các hoạt động lặn biển (Snokelling). Về lại Hội An tham quan Phố Cổ.</p>\r\n\r\n<p><strong>- Tối:</strong>&nbsp; Ăn tối nhà hàng. Xe đưa quý khách về lại Đà Nẵng. Nghỉ đêm tại khách sạn Đà Nẵng. Tự do thưởng thức phố biển về đêm.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong><u>NGÀY 03: NGŨ HÀNH SƠN – TIỄN KHÁCH &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ĂN SÁNG-TRƯA---)</u></strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>- Sáng:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong>Điểm tâm. Sáng tham quan Ngũ Hành Sơn, tham quan Làng đá Non Nước. Mua sắm tại Siêu Thị Đặc Sản Miền Trung.</p>\r\n\r\n<p><strong>- Trưa:</strong>&nbsp; Ăn trưa nhà hàng.</p>\r\n\r\n<p><strong>- Chiều:</strong>Tiễn khách sân bay Đà Nẵng &nbsp;Chào thân ái.&nbsp; Kết thúc chương trình.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong><u>* </u></strong><strong><u>TOUR BAO GỒM: </u></strong></p>\r\n\r\n<p>-Xe vận chuyển tốt đời mới đón - tiễn và phục vụ theo chương trình.</p>\r\n\r\n<p>(16, 29, 35, 45 chỗ tùy theo số lượng khách của mỗi tour)</p>\r\n\r\n<p>-Ngủ 2khách/phòng khách sạn tiện nghi 3 sao hoặc 4 sao :hệ thống máy nước nóng lạnh, ĐT, phòng tắm riêng, phòng 2-3 người…&nbsp; Trường hợp đi 1 người phải phụ thu phòng đơn</p>\r\n\r\n<p>-Ăn các bữa theo tour: 03 bữa sáng buffet + 04 bữa trưa + 03 bữa tối tiêu chuẩn 120,000 VNĐ/suất.</p>\r\n\r\n<p>-Vé tham quan các điểm.</p>\r\n\r\n<p>-Dịch vụ snorkelling Cù Lao Chàm</p>\r\n\r\n<p>-Hướng dẫn viên tiếng Việt phục vụ tận tình.</p>\r\n\r\n<p>-Phục vụ 02nước0.5l/khách /ngày.</p>\r\n\r\n<p>-Bảo hiểm du lịch.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong><u>* KHÔNG BAO GỒM: </u></strong></p>\r\n\r\n<p>-Chi phí cá nhân, thức uống tự gọi trong các bữa ăn,..</p>\r\n\r\n<p>-Vé tham quan Vòng Quay Mặt Trời, Vé Du thuyền Sông Hàn, vé tham quan Bà Nà.</p>\r\n\r\n<p>-Vé máy bay/tàu/ô tô khứ hồi: SGN/HAN/NHA-DAD/HUI-SGN/HAN/NHA.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Giá tour trẻ em </strong></p>\r\n\r\n<table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:669px;\" width=\"836\">\r\n	<tbody>\r\n		<tr>\r\n			<td style=\"width:134px;\">\r\n			<p>Trẻ em 1 - 4 tuổi:</p>\r\n			</td>\r\n			<td style=\"width:54px;\">\r\n			<p>Free</p>\r\n			</td>\r\n			<td style=\"width:481px;\">\r\n			<p>Gia đình tự lo ăn uống, chỗ ngủ cho bé. Nếu phát sinh chi phí cáp treo Bà Nà bố mẹ tự thanh toán trực tiếp (Trẻ em dưới 1 m miễn phí)</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td style=\"width:134px;\">\r\n			<p>Trẻ em 5 - 9 tuổi</p>\r\n			</td>\r\n			<td style=\"width:54px;\">\r\n			<p>50%</p>\r\n			</td>\r\n			<td style=\"width:481px;\">\r\n			<p>Ăn suất riêng và ngủ chung với bố mẹ.</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td style=\"width:134px;\">\r\n			<p>Trẻ em từ 10 tuổi</p>\r\n			</td>\r\n			<td style=\"width:54px;\">\r\n			<p>100%</p>\r\n			</td>\r\n			<td style=\"width:481px;\">\r\n			<p>Tiêu chuẩn như người lớn</p>\r\n			</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n\r\n<p>&nbsp;</p>\r\n', '<table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" width=\"908\">\r\n	<tbody>\r\n		<tr>\r\n			<td style=\"width:66px;\">\r\n			<p style=\"margin-left:-4.5pt;\">&nbsp;</p>\r\n\r\n			<p align=\"center\" style=\"margin-left:-4.5pt;\"><strong>thời gian</strong></p>\r\n			</td>\r\n			<td style=\"width:174px;\">Chương trình</td>\r\n			<td style=\"width:96px;\">\r\n			<p align=\"center\" style=\"margin-left:-5.4pt;\"><b><i>khách sạn 2 sao</i></b></p>\r\n			</td>\r\n			<td style=\"width:66px;\">\r\n			<p align=\"center\"><strong>khách sạn 3 sao</strong></p>\r\n			</td>\r\n			<td style=\"width:54px;\">\r\n			<p align=\"center\"><b>khách sạn&nbsp;4 sao</b></p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td style=\"width:66px;\">\r\n			<p align=\"center\" style=\"margin-left:-4.5pt;\">&nbsp;</p>\r\n\r\n			<p align=\"center\" style=\"margin-left:-4.5pt;\"><strong>3N/2Đ</strong></p>\r\n			</td>\r\n			<td style=\"width:174px;\">\r\n			<p><strong>ĐN - Bà Nà - Cù Lao Chàm - Hội An</strong></p>\r\n			</td>\r\n			<td style=\"width:96px;\">&nbsp; &nbsp; &nbsp;2.250.000đ/ khách</td>\r\n			<td style=\"width:66px;\">\r\n			<p align=\"center\"><strong>2.450.000đ/ khách</strong></p>\r\n			</td>\r\n			<td style=\"width:54px;\">\r\n			<p align=\"center\"><strong>3.050.000đ/khách</strong></p>\r\n			</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n\r\n<p>&nbsp;</p>\r\n', 1315, '', '', 1, 1, 1, 11, '', '', 'Du lịch Đà Nẵng 3 ngày,du lịch Đà Nẵng giá rẻ,Cù Lao Chàm,Du lịch Bà Nà Hills', 1458358980, 1458872951, 1),
+(27, 146, 'DU LỊCH ĐÀ NẴNG 3 NGÀY 2 ĐÊM GIÁ RẺ', '3enlphg7ctjyjkj-27-du-lich-da-nang-3-ngay-2-dem-gia-re.jpg', '', 'Bạn đã lên kế hoạch cho kỳ nghỉ của mình? Bạn muốn khám phá Đà Nẵng - Thành phố của những cây cầu? hay bạn muốn biết tại sao Đà Nẵng được đánh giá là thành phố đáng sống và đáng đến nhất Việt Nam trong những năm trở lại đây, hãy để chúng tôi đồng hành cùng bạn trong chuyến đi này. \"Vodatours - Thỏa lòng nơi bạn đến\"', 'VDS302', 2550000, '3 ngày 2 đêm', 0, 'ô tô ,cáp treo', 'Du lịch tâm linh,du lịch nghỉ dưỡng,du lịch khám phá', 'Bà Nà,Ngũ Hành Sơn,Hội An,Sơn Trà,Bà Nà Hills', 10, '<p><strong><u>NGÀY 01: </u></strong>&nbsp;<strong><u>ĐÓN KHÁCH</u></strong> <strong><u>– </u></strong><strong><u>ĂN TRƯA – NGŨ HÀNH SƠN – HỘI AN</u></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>\r\n\r\n<p><strong>- Trưa:</strong> Xe &amp; HDV đón quý khách tại Ga và sân bay Đà Nẵng (từ 07h00 đến 13h00, sau thời gian này vui lòng tự túc nhập đoàn) ăn trưa - về nhận phòng khách sạn nghỉ ngơi</p>\r\n\r\n<p><strong>- Chiều</strong>: 15h00 Xe và HDV <strong>Vodatours </strong>đón Quý khách&nbsp;khởi hành&nbsp;tham quan Phố cổ&nbsp;Hội An&nbsp;</p>\r\n\r\n<p>Trên đường đến Hội An, Quý khách sẽ ghé thăm Ngũ Hành Sơn (nơi được mệnh là Hòn Non Bộ khổng lồ giữa lòng thành phố). Tại đây, quý khách được chiêm ngưỡng toàn cảnh Thành Phố Đà Nẵng, và tham quan Vọng Giang Đài, năm ngọn Kim - Mộc - Thủy - Hỏa - Thổ, thăm động Huyền Không, động Vân Thông, đường lên trời, tháp Xá Lợi, chùa Linh Ứng, làng đá mỹ nghệ Non Nước.</p>\r\n\r\n<p><strong>1</strong><strong>7</strong><strong>h</strong><strong>3</strong><strong>0</strong>: Quý khách ăn tối và nghỉ ngơi tại nhà hàng Hội An (Quý khách sẽ được thưởng thức đặc sản nổi tiếng tại Hội An với món Cơm gà- Bánh Vạc – Hoành Thánh).&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>\r\n\r\n<p><strong>1</strong><strong>9</strong><strong>h00</strong>: Quý khách tiếp tục hành trình tham quan khu Phố Cổ, HDV sẽ đưa Quý khách bách bộ tham quan :</p>\r\n\r\n<p>- Chùa Cầu Nhật Bản -&nbsp; là công trình kiến trúc đẹp và ấn tượng tại TP. Hội An - công trình là biểu tượng tiêu biểu của quá trình giao lưu văn hóa giữa 3 dân tộc Hoa – Việt – Nhật.</p>\r\n\r\n<p>- Bảo tàng văn hóa Sa Huỳnh – nơi lưu giữ những hiện vật có giá trị tiêu biểu thuộc nền văn hóa Sa Huỳnh ở miền Trung Việt Nam.</p>\r\n\r\n<p>- Nhà Cổ Tấn Ký hàng trăm năm tuổi – một trong những ngôi nhà cổ xưa nhất và có kiến trúc đẹp nhất tại Hội An.</p>\r\n\r\n<p>- Hội quán Phước Kiến – một trong những hội quán có kiến trúc đẹp và lớn nhất của người Hoa tại Hội An.</p>\r\n\r\n<p><strong>20</strong><strong>h30</strong>: Quý khách tập trung về lại Đà Nẵng tự do khám phá thành phố biển về đêm.</p>\r\n\r\n<p><strong><u>NGÀY 02: ĐÀ NẴNG</u></strong> <strong><u>-</u></strong> &nbsp;<strong><u>BÀ NÀ HILLS</u></strong>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>\r\n\r\n<p><strong>- Sáng: </strong>Điểm tâm tại khách sạn</p>\r\n\r\n<p><strong>08h00:</strong> Khởi hành đi tham quan khu du lịch Bà Nà – Núi Chúa, mệnh danh là Đà Lạt/ Sa Pa thứ 2 tại miền Trung, với khí hậu tuyệt vời được ví như mùa Xuân của nước Pháp.</p>\r\n\r\n<p><strong>08h45 : </strong>Cùng nhau thưởng ngoạn khung cảnh Bà Nà trên cao bằng hệ thống cáp treo hiện đại nhất Đông Nam Á. 20 phút du ngoạn trên cáp treo, du khách sẽ được chiêm ngưỡng Suối Mơ hùng vĩ, cảnh núi rừng nguyên sinh của khu bảo tồn thiên nhiên Bà Nà với hệ sinh thái phong phú và đa dạng . Du khách sẽ được tận hưởng sự thay đổi thời tiết rõ rệt khi đi qua Cổng Trời hay có cơ hội trải nghiệm cảm giác phiêu lưu đầy ấn tượng chìm trong sương mờ. Chinh phục đỉnh núi Chúa ở độ cao 1.487m so với mực nước biển, giữ 4 kỉ lục thế giới (hệ thống cáp treo một dây dài nhất thế giới 5.042m và độ cao chênh lệch giữa ga trên và ga dưới cao nhất thế giới 1.291m) chiêm ngưỡng quang cảnh núi rừng Bà Nà và toàn cảnh Quảng Nam - Đà Nẵng từ trên cao. Tham quan khu Le Jardin với các di tích của người Pháp như: khu buộc ngựa của Pháp, cây bưởi gần 100 tuổi, vết tích các khu biệt thự cổ. Đặc biệt là Hầm rượu Debay, hầm rượu được người Pháp xây dựng từ năm 1923, trải qua gần một thế kỷ, hầm rượu vẫn giữ được nét hoang sơ, kì bí, là công trình duy nhất của người Pháp còn lại khá nguyên vẹn tại Bà Nà.</p>\r\n\r\n<p>Viếng chùa Linh Ứng Bà Nà chiêm ngưỡng tượng Phật Thích Ca cao 27m và thả mình vào khung cảnh thanh tịnh của chốn thiền môn, tham quan Vườn Lộc Uyển, Quan Âm Các</p>\r\n\r\n<p><strong>1</strong><strong>1</strong><strong>h00 :</strong> Hướng dẫn viên đưa đoàn vào tham quan khu vui chơi Fantasy Park – khu vui chơi giải trí trong nhà lớn nhất Việt Nam..</p>\r\n\r\n<p><strong>12h00 :</strong> Quý khách ăn trưa và nghỉ ngơi tại nhà hàng, dùng buffet tại Bà Nà</p>\r\n\r\n<p><strong>13h00 :</strong> Chinh phục đỉnh Núi Chúa – nóc nhà của thành phố, thăm viếng Lĩnh Chúa Linh Từ nằm ở độ cao 1487m, Ngắm toàn cảnh thành phố Đà Nẵng và vịnh Đà Nẵng lúc ẩn, lúc hiện dưới một biển mây trắng.</p>\r\n\r\n<p><strong>1</strong><strong>5</strong><strong>h</strong><strong>0</strong><strong>0 :</strong> Đón chuyến cáp và xuống lại Ga Suối Mơ về khách sạn nghỉ ngơi.</p>\r\n\r\n<p><strong>- Tối:</strong>&nbsp; Ăn tối nhà hàng. Xe đưa quý khách về lại Đà Nẵng. Nghỉ đêm tại khách sạn Đà Nẵng. Tự do thưởng thức phố biển về đêm.</p>\r\n\r\n<p><strong><u>NGÀY 03: </u></strong><strong><u>BÁN ĐẢO SƠN TRÀ – MUA SẮM</u></strong><strong><u> – SÂN BAY</u></strong></p>\r\n\r\n<p><strong>- Sáng:</strong> Điểm tâm tại khách sạn – Hdv Vodatours đưa quý khách đi tham quan Bán đảo Sơn Trà – Chùa Linh Ứng Bãi Bụt. chiêm ngưỡng tượng Phật Quan Thế Âm cao nhất Việt Nam (67m) , Ngắm trạm Rada Sơn Trà.</p>\r\n\r\n<p>Dọc theo đường biển ngắm các cầu &nbsp;trên dòng Sông Hàn thơ mộng, Hdv đưa quý khách tham quan mua sắm đặc sản Đà Nẵng</p>\r\n\r\n<p><strong>- Trưa:</strong>&nbsp; Ăn trưa nhà hàng.</p>\r\n\r\n<p><strong>- Chiều:</strong>Tiễn khách sân bay/ nhà Ga Đà Nẵng &nbsp;- Chào thân ái.&nbsp; Kết thúc chương trình</p>\r\n\r\n<p><strong><u>* </u></strong><strong><u>TOUR BAO GỒM: </u></strong></p>\r\n\r\n<p>-Xe vận chuyển tốt đời mới đón - tiễn và phục vụ theo chương trình.</p>\r\n\r\n<p>(16, 29, 35, 45 chỗ tùy theo số lượng khách của mỗi tour)</p>\r\n\r\n<p>-Ngủ 2khách/phòng khách sạn tiện nghi 3 sao hoặc 4 sao :hệ thống máy nước nóng lạnh, ĐT, phòng tắm riêng, phòng 2-3 người…&nbsp; Trường hợp đi 1 người phải phụ thu phòng đơn</p>\r\n\r\n<p>-Ăn các bữa theo tour: 03 bữa sáng buffet + 04 bữa chính 120,000 VNĐ/suất và 1 bữa Buffet trưa Bà Nà 180,000đ/ suất.</p>\r\n\r\n<p>-Vé tham quan các điểm ( Ngũ Hành Sơn – Hội An – Bà Nà).</p>\r\n\r\n<p>-Hướng dẫn viên tiếng Việt phục vụ tận tình.</p>\r\n\r\n<p>-Phục vụ 02nước0.5l/khách /ngày.</p>\r\n\r\n<p>-Bảo hiểm du lịch.</p>\r\n\r\n<p><strong><u>* KHÔNG BAO GỒM: </u></strong></p>\r\n\r\n<p>-Chi phí cá nhân, thức uống tự gọi trong các bữa ăn,..</p>\r\n\r\n<p>-Vé tham quan Vòng Quay Mặt Trời, Vé Du thuyền Sông Hàn.</p>\r\n\r\n<p>-Vé máy bay/tàu/ô tô khứ hồi: SGN/HAN/NHA-DAD/HUI-SGN/HAN/NHA</p>\r\n', '<table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:669px;\" width=\"669\">\r\n	<tbody>\r\n		<tr>\r\n			<td style=\"width:134px;\">Người lớn</td>\r\n			<td style=\"width:54px;\">\r\n			<p>&nbsp;</p>\r\n			</td>\r\n			<td style=\"width:481px;\">\r\n			<p>&nbsp; 2.550.000đ/ &nbsp;khách</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td style=\"width:134px;\">\r\n			<p>Trẻ em 5 - 9 tuổi</p>\r\n			</td>\r\n			<td style=\"width:54px;\">\r\n			<p>&nbsp;50%</p>\r\n			</td>\r\n			<td style=\"width:481px;\">\r\n			<p>Ăn suất riêng và ngủ chung với bố mẹ.</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td style=\"width:134px;\">\r\n			<p>Trẻ em từ 10 tuổi</p>\r\n			</td>\r\n			<td style=\"width:54px;\">\r\n			<p>100%</p>\r\n			</td>\r\n			<td style=\"width:481px;\">\r\n			<p>Tiêu chuẩn như người lớn</p>\r\n			</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n', 1319, '', '', 1, 1, 1, 8, '', '', 'Du lịch Đà Nẵng 3 ngày 2 đêm,Du lịch Bà Nà Hội An,Du lịch Đà Nẵng giá rẻ,Du lịch Đà Nẵng uy tín', 1458662040, 0, 1);
 
 -- --------------------------------------------------------
 
@@ -2230,8 +2112,8 @@ INSERT INTO `olala3w_tour` (`tour_id`, `tour_menu_id`, `name`, `img`, `img_note`
 -- Table structure for table `olala3w_tour_menu`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_tour_menu` (
-  `tour_menu_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_tour_menu` (
+  `tour_menu_id` int(11) NOT NULL,
   `category_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `slug` varchar(255) NOT NULL DEFAULT 'not-found',
@@ -2245,9 +2127,8 @@ CREATE TABLE IF NOT EXISTS `olala3w_tour_menu` (
   `img` varchar(255) NOT NULL DEFAULT 'no',
   `created_time` int(11) NOT NULL DEFAULT '0',
   `modified_time` int(11) NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`tour_menu_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=157 ;
+  `user_id` int(11) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `olala3w_tour_menu`
@@ -2276,13 +2157,12 @@ INSERT INTO `olala3w_tour_menu` (`tour_menu_id`, `category_id`, `name`, `slug`, 
 -- Table structure for table `olala3w_uploads_tmp`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_uploads_tmp` (
-  `upload_id` bigint(20) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_uploads_tmp` (
+  `upload_id` bigint(20) NOT NULL,
   `status` int(1) NOT NULL DEFAULT '0',
   `list_img` text NOT NULL,
-  `created_time` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`upload_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1341 ;
+  `created_time` int(11) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `olala3w_uploads_tmp`
@@ -2452,16 +2332,468 @@ INSERT INTO `olala3w_uploads_tmp` (`upload_id`, `status`, `list_img`, `created_t
 -- Table structure for table `olala3w_vote`
 --
 
-CREATE TABLE IF NOT EXISTS `olala3w_vote` (
-  `vote_id` bigint(20) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `olala3w_vote` (
+  `vote_id` bigint(20) NOT NULL,
   `session` varchar(255) NOT NULL,
   `user_id` int(11) NOT NULL DEFAULT '0',
   `vote` int(1) NOT NULL DEFAULT '0',
-  `created_time` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`vote_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=18 ;
+  `created_time` int(11) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `olala3w_vote`
+-- Indexes for dumped tables
 --
 
+--
+-- Indexes for table `olala3w_article`
+--
+ALTER TABLE `olala3w_article`
+  ADD PRIMARY KEY (`article_id`);
+
+--
+-- Indexes for table `olala3w_article_menu`
+--
+ALTER TABLE `olala3w_article_menu`
+  ADD PRIMARY KEY (`article_menu_id`);
+
+--
+-- Indexes for table `olala3w_bds_business`
+--
+ALTER TABLE `olala3w_bds_business`
+  ADD PRIMARY KEY (`bds_business_id`);
+
+--
+-- Indexes for table `olala3w_bds_business_menu`
+--
+ALTER TABLE `olala3w_bds_business_menu`
+  ADD PRIMARY KEY (`bds_business_menu_id`);
+
+--
+-- Indexes for table `olala3w_car`
+--
+ALTER TABLE `olala3w_car`
+  ADD PRIMARY KEY (`car_id`);
+
+--
+-- Indexes for table `olala3w_car_menu`
+--
+ALTER TABLE `olala3w_car_menu`
+  ADD PRIMARY KEY (`car_menu_id`);
+
+--
+-- Indexes for table `olala3w_category`
+--
+ALTER TABLE `olala3w_category`
+  ADD PRIMARY KEY (`category_id`);
+
+--
+-- Indexes for table `olala3w_category_type`
+--
+ALTER TABLE `olala3w_category_type`
+  ADD PRIMARY KEY (`type_id`);
+
+--
+-- Indexes for table `olala3w_constant`
+--
+ALTER TABLE `olala3w_constant`
+  ADD PRIMARY KEY (`constant_id`);
+
+--
+-- Indexes for table `olala3w_contact`
+--
+ALTER TABLE `olala3w_contact`
+  ADD PRIMARY KEY (`contact_id`);
+
+--
+-- Indexes for table `olala3w_core_privilege`
+--
+ALTER TABLE `olala3w_core_privilege`
+  ADD PRIMARY KEY (`privilege_id`);
+
+--
+-- Indexes for table `olala3w_core_role`
+--
+ALTER TABLE `olala3w_core_role`
+  ADD PRIMARY KEY (`role_id`);
+
+--
+-- Indexes for table `olala3w_core_user`
+--
+ALTER TABLE `olala3w_core_user`
+  ADD PRIMARY KEY (`user_id`),
+  ADD UNIQUE KEY `user_name` (`user_name`);
+
+--
+-- Indexes for table `olala3w_direction`
+--
+ALTER TABLE `olala3w_direction`
+  ADD PRIMARY KEY (`direction_id`);
+
+--
+-- Indexes for table `olala3w_gallery`
+--
+ALTER TABLE `olala3w_gallery`
+  ADD PRIMARY KEY (`gallery_id`);
+
+--
+-- Indexes for table `olala3w_gallery_menu`
+--
+ALTER TABLE `olala3w_gallery_menu`
+  ADD PRIMARY KEY (`gallery_menu_id`);
+
+--
+-- Indexes for table `olala3w_gift`
+--
+ALTER TABLE `olala3w_gift`
+  ADD PRIMARY KEY (`gift_id`);
+
+--
+-- Indexes for table `olala3w_gift_menu`
+--
+ALTER TABLE `olala3w_gift_menu`
+  ADD PRIMARY KEY (`gift_menu_id`);
+
+--
+-- Indexes for table `olala3w_location`
+--
+ALTER TABLE `olala3w_location`
+  ADD PRIMARY KEY (`location_id`);
+
+--
+-- Indexes for table `olala3w_location_menu`
+--
+ALTER TABLE `olala3w_location_menu`
+  ADD PRIMARY KEY (`location_menu_id`);
+
+--
+-- Indexes for table `olala3w_order`
+--
+ALTER TABLE `olala3w_order`
+  ADD PRIMARY KEY (`order_id`);
+
+--
+-- Indexes for table `olala3w_others`
+--
+ALTER TABLE `olala3w_others`
+  ADD PRIMARY KEY (`others_id`);
+
+--
+-- Indexes for table `olala3w_others_menu`
+--
+ALTER TABLE `olala3w_others_menu`
+  ADD PRIMARY KEY (`others_menu_id`);
+
+--
+-- Indexes for table `olala3w_page`
+--
+ALTER TABLE `olala3w_page`
+  ADD PRIMARY KEY (`page_id`);
+
+--
+-- Indexes for table `olala3w_prjname`
+--
+ALTER TABLE `olala3w_prjname`
+  ADD PRIMARY KEY (`prjname_id`);
+
+--
+-- Indexes for table `olala3w_product`
+--
+ALTER TABLE `olala3w_product`
+  ADD PRIMARY KEY (`product_id`);
+
+--
+-- Indexes for table `olala3w_product_menu`
+--
+ALTER TABLE `olala3w_product_menu`
+  ADD PRIMARY KEY (`product_menu_id`);
+
+--
+-- Indexes for table `olala3w_project`
+--
+ALTER TABLE `olala3w_project`
+  ADD PRIMARY KEY (`project_id`);
+
+--
+-- Indexes for table `olala3w_project_menu`
+--
+ALTER TABLE `olala3w_project_menu`
+  ADD PRIMARY KEY (`project_menu_id`);
+
+--
+-- Indexes for table `olala3w_register_email`
+--
+ALTER TABLE `olala3w_register_email`
+  ADD PRIMARY KEY (`register_email_id`);
+
+--
+-- Indexes for table `olala3w_register_try`
+--
+ALTER TABLE `olala3w_register_try`
+  ADD PRIMARY KEY (`register_try_id`);
+
+--
+-- Indexes for table `olala3w_road`
+--
+ALTER TABLE `olala3w_road`
+  ADD PRIMARY KEY (`road_id`);
+
+--
+-- Indexes for table `olala3w_street`
+--
+ALTER TABLE `olala3w_street`
+  ADD PRIMARY KEY (`street_id`);
+
+--
+-- Indexes for table `olala3w_tour`
+--
+ALTER TABLE `olala3w_tour`
+  ADD PRIMARY KEY (`tour_id`);
+
+--
+-- Indexes for table `olala3w_tour_menu`
+--
+ALTER TABLE `olala3w_tour_menu`
+  ADD PRIMARY KEY (`tour_menu_id`);
+
+--
+-- Indexes for table `olala3w_uploads_tmp`
+--
+ALTER TABLE `olala3w_uploads_tmp`
+  ADD PRIMARY KEY (`upload_id`);
+
+--
+-- Indexes for table `olala3w_vote`
+--
+ALTER TABLE `olala3w_vote`
+  ADD PRIMARY KEY (`vote_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `olala3w_article`
+--
+ALTER TABLE `olala3w_article`
+  MODIFY `article_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=744;
+
+--
+-- AUTO_INCREMENT for table `olala3w_article_menu`
+--
+ALTER TABLE `olala3w_article_menu`
+  MODIFY `article_menu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=339;
+
+--
+-- AUTO_INCREMENT for table `olala3w_bds_business`
+--
+ALTER TABLE `olala3w_bds_business`
+  MODIFY `bds_business_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=443;
+
+--
+-- AUTO_INCREMENT for table `olala3w_bds_business_menu`
+--
+ALTER TABLE `olala3w_bds_business_menu`
+  MODIFY `bds_business_menu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=153;
+
+--
+-- AUTO_INCREMENT for table `olala3w_car`
+--
+ALTER TABLE `olala3w_car`
+  MODIFY `car_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=312;
+
+--
+-- AUTO_INCREMENT for table `olala3w_car_menu`
+--
+ALTER TABLE `olala3w_car_menu`
+  MODIFY `car_menu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=188;
+
+--
+-- AUTO_INCREMENT for table `olala3w_category`
+--
+ALTER TABLE `olala3w_category`
+  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=74;
+
+--
+-- AUTO_INCREMENT for table `olala3w_category_type`
+--
+ALTER TABLE `olala3w_category_type`
+  MODIFY `type_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+
+--
+-- AUTO_INCREMENT for table `olala3w_constant`
+--
+ALTER TABLE `olala3w_constant`
+  MODIFY `constant_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=90;
+
+--
+-- AUTO_INCREMENT for table `olala3w_contact`
+--
+ALTER TABLE `olala3w_contact`
+  MODIFY `contact_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `olala3w_core_privilege`
+--
+ALTER TABLE `olala3w_core_privilege`
+  MODIFY `privilege_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4128;
+
+--
+-- AUTO_INCREMENT for table `olala3w_core_role`
+--
+ALTER TABLE `olala3w_core_role`
+  MODIFY `role_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT for table `olala3w_core_user`
+--
+ALTER TABLE `olala3w_core_user`
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+
+--
+-- AUTO_INCREMENT for table `olala3w_direction`
+--
+ALTER TABLE `olala3w_direction`
+  MODIFY `direction_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `olala3w_gallery`
+--
+ALTER TABLE `olala3w_gallery`
+  MODIFY `gallery_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=571;
+
+--
+-- AUTO_INCREMENT for table `olala3w_gallery_menu`
+--
+ALTER TABLE `olala3w_gallery_menu`
+  MODIFY `gallery_menu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
+
+--
+-- AUTO_INCREMENT for table `olala3w_gift`
+--
+ALTER TABLE `olala3w_gift`
+  MODIFY `gift_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=132;
+
+--
+-- AUTO_INCREMENT for table `olala3w_gift_menu`
+--
+ALTER TABLE `olala3w_gift_menu`
+  MODIFY `gift_menu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=144;
+
+--
+-- AUTO_INCREMENT for table `olala3w_location`
+--
+ALTER TABLE `olala3w_location`
+  MODIFY `location_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `olala3w_location_menu`
+--
+ALTER TABLE `olala3w_location_menu`
+  MODIFY `location_menu_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `olala3w_order`
+--
+ALTER TABLE `olala3w_order`
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `olala3w_others`
+--
+ALTER TABLE `olala3w_others`
+  MODIFY `others_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=133;
+
+--
+-- AUTO_INCREMENT for table `olala3w_others_menu`
+--
+ALTER TABLE `olala3w_others_menu`
+  MODIFY `others_menu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `olala3w_page`
+--
+ALTER TABLE `olala3w_page`
+  MODIFY `page_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=98;
+
+--
+-- AUTO_INCREMENT for table `olala3w_prjname`
+--
+ALTER TABLE `olala3w_prjname`
+  MODIFY `prjname_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `olala3w_product`
+--
+ALTER TABLE `olala3w_product`
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=483;
+
+--
+-- AUTO_INCREMENT for table `olala3w_product_menu`
+--
+ALTER TABLE `olala3w_product_menu`
+  MODIFY `product_menu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=152;
+
+--
+-- AUTO_INCREMENT for table `olala3w_project`
+--
+ALTER TABLE `olala3w_project`
+  MODIFY `project_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=206;
+
+--
+-- AUTO_INCREMENT for table `olala3w_project_menu`
+--
+ALTER TABLE `olala3w_project_menu`
+  MODIFY `project_menu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=217;
+
+--
+-- AUTO_INCREMENT for table `olala3w_register_email`
+--
+ALTER TABLE `olala3w_register_email`
+  MODIFY `register_email_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `olala3w_register_try`
+--
+ALTER TABLE `olala3w_register_try`
+  MODIFY `register_try_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT for table `olala3w_road`
+--
+ALTER TABLE `olala3w_road`
+  MODIFY `road_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `olala3w_street`
+--
+ALTER TABLE `olala3w_street`
+  MODIFY `street_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `olala3w_tour`
+--
+ALTER TABLE `olala3w_tour`
+  MODIFY `tour_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+
+--
+-- AUTO_INCREMENT for table `olala3w_tour_menu`
+--
+ALTER TABLE `olala3w_tour_menu`
+  MODIFY `tour_menu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=157;
+
+--
+-- AUTO_INCREMENT for table `olala3w_uploads_tmp`
+--
+ALTER TABLE `olala3w_uploads_tmp`
+  MODIFY `upload_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1341;
+
+--
+-- AUTO_INCREMENT for table `olala3w_vote`
+--
+ALTER TABLE `olala3w_vote`
+  MODIFY `vote_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
